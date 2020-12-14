@@ -8,7 +8,15 @@ $title = 'Home';
 include('inc/header.php');
 ?>
 
-        <h1>Home</h1>
+
+<section id="banner">
+        <img src="asset/img/logo-light.svg" class="logo">
+        <div class="banner-text">
+                <h1>VeryGoodNetwork</h1>
+                <p>Responsive Network Website available now 24h/24h</p>
+        </div>
+</section>
+
 
                 <div class="wrap">  
                  <div class="content">

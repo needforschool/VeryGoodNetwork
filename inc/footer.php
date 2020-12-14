@@ -5,7 +5,7 @@
 
         <!--Chart.js-->
         <!--MicroModal-->
-        <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+        <script src="micromodal.min.js"></script>
         <!--JS Perso-->
         <script src="asset/js/main.js" type="text/javascript"></script>
         </footer>
