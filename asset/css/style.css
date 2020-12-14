@@ -70,3 +70,11 @@ table {
 .clear{
     *zoom:1;
 }
+
+
+.content {
+    text-align: center;
+    line-height: 30px;
+    text-transform: uppercase;
+
+}
