@@ -64,7 +64,11 @@ table {
 .clear {
     *zoom: 1;
 }
-
+.content {
+    text-align: center;
+    line-height: 30px;
+  text-transform: uppercase;
+}
 #banner {
     background: url(../img/banner.jpg);
     background-size: cover;
@@ -94,4 +98,5 @@ table {
     font-size: 20px;
     font-style: italic;
     font-family: 'PT Sans', sans-serif;
+
 }
