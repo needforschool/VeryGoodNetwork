@@ -104,6 +104,11 @@ table {
     font-size: 20px;
     font-style: italic;
     font-family: 'PT Sans', sans-serif;
+    color: #e22813;
+    font-weight: bold;
+}
+span.red {
+	color: #e22813;
 }
 
 .banner-btn {
@@ -112,8 +117,9 @@ table {
     margin: 70px auto 0;
 }
 
+
 .btn {
-    border: 1px solid #913333;
+    border: 1px solid #a51d0d;
     background: none;
     padding: 10px 20px;
     font-size: 20px;
@@ -131,7 +137,7 @@ table {
 }
 
 .btn1:hover, .btn2:hover {
-    color: #913333;
+    color: #a51d0d;
 }
 
 .btn::before {
@@ -140,7 +146,7 @@ table {
     left: 0;
     width: 100%;
     height: 0%;
-    background: #913333;
+    background: #a51d0d;
     z-index: -1;
     transition: 0.8s;
 }
