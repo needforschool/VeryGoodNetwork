@@ -47,24 +47,24 @@ include('inc/header.php');
                 </div>
         </section>
 
-        <section>
-
-        <div>
+        <section id="about-section3">
+        <h1>Quelques chiffres</h1>
+        <div class="box">
                 <div>
-                        <p>1<span>er</span></p>
-                        <p>En Normandie</p>
+                        <p class="number">1<span>er</sup></p>
+                        <p class="text">En Normandie</p>
                 </div>
                 <div>
-                        <p>4</p>
-                        <p>Développeurs</p>
+                        <p class="number">4</p>
+                        <p class="text">Développeurs</p>
                 </div>
                 <div>
-                        <p>56</p>
-                        <p>Partenaires</p>  
+                        <p class="number">56</p>
+                        <p class="text">Partenaires</p>  
                 </div>
                 <div>
-                        <p>6</p>
-                        <p>Module d'analyse</p>      
+                        <p class="number">6</p>
+                        <p class="text">Module d'analyse</p>      
                 </div>
         </div>
         </section>
