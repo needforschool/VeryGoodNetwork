@@ -73,19 +73,20 @@ include('inc/header.php');
                         </div>
                         <div class="bigbox4">
                                 <div class="boximg4">
-                                        <img id="imgmiddle3" src="asset/img/austin.jpg" alt="Avatar">
+                                        <img id="imgmiddle4" src="asset/img/austin.jpg" alt="Avatar">
                                 </div>
                                 <div class="text5">
                                         <p>Grâce à VGN, je peux analyser mon site web et comprendre les besoins de mes clients. Un Super Outil, je recommande.</p>
                                 </div>
                                 <div class="boximg4">
-                                        <img id="imgmiddle3" src="asset/img/alphawan.jpg" alt="Avatar">
+                                        <img id="imgmiddle4" src="asset/img/alphawan.jpg" alt="Avatar">
                                 </div>
                                 <div class="text5">
                                         <p>Grâce à VGN, je peux analyser mon site web et comprendre les besoins de mes clients. Un Super Outil, je recommande.</p>
                                 </div>
-
-
+                        </div>
+                        <div class="triangleinverse">
+                                <img id="triangle1" src="asset/img/triangleinverse.png" alt="Avatar">
                         </div>
                 </div>
 </section>

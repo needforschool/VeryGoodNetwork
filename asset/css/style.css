@@ -98,11 +98,12 @@ body::-webkit-scrollbar-thumb {
     background-position: center;
     min-height: 100vh;
 }
+
 .wrap-banner {
     max-width: 100%;
     width: 100%;
-
 }
+
 .banner-img {
     width: 100%;
     position: absolute;
@@ -120,7 +121,6 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
     color: #fff;
     padding-top: 300px;
-
 }
 
 .banner-text h1 {
@@ -135,20 +135,17 @@ body::-webkit-scrollbar-thumb {
     margin-top: 20px;
 }
 
-/* span.red {
-    color: #e22813;
-} */
-
 .banner-btn {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    width: 50%;
+    width: 750px;
     margin-top: -10px;
 }
 
 .banner-btn button {
     border: 1px solid #a51d0d;
+    border-radius: 4px;
     background: #a51d0d;
     padding: 10px 20px;
     font-size: 35px;
@@ -166,40 +163,6 @@ body::-webkit-scrollbar-thumb {
     color: #a51d0d;
     background-color: #000;
 }
-
-/* .banner-btn button::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 0%;
-    background: #a51d0d;
-    z-index: -1;
-    transition: 0.8s;
-} */
-
-/* #openModalSignin::before {
-    top: 0;
-    border-radius: 0 0 50% 50%;
-}
-
-#openModalLogin::before {
-    bottom: 0;
-    border-radius: 50% 50% 0 0;
-}
-
-#openModalSignin::before, #openModalLogin::before {
-    height: 180%;
-}
-
-#openModalSignin:hover::before, #openModalLogin:hover::before {
-    height: 0%;
-
-} */
-
-/* #content {
-    height: 100vh;
-} */
 
 .content {
     text-align: center;
@@ -298,6 +261,7 @@ body::-webkit-scrollbar-thumb {
 
 .text3 h1 {
     font-weight: bold;
+    padding: 5%;
 }
 
 .text3 p {
@@ -313,8 +277,30 @@ body::-webkit-scrollbar-thumb {
 
 .bigbox4 {
     display: flex;
+    PADDING: 0% 5% 5% 5%;
+    align-items: center;
+}
+#imgmiddle4 {
+    width: 80%;
+    border-radius: 50%;
+    padding-left: 20%;
+}
+.boximg4 {
+    align-items: center;
+}
+.text5 {
+    font-size: 1.2em;
+    font-family: 'PT Sans', sans-serif;
 }
 
+#triangle1 {
+    width: 100%;
+    bottom: 0;
+    position: relative;
+    top: 10px;
+  
+    
+}
 /*About us*/
 
 #about-section1 .flexbox {
@@ -419,17 +405,17 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column;
 }
 
-#about-section3{
+#about-section3 {
     padding: 50px 0;
     font-family: 'PT Sans', sans-serif;
 }
 
-#about-section3 h1{
+#about-section3 h1 {
     font-size: 3em;
     text-align: center;
 }
 
-#about-section3 .box{
+#about-section3 .box {
     background-color: #913333;
     height: 15em;
     color: #fff;
@@ -439,13 +425,14 @@ body::-webkit-scrollbar-thumb {
     margin: 15px 0;
 }
 
-#about-section3 .box div{
+#about-section3 .box div {
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 25%;
 }
-#about-section3 .number{
+
+#about-section3 .number {
     font-size: 6em;
     font-weight: 900;
 }
@@ -544,4 +531,9 @@ body::-webkit-scrollbar-thumb {
     transition: 0.8s;
     overflow: hidden;
     color: #fff;
+}
+
+#about-section3 .text {
+    font-size: 1.4em;
+    white-space: nowrap;
 }
