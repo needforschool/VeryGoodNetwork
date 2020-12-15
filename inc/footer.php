@@ -27,7 +27,6 @@
 
                         <footer class="modal__footer">
                             <input type="submit" name="submitted" class="modal__btn modal__btn-primary" value="Se Connecter">
-                            <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Close</button>
                         </footer>
                     </form>
                 </div>
