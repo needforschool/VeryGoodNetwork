@@ -333,7 +333,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 #about-section1 {
-    background-color: lime;
     height: 26em;
 }
 
@@ -392,7 +391,6 @@ body::-webkit-scrollbar-thumb {
 
 #about-section2 {
     padding: 50px 0;
-    background-color: lightblue;
     font-family: 'PT Sans', sans-serif;
 }
 
@@ -418,4 +416,38 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+#about-section3{
+    padding: 50px 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+#about-section3 h1{
+    font-size: 3em;
+    text-align: center;
+}
+
+#about-section3 .box{
+    background-color: #913333;
+    height: 15em;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px 0;
+}
+
+#about-section3 .box div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#about-section3 .number{
+    font-size: 6em;
+    font-weight: 900;
+}
+
+#about-section3 .text{
+    font-size: 1.5em;
 }

@@ -1,9 +1,11 @@
 .modal {
     display: none;
+    z-index: 99;
 }
 
 .modal.is-open {
     display: block;
+    z-index: 99;
 }
 
 /**************************\
@@ -24,6 +26,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 98;
 }
 
 .modal__container {
@@ -34,6 +37,7 @@
   border-radius: 4px;
   overflow-y: auto;
   box-sizing: border-box;
+  z-index: 99;
 }
 
 .modal__header {
