@@ -186,3 +186,11 @@ span.red {
 .btn1:hover::before, .btn2:hover::before {
     height: 0%;
 }
+
+/*About us*/
+
+#about-section1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
