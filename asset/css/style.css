@@ -64,11 +64,7 @@ table {
 .clear {
     *zoom: 1;
 }
-.content {
-    text-align: center;
-    line-height: 30px;
-  text-transform: uppercase;
-}
+
 #banner {
     background: url(../img/banner.jpg);
     background-size: cover;
@@ -99,4 +95,99 @@ table {
     font-style: italic;
     font-family: 'PT Sans', sans-serif;
 
+}
+
+.content {
+    text-align: center;
+    line-height: 45px;
+    font-family: 'PT Sans', sans-serif;
+    margin-top: 5%;
+}
+.content h1 {
+    font-size: 2.8em;
+}
+.content p {
+    font-size: 2em;
+}
+.wrap {
+    width: 100%;
+    margin-top: 5%;
+}
+.bigbox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+#imgmiddle  {
+    width: 40%;
+}
+.text  {
+    width: 40%;
+    font-size: 2em;
+    font-family: 'PT Sans', sans-serif;
+}
+.text h1 {
+    font-weight: bold;
+}
+.text p {
+    line-height: 40px;
+}
+.bigbox2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#imgmiddle2 {
+    width: 30%;
+}
+.text2 {
+    font-family: 'PT Sans', sans-serif;
+}
+    
+.text2 h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+.text2 p {
+    font-size: 1.8em;
+}
+#bleu {
+    color: #2e50be;
+}
+#blanc {
+    color: #b5b5b5;
+}
+#rouge {
+    color: #950303;
+}
+
+.bigbox3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+#imgmiddle3  {
+    width: 40%;
+}
+.text3 {
+    width: 40%;
+    font-size: 2em;
+    font-family: 'PT Sans', sans-serif;
+}
+.text3 h1 {
+    font-weight: bold;
+}
+.text3 p {
+    line-height: 40px;
+}
+.text4 {
+    text-align: center;
+    margin: 5% auto;
+    font-size: 3em;
+    font-family: 'PT Sans', sans-serif;
+}
+.bigbox4 {
+    display: flex;
 }
