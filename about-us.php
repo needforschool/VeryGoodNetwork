@@ -8,7 +8,8 @@ $title = 'A propos';
 include('inc/header.php');
 ?>
       
-        <section>
+        <section id="about-section0">
+                <img src="asset/img/triangle.png" class="banner-img">
                 <h1>About US</h1> 
         </section>
         
@@ -98,6 +99,9 @@ include('inc/header.php');
         <section id="about-section6">
                 <h1>Satisfait ?</h1>
                 <button>Inscrivez vous</button>
+                <div class="triangleinverse">
+                        <img id="triangle4" src="asset/img/triangleinverse.png" alt="Avatar">
+                </div>
         </section>
 
 

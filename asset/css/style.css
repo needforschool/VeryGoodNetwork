@@ -297,11 +297,17 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     bottom: 0;
     position: relative;
-    top: 10px;
-  
-    
+    top: 10px;  
 }
 /*About us*/
+
+#about-section0{
+    padding-bottom: 10em;
+}
+#about-section0 img{
+    z-index: 1;
+    width: 100%;
+}
 
 #about-section1 .flexbox {
     display: flex;
@@ -337,6 +343,7 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     height: auto;
 }
+
 
 #about-picture1 {
     width: 500px;
@@ -536,4 +543,11 @@ body::-webkit-scrollbar-thumb {
 #about-section3 .text {
     font-size: 1.4em;
     white-space: nowrap;
+}
+
+#triangle4 {
+    width: 100%;
+    bottom: 0;
+    position: relative;
+    top: 40px;  
 }
