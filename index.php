@@ -10,6 +10,9 @@ include('inc/header.php');
 
 
 <section id="banner">
+        <div class="title-page">
+                <p>Home</p>
+        </div>
         <img src="asset/img/triangle.png" class="banner-img">
         <div class="wrap-banner">
                 <div class="banner-text">
