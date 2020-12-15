@@ -5,7 +5,7 @@
                 <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-login-title">
                     <header class="modal__header">
                         <h2 class="modal__title" id="modal-login-title">
-                            Connection
+                            Connexion <i class="fas fa-lock"></i>
                         </h2>
                         <button class="modal__close" aria-label="Close modal" data-custom-close="modal-login"></button>
                     </header>
@@ -19,7 +19,7 @@
                             </div>
 
                             <div class="input-area">
-                                <label for="password-login"><strong>Password</strong> (required)</label>
+                                <label for="password-login"><strong>Mot de pass</strong> (requis)</label>
                                 <input type="password" id="password-login" name="password-login">
                                 <span class="error-password-login"></span>
                             </div>
@@ -41,7 +41,7 @@
                 <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-signin-title">
                     <header class="modal__header">
                         <h2 class="modal__title" id="modal-signin-title">
-                            Register
+                            Inscription
                             <i class="fas fa-sign-in-alt"></i>
                         </h2>
                         <button class="modal__close" aria-label="Close modal" data-custom-close="modal-signin"></button>
@@ -50,13 +50,13 @@
                         <div class="modal__content" id="modal-signin-content">
 
                             <div class="input-area">
-                                <label for="nom-signin"><strong>First name</strong></label>
+                                <label for="nom-signin"><strong>Nom</strong></label>
                                 <input type="text" id="nom-signin" name="nom-signin">
                                 <span class="error-nom-signin"></span>
                             </div>
 
                             <div class="input-area">
-                                <label for="prenom-signin"><strong>Last name</strong></label>
+                                <label for="prenom-signin"><strong>Prénom</strong></label>
                                 <input type="text" id="prenom-signin" name="prenom-signin">
                                 <span class="error-prenom-signin"></span>
                             </div>
@@ -68,7 +68,7 @@
                             </div>
 
                             <div class="input-area">
-                                <label for="password-signin"><strong>Password</strong></label>
+                                <label for="password-signin"><strong>Mot de passe</strong></label>
                                 <input type="password" id="password-signin" name="password-signin">
                                 <span class="error-password-signin"></span>
                             </div>
