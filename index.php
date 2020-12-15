@@ -28,9 +28,12 @@ include('inc/header.php');
                 </div>
         </div>
         <img src="asset/img/triangle-blanc.png" class="banner-img-bottom">
+
 </section>
 
+
 <section id="content">
+
         <div class="box">
                 <div class="content">
                         <h1>Solution d'analyse Web</h1>
