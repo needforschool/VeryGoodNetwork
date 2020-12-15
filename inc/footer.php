@@ -19,7 +19,7 @@
                             </div>
 
                             <div class="input-area">
-                                <label for="password-login"><strong>Mot de pass</strong> (requis)</label>
+                                <label for="password-login"><strong>Mot de passe</strong> (requis)</label>
                                 <input type="password" id="password-login" name="password-login">
                                 <span class="error-password-login"></span>
                             </div>
@@ -75,7 +75,7 @@
                         </div>
 
                         <footer class="modal__footer">
-                            <input type="submit" name="submitted" class="modal__btn modal__btn-primary" value="Sign in">
+                            <input id="btn-submit-signin" type="submit" name="submitted" class="modal__btn modal__btn-primary" value="Sign in">
                         </footer>
                     </form>
                 </div>

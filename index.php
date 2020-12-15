@@ -10,9 +10,9 @@ include('inc/header.php');
 
 
 <section id="banner">
-        <div class="title-page">
+        <!-- <div class="title-page">
                 <p>Home</p>
-        </div>
+        </div> -->
         <img src="asset/img/triangle.png" class="banner-img">
         <div class="wrap-banner">
                 <div class="banner-text">
@@ -28,9 +28,12 @@ include('inc/header.php');
                 </div>
         </div>
         <img src="asset/img/triangle-blanc.png" class="banner-img-bottom">
+
 </section>
 
+
 <section id="content">
+
         <div class="box">
                 <div class="content">
                         <h1>Solution d'analyse Web</h1>

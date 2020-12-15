@@ -136,7 +136,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .banner-text h1 {
-    font-size: 130px;
+    font-size: 9em;
     font-family: 'PT Sans', sans-serif;
 }
 
@@ -149,9 +149,9 @@ body::-webkit-scrollbar-thumb {
 
 .banner-btn {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0 auto;
-    width: 750px;
+    width: 100%;
     margin-top: -10px;
 }
 
@@ -160,10 +160,10 @@ body::-webkit-scrollbar-thumb {
     border-radius: 4px;
     background: #a51d0d;
     padding: 10px 20px;
-    font-size: 35px;
+    font-size: 2em;
     font-family: 'PT Sans', sans-serif;
     cursor: pointer;
-    /* margin: 10px; */
+    margin: 5%;
     z-index: 1;
     transition: 0.8s;
     /* position: relative; */
@@ -180,7 +180,7 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
     line-height: 45px;
     font-family: 'PT Sans', sans-serif;
-    margin-top: 5%;
+    margin-top: 60px;
 }
 
 .content h1 {
@@ -581,5 +581,37 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     bottom: 0;
     position: relative;
+<<<<<<< HEAD
     top: 50px;
 }
+=======
+    top: 40px;  
+}
+
+/* RESPONSIVE */
+body {
+    font-size: 100%
+}
+
+p {
+    font-size: 1em;
+}
+
+@media screen and (max-width: 64em) {
+    body {
+         font-size: 80%;
+      }
+   }
+   
+   @media screen and (max-width: 50em) {
+    body {
+          font-size: 75%;
+      }
+   }
+   
+   @media screen and (max-width: 30em) {
+      body {
+           font-size: 50%;
+     }
+   }
+>>>>>>> 9b0347d57f511bf5d587f15145d3b85ad9e7af62

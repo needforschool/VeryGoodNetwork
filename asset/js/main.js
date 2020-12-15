@@ -54,6 +54,28 @@ $(document).ready(function(){
     })
 
 
+    //Requete AJAX
+    $('#formSignin').on('submit', function(e){
+        e.preventDefault();
+        let form = $('#formSignin');
+        $.ajax({
+            type: 'POST',
+            url: form.attr('action'),
+            data: form.serialize(),
+            dataType: 'json',
+
+            beforeSend: function() {
+                $('#btn-submit-signin').css('display', 'none');
+            },
+
+            success: function(response) {
+                $('#btn-submit-signin').fadeIn(200);
+                console.log(response)
+            }
+        })
+    })
+
+
 
 //----------------------
 //FERMETURE JQUERY
@@ -65,6 +87,7 @@ $(document).ready(function(){
 //FONCTIONS JS
 //----------------------
 
+//fonction pour verifier la longueur du texte
 function verifText(id, min, max)
 {
   var error = $('span.error-' + id);
@@ -82,7 +105,7 @@ function verifText(id, min, max)
   }
 }
 
-
+//Fonction pour verifier qu'un email est valide
 function verifEmail(id)
 {
     var error = $('span.error-' + id);
@@ -100,6 +123,7 @@ function verifEmail(id)
     }
 }
 
+//fonction pour verifier la longueur du mot de passe
 function checkLengthPassword(id)
 {
     var error = $('span.error-' + id);
