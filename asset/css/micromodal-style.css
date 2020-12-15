@@ -59,7 +59,6 @@
 .modal__close {
   background: transparent;
   border: 0;
-  z-index: 95;
 }
 
 .modal__header .modal__close:before { content: "\2715"; }
