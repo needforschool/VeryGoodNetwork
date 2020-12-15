@@ -260,6 +260,7 @@ body::-webkit-scrollbar-thumb {
 
 .text3 h1 {
     font-weight: bold;
+    padding: 5%;
 }
 
 .text3 p {
@@ -275,8 +276,30 @@ body::-webkit-scrollbar-thumb {
 
 .bigbox4 {
     display: flex;
+    PADDING: 0% 5% 5% 5%;
+    align-items: center;
+}
+#imgmiddle4 {
+    width: 80%;
+    border-radius: 50%;
+    padding-left: 20%;
+}
+.boximg4 {
+    align-items: center;
+}
+.text5 {
+    font-size: 1.2em;
+    font-family: 'PT Sans', sans-serif;
 }
 
+#triangle1 {
+    width: 100%;
+    bottom: 0;
+    position: relative;
+    top: 10px;
+  
+    
+}
 /*About us*/
 
 #about-section1 .flexbox {
