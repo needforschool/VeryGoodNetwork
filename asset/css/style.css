@@ -196,8 +196,108 @@ body::-webkit-scrollbar-thumb {
 
 /*About us*/
 
-#about-section1{
+#about-section1 .flexbox{
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'PT Sans', sans-serif;
+    position: relative;
+    top: 5em;
+}
+
+#about-section1 h1{
+    font-size: 3em;
+    letter-spacing: 6px;
+    margin-bottom: 30px;
+}
+
+#about-section1{
+    background-color: lime;
+    height: 26em;
+}
+
+#about-section1 p{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.about-picture{
+    border-radius: 20px;
+    position: relative;
+}
+
+.responsive{
+    width: 100%;
+    height: auto;
+}
+
+#about-picture1{
+    width: 350px;
+    z-index: 2;
+    right: 5em;
+    bottom: 5em;
+
+}
+
+#about-picture2{
+    width: 200px;
+    z-index: 1;
+    right: 20em;
+    bottom: 5em;
+
+    
+}
+#about-section1 .leftpicture{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+#about-picture3{
+    max-width: 100%;
+    width: 280px;
+    left: 18em;
+    bottom: 25em;
+    z-index: 20;
+}
+
+#about-picture4{
+    max-width: 100%;
+    width: 250px;
+    z-index: 1;
+    right: 5em;
+    bottom: 27em;
+    border-radius: 80px;
+    transform:scaleX(-1);
+}
+
+#about-section2{
+    padding: 50px 0;
+    background-color: lightblue;
+    font-family: 'PT Sans', sans-serif;
+}
+
+#about-section2 h1{
+    text-align: center;
+    font-size: 3em;
+    padding: 0 0 50px 0;
+
+}
+
+#about-section2 .profils{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#about-section2 img{
+    height: 90px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+#about-section2 .single-profil{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
