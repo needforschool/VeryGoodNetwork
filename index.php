@@ -11,7 +11,6 @@ include('inc/header.php');
 
 <section id="banner">
         <img src="asset/img/triangle.png" class="banner-img">
-
         <div class="wrap-banner">
                 <div class="banner-text">
                         <h1>Very <span class="red">Good </span>Network</h1>
@@ -24,7 +23,6 @@ include('inc/header.php');
                                 <button data-custom-open="modal-login" id="openModalLogin">Connexion</button>
                         <?php endif; ?>
                 </div>
-
         </div>
         <img src="asset/img/triangle-blanc.png" class="banner-img-bottom">
 </section>
