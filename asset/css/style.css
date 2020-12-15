@@ -116,7 +116,7 @@ body::-webkit-scrollbar-thumb {
 .banner-text {
     text-align: center;
     color: #fff;
-    padding-top: 350px;
+    padding-top: 345px;
 }
 
 .banner-text h1 {
@@ -128,7 +128,7 @@ body::-webkit-scrollbar-thumb {
     font-size: 40px;
     font-family: 'PT Sans', sans-serif;
     font-weight: bold;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 /* span.red {
@@ -143,9 +143,9 @@ body::-webkit-scrollbar-thumb {
     margin-top: -10px;
 }
 
-.btn {
+.banner-btn button {
     border: 1px solid #a51d0d;
-    background: none;
+    background: #a51d0d;
     padding: 10px 20px;
     font-size: 35px;
     font-family: 'PT Sans', sans-serif;
@@ -155,17 +155,15 @@ body::-webkit-scrollbar-thumb {
     transition: 0.8s;
     position: relative;
     overflow: hidden;
-}
-
-.btn1, .btn2 {
     color: #fff;
 }
 
-.btn1:hover, .btn2:hover {
-    color: #fff;
+#openModalSignin:hover, #openModalLogin:hover {
+    color: #a51d0d;
+    background-color: #000;
 }
 
-.btn::before {
+/* .banner-btn button::before {
     content: "";
     position: absolute;
     left: 0;
@@ -174,22 +172,22 @@ body::-webkit-scrollbar-thumb {
     background: #a51d0d;
     z-index: -1;
     transition: 0.8s;
-}
+} */
 
-.btn1::before {
+/* #openModalSignin::before {
     top: 0;
     border-radius: 0 0 50% 50%;
 }
 
-.btn2::before {
+#openModalLogin::before {
     bottom: 0;
     border-radius: 50% 50% 0 0;
 }
 
-.btn1::before, .btn2::before {
+#openModalSignin::before, #openModalLogin::before {
     height: 180%;
 }
 
-.btn1:hover::before, .btn2:hover::before {
+#openModalSignin:hover::before, #openModalLogin:hover::before {
     height: 0%;
-}
+} */
