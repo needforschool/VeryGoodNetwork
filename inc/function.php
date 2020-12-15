@@ -54,3 +54,15 @@ function verifText($errors, $notVerif, int $min, int $max, $key)
   }
   return $errors;
 }
+
+function checkIfAlreadyTaken($table, $data, $databis, $errors, $key)
+{
+  $sql = "SELECT * FROM $table WHERE $data LIKE :databis";
+  $query = $pdo->prepare($sql);
+  $query -> bindValue(':databis', $databis, PDO::PARAM_STR);
+  $query->execute();
+  $verifData = $query->fetch();
+  if (!empty($verifData)) {
+    $errors[$key] = $key . ' déjà utilisé';
+  }
+}
