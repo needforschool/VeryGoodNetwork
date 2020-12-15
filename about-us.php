@@ -51,7 +51,7 @@ include('inc/header.php');
         <h1>Quelques chiffres</h1>
         <div class="box">
                 <div>
-                        <p class="number">1<span>er</sup></p>
+                        <p class="number">1<span>er</span></p>
                         <p class="text">En Normandie</p>
                 </div>
                 <div>

@@ -17,12 +17,10 @@ MicroModal.init({
 
 var buttonLogin = $('#openModalLogin');
 buttonLogin.on('click', function(){
-    MicroModal.show('#modal-login');
 });
 
 var buttonSignin = $('#openModalSignin');
 buttonSignin.on('click', function(){
-    MicroModal.show('#modal-signin');
 });
 
 //----------------------

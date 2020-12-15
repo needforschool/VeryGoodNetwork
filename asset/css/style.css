@@ -466,6 +466,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     align-items: center;
     flex-direction: column;
+    width: 25%;
 }
 #about-section3 .number{
     font-size: 6em;
@@ -473,5 +474,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 #about-section3 .text{
-    font-size: 1.5em;
+    font-size: 1.4em;
+    white-space: nowrap;
 }
