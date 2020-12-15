@@ -108,6 +108,7 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     text-align: center;
 }
+
 .wrap-banner {
     height: auto;
     width: 50%;
@@ -200,15 +201,15 @@ body::-webkit-scrollbar-thumb {
     justify-content: space-around;
     align-items: center;
 }
-#imgmiddle { 
+
+#imgmiddle {
     width: 40%;
-    transition: all .2s ease-in-out; 
-}
-#imgmiddle:hover { 
-    transform: scale(1.1); 
+    transition: all .2s ease-in-out;
 }
 
-
+#imgmiddle:hover {
+    transform: scale(1.1);
+}
 
 .text {
     width: 40%;
@@ -229,13 +230,15 @@ body::-webkit-scrollbar-thumb {
     justify-content: space-around;
     align-items: center;
 }
-#imgmiddle2 { 
+
+#imgmiddle2 {
     padding: 2%;
     width: 40%;
-    transition: all .2s ease-in-out; 
+    transition: all .2s ease-in-out;
 }
-#imgmiddle2:hover { 
-    transform: scale(1.1); 
+
+#imgmiddle2:hover {
+    transform: scale(1.1);
 }
 
 .text2 {
@@ -268,12 +271,14 @@ body::-webkit-scrollbar-thumb {
     justify-content: space-around;
     align-items: center;
 }
-#imgmiddle3 { 
+
+#imgmiddle3 {
     width: 40%;
-    transition: all .2s ease-in-out; 
+    transition: all .2s ease-in-out;
 }
-#imgmiddle3:hover { 
-    transform: scale(1.1); 
+
+#imgmiddle3:hover {
+    transform: scale(1.1);
 }
 
 .text3 {
@@ -303,14 +308,17 @@ body::-webkit-scrollbar-thumb {
     PADDING: 0% 5% 5% 5%;
     align-items: center;
 }
+
 #imgmiddle4 {
     width: 80%;
     border-radius: 50%;
     padding-left: 20%;
 }
+
 .boximg4 {
     align-items: center;
 }
+
 .text5 {
     font-size: 1.2em;
     font-family: 'PT Sans', sans-serif;
@@ -320,14 +328,16 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     bottom: 0;
     position: relative;
-    top: 10px;  
+    top: 10px;
 }
+
 /*About us*/
 
-#about-section0{
+#about-section0 {
     padding-bottom: 10em;
 }
-#about-section0 img{
+
+#about-section0 img {
     z-index: 1;
     width: 100%;
 }
@@ -366,7 +376,6 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     height: auto;
 }
-
 
 #about-picture1 {
     width: 500px;
@@ -467,36 +476,35 @@ body::-webkit-scrollbar-thumb {
     font-weight: 900;
 }
 
-#about-section3 .text{
+#about-section3 .text {
     padding-top: 15px;
     font-size: 1.4em;
     white-space: nowrap;
 }
 
-#about-section4{
+#about-section4 {
     font-family: 'PT Sans', sans-serif;
-
 }
 
-#about-section4 h1{
+#about-section4 h1 {
     font-size: 3em;
     text-align: center;
     margin-bottom: 40px;
 }
 
-#about-section4 .flexbox{
+#about-section4 .flexbox {
     display: flex;
     flex-direction: row;
     justify-content: center;
-
 }
-#about-section4 .stick{
+
+#about-section4 .stick {
     background-color: #000;
     width: 4px;
     height: 240px;
 }
 
-#about-section4 .picture{
+#about-section4 .picture {
     background-image: url("../img/dashboard.jpg");
     height: 240px;
     width: 450px;
@@ -504,39 +512,39 @@ body::-webkit-scrollbar-thumb {
     background-repeat: no-repeat;
 }
 
-#about-section4 .flexbox div{
-    margin: 0 15px;;
+#about-section4 .flexbox div {
+    margin: 0 15px;
+    ;
 }
 
-#about-section4 .textarg{
+#about-section4 .textarg {
     font-size: 1.5em;
     letter-spacing: 6px;
     line-height: 45px;
 }
 
-#about-section5{
+#about-section5 {
     margin: 40px 0;
     font-family: 'PT Sans', sans-serif;
-
 }
 
-#about-section5 h1{
+#about-section5 h1 {
     font-size: 3em;
     text-align: center;
     margin-bottom: 40px;
 }
 
-#about-section5 .flexbox{
+#about-section5 .flexbox {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
-#about-section5 img{
+#about-section5 img {
     height: 80px;
 }
 
-#about-section6{
+#about-section6 {
     margin: 40px 0;
     font-family: 'PT Sans', sans-serif;
     display: flex;
@@ -545,12 +553,13 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column;
 }
 
-#about-section6 h1{
+#about-section6 h1 {
     font-size: 3em;
     text-align: center;
     margin-bottom: 40px;
 }
-#about-section6 button{
+
+#about-section6 button {
     border: 1px solid #a51d0d;
     background: #a51d0d;
     padding: 10px 20px;
@@ -572,5 +581,5 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     bottom: 0;
     position: relative;
-    top: 40px;  
+    top: 40px;
 }
