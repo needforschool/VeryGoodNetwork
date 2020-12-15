@@ -11,10 +11,10 @@ include('inc/header.php');
 
 <section id="banner">
 
-        <img src="asset/img/triangle.png" class="logo">
+        <img src="asset/img/triangle.png" class="banner-img">
         <div class="banner-text">
-                <h1>Very<span class="red">Good</span>Network</h1>
-                <p>Responsive Network Website available now 24h/24h</p>
+                <h1>Very <span class="red">Good </span>Network</h1>
+                <p>Analyse Web</p>
         </div>
         <div class="banner-btn">
                 <?php if (empty($_SESSION)) : ?>
@@ -22,6 +22,7 @@ include('inc/header.php');
                         <a href="login.php" class="btn btn2">Connexion</a>
                 <?php endif; ?>
         </div>
+        <img src="asset/img/triangle-blanc.png" class="banner-img-bottom">
 </section>
 
 
