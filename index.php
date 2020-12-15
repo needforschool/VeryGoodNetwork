@@ -10,15 +10,16 @@ include('inc/header.php');
 
 
 <section id="banner">
-        <img src="asset/img/logo-light.svg" class="logo">
+
+        <img src="asset/img/triangle.png" class="logo">
         <div class="banner-text">
                 <h1>Very<span class="red">Good</span>Network</h1>
                 <p>Responsive Network Website available now 24h/24h</p>
         </div>
         <div class="banner-btn">
                 <?php if (empty($_SESSION)) : ?>
-                        <a href="signin.php" class="btn btn1">Inscription</a>
-                        <a href="login.php" class="btn btn2">Connexion</a>
+                        <button data-custom-open="modal-signin" id="openModalSignin">Insciption</button>
+                        <button data-custom-open="modal-login" id="openModalLogin">Connexion</button>
                 <?php endif; ?>
         </div>
 </section>
