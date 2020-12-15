@@ -169,3 +169,20 @@
     Form Style in Modal
 \**************************/
 
+.modal__container {
+  width: 700px;
+}
+.input-area {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  line-height: 2;
+}
+
+.input-area strong {
+  font-weight: bold;
+}
+
+.input-area input {
+  height: 30px;
+}

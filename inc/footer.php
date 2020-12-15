@@ -5,7 +5,7 @@
                 <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-login-title">
                     <header class="modal__header">
                         <h2 class="modal__title" id="modal-login-title">
-                            Se connecter
+                            Connection
                         </h2>
                         <button class="modal__close" aria-label="Close modal" data-custom-close="modal-login"></button>
                     </header>
@@ -13,20 +13,20 @@
                         <div class="modal__content" id="modal-login-content">
 
                             <div class="input-area">
-                                <label for="email-login">Votre email</label>
+                                <label for="email-login"><strong>Email</strong> </label>
                                 <input type="email" id="email-login" name="email-login">
                                 <span class="error-email-login"></span>
                             </div>
 
                             <div class="input-area">
-                                <label for="password-login">Votre mot de passe</label>
+                                <label for="password-login"><strong>Password</strong> (required)</label>
                                 <input type="password" id="password-login" name="password-login">
                                 <span class="error-password-login"></span>
                             </div>
                         </div>
 
                         <footer class="modal__footer">
-                            <input type="submit" name="submitted" class="modal__btn modal__btn-primary" value="Se Connecter">
+                            <input type="submit" name="submitted" class="modal__btn modal__btn-primary" value="Login">
                         </footer>
                     </form>
                 </div>
@@ -41,7 +41,7 @@
                 <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-signin-title">
                     <header class="modal__header">
                         <h2 class="modal__title" id="modal-signin-title">
-                            S'inscrire
+                            Register
                             <i class="fas fa-sign-in-alt"></i>
                         </h2>
                         <button class="modal__close" aria-label="Close modal" data-custom-close="modal-signin"></button>
@@ -50,32 +50,32 @@
                         <div class="modal__content" id="modal-signin-content">
 
                             <div class="input-area">
-                                <label for="nom-signin">Votre nom</label>
+                                <label for="nom-signin"><strong>First name</strong></label>
                                 <input type="text" id="nom-signin" name="nom-signin">
                                 <span class="error-nom-signin"></span>
                             </div>
 
                             <div class="input-area">
-                                <label for="prenom-signin">Votre prenom</label>
+                                <label for="prenom-signin"><strong>Last name</strong></label>
                                 <input type="text" id="prenom-signin" name="prenom-signin">
                                 <span class="error-prenom-signin"></span>
                             </div>
 
                             <div class="input-area">
-                                <label for="email-signin">Votre email</label>
+                                <label for="email-signin"><strong>Email</strong></label>
                                 <input type="email" id="email-signin" name="email-signin">
                                 <span class="error-email-signin"></span>
                             </div>
 
                             <div class="input-area">
-                                <label for="password-signin">Votre mot de passe</label>
+                                <label for="password-signin"><strong>Password</strong></label>
                                 <input type="password" id="password-signin" name="password-signin">
                                 <span class="error-password-signin"></span>
                             </div>
                         </div>
 
                         <footer class="modal__footer">
-                            <input type="submit" name="submitted" class="modal__btn modal__btn-primary" value="S'inscrire">
+                            <input type="submit" name="submitted" class="modal__btn modal__btn-primary" value="Sign in">
                         </footer>
                     </form>
                 </div>
