@@ -69,32 +69,33 @@ include('inc/header.php');
         </div>
         </section>
 
-        <section>
+        <section id="about-section4">
                 <h1>Notre Interface</h1>
-                <div>
+                <div class="flexbox">
+                        <div class="picture">
+                        </div>
+                        <div class="stick">
 
-                </div>
-                <div>
-                        <div></div>
-                        <div>
+                        </div>
+                        <div class="textarg">
                                 <p>Ergonomique</p>
                                 <p>Performantes</p>
                                 <p>Simple à comprendre</p>
-                                <p>Cliquez sur l'image pour tester</p>
+                                <p>Cliquez sur l'image pour <br>lancer la démo</p>
                         </div>
                 </div>
         </section>
 
-        <section>
+        <section id="about-section5">
                 <h1>Ils parlent de nous</h1>
-                <div>
-                        <img src="" alt="">
-                        <img src="" alt="">
-                        <img src="" alt="">
+                <div class="flexbox">
+                        <img src="asset/img/BFM.png" alt="">
+                        <img src="asset/img/lemonde.png" alt="">
+                        <img src="asset/img/leParisien.png" alt="">
                 </div>
         </section>
 
-        <section>
+        <section id="about-section6">
                 <h1>Satisfait ?</h1>
                 <button>Inscrivez vous</button>
         </section>
