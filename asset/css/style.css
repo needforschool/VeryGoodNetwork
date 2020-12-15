@@ -99,15 +99,26 @@ body::-webkit-scrollbar-thumb {
     min-height: 100vh;
 }
 
-.wrap-banner {
-    max-width: 100%;
+.title-page {
+    position: absolute;
+    z-index: 50;
+    font-size: 80px;
+    color: #fff;
+    top: 100px;
     width: 100%;
+    text-align: center;
+}
+.wrap-banner {
+    height: auto;
+    width: 50%;
+    margin: 0 auto;
 }
 
 .banner-img {
     width: 100%;
     position: absolute;
     top: 0;
+    z-index: 10;
 }
 
 .banner-img-bottom {
