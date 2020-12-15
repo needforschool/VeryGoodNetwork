@@ -37,6 +37,10 @@ blockquote, q {
     quotes: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 blockquote:before, blockquote:after, q:before, q:after {
     content: '';
     content: none;
@@ -65,6 +69,32 @@ table {
     *zoom: 1;
 }
 
+<<<<<<< HEAD
+=======
+.content {
+    text-align: center;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+/* SCROLLBAR */
+
+body::-webkit-scrollbar {
+    width: 9px;
+}
+
+body::-webkit-scrollbar-track {
+    background: linear-gradient(0deg, #e22813 0%, #000 100%);
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    background: transparent;
+    /* opacity: 0; should do the thing either */
+    box-shadow: 0px 0px 0px 100000vh black;
+}
+
+>>>>>>> 57774cb6b43431444472f7c115e91b220c254b71
 #banner {
     background: url(../img/banner.jpg);
     background-size: cover;
@@ -72,17 +102,24 @@ table {
     height: 100vh;
 }
 
-.logo {
-    width: 140px;
+.banner-img {
+    width: 100%;
+    height: 33%;
     position: absolute;
-    top: 4%;
-    left: 10%;
+    top: 0;
+}
+
+.banner-img-bottom {
+    width: 100%;
+    height: 33%;
+    position: absolute;
+    bottom: 0;
 }
 
 .banner-text {
     text-align: center;
     color: #fff;
-    padding-top: 180px;
+    padding-top: 345px;
 }
 
 .banner-text h1 {
@@ -91,12 +128,25 @@ table {
 }
 
 .banner-text p {
-    font-size: 20px;
-    font-style: italic;
+    font-size: 40px;
     font-family: 'PT Sans', sans-serif;
-
+    font-weight: bold;
+    margin-top: 20px;
 }
 
+/* span.red {
+    color: #e22813;
+} */
+
+.banner-btn {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 50%;
+    margin-top: -10px;
+}
+
+<<<<<<< HEAD
 .content {
     text-align: center;
     line-height: 45px;
@@ -191,3 +241,164 @@ table {
 .bigbox4 {
     display: flex;
 }
+=======
+.banner-btn button {
+    border: 1px solid #a51d0d;
+    background: #a51d0d;
+    padding: 10px 20px;
+    font-size: 35px;
+    font-family: 'PT Sans', sans-serif;
+    cursor: pointer;
+    /* margin: 10px; */
+    z-index: 1;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+}
+
+#openModalSignin:hover, #openModalLogin:hover {
+    color: #a51d0d;
+    background-color: #000;
+}
+
+/* .banner-btn button::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #a51d0d;
+    z-index: -1;
+    transition: 0.8s;
+} */
+
+/* #openModalSignin::before {
+    top: 0;
+    border-radius: 0 0 50% 50%;
+}
+
+#openModalLogin::before {
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+}
+
+#openModalSignin::before, #openModalLogin::before {
+    height: 180%;
+}
+
+#openModalSignin:hover::before, #openModalLogin:hover::before {
+    height: 0%;
+<<<<<<< HEAD
+}
+
+/*About us*/
+
+#about-section1 .flexbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'PT Sans', sans-serif;
+    position: relative;
+    top: 5em;
+}
+
+#about-section1 h1{
+    font-size: 3em;
+    letter-spacing: 6px;
+    margin-bottom: 30px;
+}
+
+#about-section1{
+    background-color: lime;
+    height: 26em;
+}
+
+#about-section1 p{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.about-picture{
+    border-radius: 20px;
+    position: relative;
+}
+
+.responsive{
+    width: 100%;
+    height: auto;
+}
+
+#about-picture1{
+    width: 350px;
+    z-index: 2;
+    right: 5em;
+    bottom: 5em;
+
+}
+
+#about-picture2{
+    width: 200px;
+    z-index: 1;
+    right: 20em;
+    bottom: 5em;
+
+    
+}
+#about-section1 .leftpicture{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+#about-picture3{
+    max-width: 100%;
+    width: 280px;
+    left: 18em;
+    bottom: 25em;
+    z-index: 20;
+}
+
+#about-picture4{
+    max-width: 100%;
+    width: 250px;
+    z-index: 1;
+    right: 5em;
+    bottom: 27em;
+    border-radius: 80px;
+    transform:scaleX(-1);
+}
+
+#about-section2{
+    padding: 50px 0;
+    background-color: lightblue;
+    font-family: 'PT Sans', sans-serif;
+}
+
+#about-section2 h1{
+    text-align: center;
+    font-size: 3em;
+    padding: 0 0 50px 0;
+
+}
+
+#about-section2 .profils{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#about-section2 img{
+    height: 90px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+#about-section2 .single-profil{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+>>>>>>> 57774cb6b43431444472f7c115e91b220c254b71
