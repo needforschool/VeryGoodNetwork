@@ -7,9 +7,9 @@
                         <h2 class="modal__title" id="modal-login-title">
                             Login
                         </h2>
-                        <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                        <button class="modal__close" aria-label="Close modal" data-micromodal-close data-custom-close="modal-login"></button>
                     </header>
-                    <form action="#" method="POST" novalidate>
+                    <form id="formLogin" action="ajax/ajax-login.php" method="POST" novalidate>
                         <div class="modal__content" id="modal-login-content">
 
                             <div class="input-area">
@@ -37,15 +37,16 @@
         <!--MODAL INSCRIPTION-->
 
         <div class="modal micromodal-slide" id="modal-signin" aria-hidden="true">
-            <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__overlay" tabindex="-2" data-micromodal-close>
                 <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-signin-title">
                     <header class="modal__header">
                         <h2 class="modal__title" id="modal-signin-title">
                             S'inscrire
+                            <i class="fas fa-sign-in-alt"></i>
                         </h2>
-                        <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+                        <button class="modal__close" aria-label="Close modal" data-custom-close="modal-signin"></button>
                     </header>
-                    <form action="#" methos="post" novalidate>
+                    <form id="formSignin" action="ajax/ajax-signin.php" method="post" novalidate>
                         <div class="modal__content" id="modal-signin-content">
 
                             <div class="input-area">

@@ -1,4 +1,6 @@
+//-----------------
 //PLUGIN MICROMODAL
+//-----------------
 
 MicroModal.init({
     onShow: modal => console.info(`${modal.id} is shown`),
@@ -15,18 +17,30 @@ MicroModal.init({
 
 var buttonLogin = document.getElementById('openModalLogin');
 buttonLogin.addEventListener('click', function(){
-  MicroModal.show('modal-login');
+    MicroModal.close('modal-signin');
+    MicroModal.show('modal-login');
 });
 
 var buttonSignin = document.getElementById('openModalSignin');
 buttonLogin.addEventListener('click', function(){
-  MicroModal.show('modal-signin');
+    MicroModal.close('modal-login');
+    MicroModal.show('modal-signin');
 });
 
-//MENU NAVIGATION
+//----------------------
+//PLUGIN MENU NAVIGATION
+//----------------------
 
 (function() {
     
     $.fatNav();
     
 }());
+
+//----------------------
+//OUVERTURE JQUERY
+//----------------------
+
+$(document).ready(function(){
+
+})
