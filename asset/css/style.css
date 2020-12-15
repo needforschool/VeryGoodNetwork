@@ -577,9 +577,9 @@ body::-webkit-scrollbar-thumb {
     white-space: nowrap;
 }
 
-#triangle4 {
+#triangle4{
     width: 100%;
     bottom: 0;
     position: relative;
-    top: 40px;
+    top: 50px;
 }
