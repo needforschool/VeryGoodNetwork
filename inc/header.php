@@ -20,9 +20,9 @@
             <div class="fat-nav">
                 <div class="fat-nav__wrapper">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Your space</a></li>
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="about-us.php">About</a></li>
+                        <li><a href="client-area.php">Your space</a></li>
                     </ul>
                 </div>
             </div>
