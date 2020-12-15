@@ -1,15 +1,15 @@
         <!--MODAL LOGIN-->
 
         <div class="modal micromodal-slide" id="modal-login" aria-hidden="true">
-            <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__overlay" tabindex="-1" data-custom-close="modal-login">
                 <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-login-title">
                     <header class="modal__header">
                         <h2 class="modal__title" id="modal-login-title">
-                            Login
+                            Se connecter
                         </h2>
-                        <button class="modal__close" aria-label="Close modal" data-micromodal-close data-custom-close="modal-login"></button>
+                        <button class="modal__close" aria-label="Close modal" data-custom-close="modal-login"></button>
                     </header>
-                    <form id="formLogin" action="ajax/ajax-login.php" method="POST" novalidate>
+                    <form id="formLogin" action="ajax/ajax-login.php" method="post" novalidate>
                         <div class="modal__content" id="modal-login-content">
 
                             <div class="input-area">
@@ -37,7 +37,7 @@
         <!--MODAL INSCRIPTION-->
 
         <div class="modal micromodal-slide" id="modal-signin" aria-hidden="true">
-            <div class="modal__overlay" tabindex="-2" data-micromodal-close>
+            <div class="modal__overlay" tabindex="-1" data-custom-close="modal-signin">
                 <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-signin-title">
                     <header class="modal__header">
                         <h2 class="modal__title" id="modal-signin-title">
@@ -75,7 +75,7 @@
                         </div>
 
                         <footer class="modal__footer">
-                            <input type="submit" name="submitted" class="modal__btn modal__btn-primary" value="Se Connecter">
+                            <input type="submit" name="submitted" class="modal__btn modal__btn-primary" value="S'inscrire">
                         </footer>
                     </form>
                 </div>
