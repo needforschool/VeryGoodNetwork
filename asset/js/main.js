@@ -15,16 +15,14 @@ MicroModal.init({
     debugMode: true
 });
 
-var buttonLogin = document.getElementById('openModalLogin');
-buttonLogin.addEventListener('click', function(){
-    MicroModal.close('modal-signin');
-    MicroModal.show('modal-login');
+var buttonLogin = $('#openModalLogin');
+buttonLogin.on('click', function(){
+    MicroModal.show('#modal-login');
 });
 
-var buttonSignin = document.getElementById('openModalSignin');
-buttonLogin.addEventListener('click', function(){
-    MicroModal.close('modal-login');
-    MicroModal.show('modal-signin');
+var buttonSignin = $('#openModalSignin');
+buttonSignin.on('click', function(){
+    MicroModal.show('#modal-signin');
 });
 
 //----------------------
