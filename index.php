@@ -17,8 +17,8 @@ include('inc/header.php');
         </div>
         <div class="banner-btn">
                 <?php if (empty($_SESSION)) : ?>
-                        <a href="signin.php" class="btn btn1">Inscription</a>
-                        <a href="login.php" class="btn btn2">Connexion</a>
+                        <button data-custom-open="modal-signin" id="openModalSignin">Insciption</button>
+                        <button data-custom-open="modal-login" id="openModalLogin">Connexion</button>
                 <?php endif; ?>
         </div>
 </section>
