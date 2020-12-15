@@ -69,8 +69,6 @@ table {
     *zoom: 1;
 }
 
-<<<<<<< HEAD
-=======
 .content {
     text-align: center;
     line-height: 30px;
@@ -94,7 +92,6 @@ body::-webkit-scrollbar-thumb {
     box-shadow: 0px 0px 0px 100000vh black;
 }
 
->>>>>>> 57774cb6b43431444472f7c115e91b220c254b71
 #banner {
     background: url(../img/banner.jpg);
     background-size: cover;
@@ -146,7 +143,7 @@ body::-webkit-scrollbar-thumb {
     margin-top: -10px;
 }
 
-<<<<<<< HEAD
+
 .content {
     text-align: center;
     line-height: 45px;
@@ -241,7 +238,7 @@ body::-webkit-scrollbar-thumb {
 .bigbox4 {
     display: flex;
 }
-=======
+
 .banner-btn button {
     border: 1px solid #a51d0d;
     background: #a51d0d;
@@ -401,4 +398,4 @@ body::-webkit-scrollbar-thumb {
 }
 
 
->>>>>>> 57774cb6b43431444472f7c115e91b220c254b71
+
