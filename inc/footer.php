@@ -9,7 +9,7 @@
                         </h2>
                         <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
                     </header>
-                    <form>
+                    <form action="#" method="POST" novalidate>
                         <div class="modal__content" id="modal-login-content">
 
                             <div class="input-area">
@@ -45,7 +45,7 @@
                         </h2>
                         <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
                     </header>
-                    <form>
+                    <form action="#" methos="post" novalidate>
                         <div class="modal__content" id="modal-signin-content">
 
                             <div class="input-area">
