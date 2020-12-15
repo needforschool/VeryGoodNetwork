@@ -74,6 +74,202 @@ $(document).ready(function(){
             }
         })
     })
+//----------------------
+//Scroll reveal About us
+//----------------------
+
+    const sr = ScrollReveal();
+
+    sr.reveal('#about-picture1', {
+        origin: 'left',
+        distance: '200px',
+        duration: 800,
+    });
+
+    sr.reveal('#about-picture2', {
+        origin: 'bottom',
+        distance: '100px',
+        duration: 500,
+        delay: 600,
+    });
+
+    sr.reveal('#about-picture3', {
+        origin: 'right',
+        distance: '100px',
+        duration: 500,
+        delay: 1000,
+    });
+
+    sr.reveal('#about-picture4', {
+        origin: 'left',
+        distance: '100px',
+        duration: 500,
+        delay: 1200,
+    });
+
+    sr.reveal('#about-section0 h1', {
+        origin: 'bottom',
+        distance: '200px',
+        duration: 500,
+        delay: 200,
+    });
+
+    sr.reveal('#about-section1 h1', {
+        origin: 'bottom',
+        distance: '200px',
+        duration: 500,
+        delay: 400,
+    });
+
+    sr.reveal('#about-section1 p', {
+        origin: 'bottom',
+        distance: '200px',
+        duration: 500,
+        delay: 800,
+    });
+
+    sr.reveal('#about-section2 h1', {
+        origin: 'bottom',
+        distance: '200px',
+        duration: 500,
+        delay: 200,
+    });
+
+    sr.reveal('.single-profil1', {
+        origin: 'bottom',
+        distance: '100px',
+        duration: 500,
+        delay: 400,
+    });
+
+    sr.reveal('.single-profil2', {
+        origin: 'bottom',
+        distance: '100px',
+        duration: 500,
+        delay: 800,
+    });
+
+    sr.reveal('.single-profil3', {
+        origin: 'bottom',
+        distance: '100px',
+        duration: 500,
+        delay: 1200,
+    });
+
+    sr.reveal('.single-profil4', {
+        origin: 'bottom',
+        distance: '100px',
+        duration: 500,
+        delay: 1600,
+    });
+
+    sr.reveal('#about-section3 h1', {
+        origin: 'bottom',
+        distance: '200px',
+        duration: 500,
+        delay: 200,
+    });
+
+    sr.reveal('.about-section3number1', {
+        origin: 'left',
+        distance: '200px',
+        duration: 500,
+        delay: 200,
+    });
+
+    sr.reveal('.about-section3number2', {
+        origin: 'left',
+        distance: '500px',
+        duration: 600,
+        delay: 600,
+    });
+
+    sr.reveal('.about-section3number3', {
+        origin: 'left',
+        distance: '800px',
+        duration: 700,
+        delay: 1000,
+    });
+
+    sr.reveal('.about-section3number4', {
+        origin: 'left',
+        distance: '1000px',
+        duration: 800,
+        delay: 1400,
+    });
+
+    sr.reveal('#about-section4 h1', {
+        origin: 'bottom',
+        distance: '200px',
+        duration: 500,
+        delay: 200,
+    });
+
+    sr.reveal('#about-section4 .picture', {
+        origin: 'bottom',
+        distance: '200px',
+        duration: 500,
+        delay: 400,
+    });
+
+
+    sr.reveal('#about-section4 .Stick', {
+        origin: 'bottom',
+        distance: '200px',
+        duration: 500,
+        delay: 600,
+    });
+
+
+    sr.reveal('#about-section4 .textarg', {
+        origin: 'bottom',
+        distance: '200px',
+        duration: 500,
+        delay: 800,
+    });
+
+    sr.reveal('#about-section5 h1', {
+        origin: 'bottom',
+        distance: '200px',
+        duration: 500,
+        delay: 200,
+    });
+
+    sr.reveal('#imagepubliciteaboutsection1', {
+        origin: 'bottom',
+        distance: '200px',
+        duration: 500,
+        delay: 400,
+    });
+
+    sr.reveal('#imagepubliciteaboutsection2', {
+        origin: 'bottom',
+        distance: '200px',
+        duration: 500,
+        delay: 600,
+    });
+
+    sr.reveal('#imagepubliciteaboutsection3', {
+        origin: 'bottom',
+        distance: '200px',
+        duration: 500,
+        delay: 800,
+    });
+
+    sr.reveal('#about-section6 h1', {
+        origin: 'bottom',
+        distance: '200px',
+        duration: 500,
+        delay: 200,
+    });
+
+    sr.reveal('#about-section6 #aboutusbutton', {
+        origin: 'bottom',
+        distance: '200px',
+        duration: 500,
+        delay: 400,
+    });
+
 
 
 

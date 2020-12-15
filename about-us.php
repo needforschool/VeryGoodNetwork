@@ -8,12 +8,12 @@ $title = 'A propos';
 include('inc/header.php');
 ?>
       
-        <section id="about-section0">
-                <img src="asset/img/triangle.png" class="banner-img">
+        <section class="about-section" id="about-section0">
                 <h1>About US</h1> 
+                <img src="asset/img/triangle.png" class="banner-img">
         </section>
         
-        <section id="about-section1">
+        <section class="about-section" id="about-section1">
                 <div class="flexbox">
                         <h1 class="title">Nos services</h1>
                         <p>Analyse de votre réseau<br> pour votre entreprise <br>Des solutions innovantes<br> pour vous</p>
@@ -26,51 +26,51 @@ include('inc/header.php');
                 </div>
         </section>
 
-        <section id="about-section2">
+        <section class="about-section" id="about-section2">
                 <h1>Notre Équipe</h1>
                 <div class="profils">
-                        <div class="single-profil">
+                        <div class="single-profil single-profil1">
                                 <img src="asset/img/profil.png" alt="">
                                 <p>Lucas</p>
                         </div>
-                        <div class="single-profil">
+                        <div class="single-profil single-profil2">
                                 <img src="asset/img/profil.png" alt="">
                                 <p>Quentin</p>   
                         </div>
-                        <div class="single-profil">
+                        <div class="single-profil single-profil3">
                                 <img src="asset/img/profil.png" alt="">
                                 <p>Cyril</p>  
                         </div>
-                        <div class="single-profil">
+                        <div class="single-profil single-profil4">
                                 <img src="asset/img/profil.png" alt="">
                                 <p>Théo</p>        
                         </div>
                 </div>
         </section>
 
-        <section id="about-section3">
+        <section class="about-section" id="about-section3">
         <h1>Quelques chiffres</h1>
         <div class="box">
-                <div>
+                <div class="about-section3number1">
                         <p class="number">1<span>er</span></p>
                         <p class="text">En Normandie</p>
                 </div>
-                <div>
+                <div class="about-section3number2">
                         <p class="number">4</p>
                         <p class="text">Développeurs</p>
                 </div>
-                <div>
+                <div class="about-section3number3">
                         <p class="number">56</p>
                         <p class="text">Partenaires</p>  
                 </div>
-                <div>
+                <div class="about-section3number4">
                         <p class="number">6</p>
                         <p class="text">Module d'analyse</p>      
                 </div>
         </div>
         </section>
 
-        <section id="about-section4">
+        <section class="about-section" id="about-section4">
                 <h1>Notre Interface</h1>
                 <div class="flexbox">
                         <div class="picture">
@@ -87,18 +87,18 @@ include('inc/header.php');
                 </div>
         </section>
 
-        <section id="about-section5">
+        <section class="about-section" id="about-section5">
                 <h1>Ils parlent de nous</h1>
                 <div class="flexbox">
-                        <img src="asset/img/BFM.png" alt="">
-                        <img src="asset/img/lemonde.png" alt="">
-                        <img src="asset/img/leParisien.png" alt="">
+                        <img id="imagepubliciteaboutsection1" src="asset/img/BFM.png" alt="">
+                        <img id="imagepubliciteaboutsection2" src="asset/img/lemonde.png" alt="">
+                        <img id="imagepubliciteaboutsection3" src="asset/img/leParisien.png" alt="">
                 </div>
         </section>
 
-        <section id="about-section6">
+        <section class="about-section" id="about-section6">
                 <h1>Satisfait ?</h1>
-                <button>Inscrivez vous</button>
+                <button id="aboutusbutton">Inscrivez vous</button>
                 <div class="triangleinverse">
                         <img id="triangle4" src="asset/img/triangleinverse.png" alt="Avatar">
                 </div>
