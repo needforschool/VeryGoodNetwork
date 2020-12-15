@@ -69,6 +69,8 @@ table {
     *zoom: 1;
 }
 
+<<<<<<< HEAD
+=======
 .content {
     text-align: center;
     line-height: 30px;
@@ -92,6 +94,7 @@ body::-webkit-scrollbar-thumb {
     box-shadow: 0px 0px 0px 100000vh black;
 }
 
+>>>>>>> 57774cb6b43431444472f7c115e91b220c254b71
 #banner {
     background: url(../img/banner.jpg);
     background-size: cover;
@@ -150,6 +153,102 @@ body::-webkit-scrollbar-thumb {
     
 }
 
+<<<<<<< HEAD
+.content {
+    text-align: center;
+    line-height: 45px;
+    font-family: 'PT Sans', sans-serif;
+    margin-top: 5%;
+}
+.content h1 {
+    font-size: 2.8em;
+}
+.content p {
+    font-size: 2em;
+}
+.wrap {
+    width: 100%;
+    margin-top: 5%;
+}
+.bigbox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+#imgmiddle  {
+    width: 40%;
+}
+.text  {
+    width: 40%;
+    font-size: 2em;
+    font-family: 'PT Sans', sans-serif;
+}
+.text h1 {
+    font-weight: bold;
+}
+.text p {
+    line-height: 40px;
+}
+.bigbox2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#imgmiddle2 {
+    width: 30%;
+}
+.text2 {
+    font-family: 'PT Sans', sans-serif;
+}
+    
+.text2 h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+.text2 p {
+    font-size: 1.8em;
+}
+#bleu {
+    color: #2e50be;
+}
+#blanc {
+    color: #b5b5b5;
+}
+#rouge {
+    color: #950303;
+}
+
+.bigbox3 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+#imgmiddle3  {
+    width: 40%;
+}
+.text3 {
+    width: 40%;
+    font-size: 2em;
+    font-family: 'PT Sans', sans-serif;
+}
+.text3 h1 {
+    font-weight: bold;
+}
+.text3 p {
+    line-height: 40px;
+}
+.text4 {
+    text-align: center;
+    margin: 5% auto;
+    font-size: 3em;
+    font-family: 'PT Sans', sans-serif;
+}
+.bigbox4 {
+    display: flex;
+}
+=======
 .banner-btn button {
     border: 1px solid #a51d0d;
     background: #a51d0d;
@@ -197,4 +296,116 @@ body::-webkit-scrollbar-thumb {
 
 #openModalSignin:hover::before, #openModalLogin:hover::before {
     height: 0%;
-} */
+<<<<<<< HEAD
+}
+
+/*About us*/
+
+#about-section1 .flexbox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'PT Sans', sans-serif;
+    position: relative;
+    top: 5em;
+}
+
+#about-section1 h1{
+    font-size: 3em;
+    letter-spacing: 6px;
+    margin-bottom: 30px;
+}
+
+#about-section1{
+    background-color: lime;
+    height: 26em;
+}
+
+#about-section1 p{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.about-picture{
+    border-radius: 20px;
+    position: relative;
+}
+
+.responsive{
+    width: 100%;
+    height: auto;
+}
+
+#about-picture1{
+    width: 350px;
+    z-index: 2;
+    right: 5em;
+    bottom: 5em;
+
+}
+
+#about-picture2{
+    width: 200px;
+    z-index: 1;
+    right: 20em;
+    bottom: 5em;
+
+    
+}
+#about-section1 .leftpicture{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+#about-picture3{
+    max-width: 100%;
+    width: 280px;
+    left: 18em;
+    bottom: 25em;
+    z-index: 20;
+}
+
+#about-picture4{
+    max-width: 100%;
+    width: 250px;
+    z-index: 1;
+    right: 5em;
+    bottom: 27em;
+    border-radius: 80px;
+    transform:scaleX(-1);
+}
+
+#about-section2{
+    padding: 50px 0;
+    background-color: lightblue;
+    font-family: 'PT Sans', sans-serif;
+}
+
+#about-section2 h1{
+    text-align: center;
+    font-size: 3em;
+    padding: 0 0 50px 0;
+
+}
+
+#about-section2 .profils{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#about-section2 img{
+    height: 90px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+#about-section2 .single-profil{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+>>>>>>> 57774cb6b43431444472f7c115e91b220c254b71
