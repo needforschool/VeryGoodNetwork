@@ -139,7 +139,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    width: 50%;
+    width: 750px;
     margin-top: -10px;
 }
 
