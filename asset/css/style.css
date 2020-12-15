@@ -96,34 +96,31 @@ body::-webkit-scrollbar-thumb {
     background: url(../img/banner.jpg);
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    min-height: 100vh;
 }
+.wrap-banner {
+    max-width: 100%;
+    width: 100%;
 
+}
 .banner-img {
     width: 100%;
-    height: 33%;
     position: absolute;
     top: 0;
 }
 
 .banner-img-bottom {
     width: 100%;
-    height: 33%;
-    position: absolute;
-    bottom: 0;
+    height: 300px;
+    position: relative;
+    top: 60px;
 }
-
-/* .wrap-banner {
-    position: absolute;
-    left: 0;
-    right: 0;
-    z-index: 0;
-} */
 
 .banner-text {
     text-align: center;
     color: #fff;
-    padding-top: 345px;
+    padding-top: 300px;
+
 }
 
 .banner-text h1 {
@@ -149,6 +146,7 @@ body::-webkit-scrollbar-thumb {
     width: 50%;
     margin-top: -10px;
 }
+
 .banner-btn button {
     border: 1px solid #a51d0d;
     background: #a51d0d;
@@ -317,28 +315,6 @@ body::-webkit-scrollbar-thumb {
     display: flex;
 }
 
-.banner-btn button {
-    border: 1px solid #a51d0d;
-    background: #a51d0d;
-    padding: 10px 20px;
-    font-size: 35px;
-    font-family: 'PT Sans', sans-serif;
-    cursor: pointer;
-    /* margin: 10px; */
-    z-index: 1;
-    transition: 0.8s;
-    position: relative;
-    overflow: hidden;
-    color: #fff;
-}
-
-#openModalSignin:hover, #openModalLogin:hover {
-    color: #a51d0d;
-    background-color: #000;
-}
-
-
-
 /*About us*/
 
 #about-section1 .flexbox {
@@ -466,6 +442,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     align-items: center;
     flex-direction: column;
+    width: 25%;
 }
 #about-section3 .number{
     font-size: 6em;
@@ -473,5 +450,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 #about-section3 .text{
-    font-size: 1.5em;
+    font-size: 1.4em;
+    white-space: nowrap;
 }
