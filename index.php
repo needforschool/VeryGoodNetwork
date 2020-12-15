@@ -10,7 +10,8 @@ include('inc/header.php');
 
 
 <section id="banner">
-        <img src="asset/img/logo-light.svg" class="logo">
+
+        <img src="asset/img/triangle.png" class="logo">
         <div class="banner-text">
                 <h1>Very<span class="red">Good</span>Network</h1>
                 <p>Responsive Network Website available now 24h/24h</p>

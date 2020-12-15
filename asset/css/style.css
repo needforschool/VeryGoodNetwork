@@ -100,16 +100,16 @@ body::-webkit-scrollbar-thumb {
 }
 
 .logo {
-    width: 140px;
+    width: 100%;
     position: absolute;
-    top: 4%;
-    left: 10%;
+    top: 0;
+    left: 0;
 }
 
 .banner-text {
     text-align: center;
     color: #fff;
-    padding-top: 180px;
+    padding-top: 300px;
 }
 
 .banner-text h1 {
