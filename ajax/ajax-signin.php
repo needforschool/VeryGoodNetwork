@@ -5,10 +5,9 @@ include('../inc/function.php');
 
 $errors = [];
 $success = false;
+$_SESSION['user'] = '';
 
 if(!empty($_POST['nom-signin']) && !empty($_POST['prenom-signin']) && !empty($_POST['email-signin']) && !empty($_POST['password-signin']) && !empty($_POST['confirm-password-signin'])){
-
-
 
   //Veification Faille XSS
   $nom = cleanXSS($_POST['nom-signin']);
@@ -20,10 +19,9 @@ if(!empty($_POST['nom-signin']) && !empty($_POST['prenom-signin']) && !empty($_P
   
   $errors = verifText($errors, $nom, 2, 50, 'nom');
   $errors = verifText($errors, $prenom, 2, 50, 'prenom');
-
   $errors = validateEmail($email, 3, 100, $errors, 'email');
-
   $errors = validatePassword($password, $confirmPassword, $errors, 'password', 'confirm-password', 3);
+
   $errors = checkIfAlreadyTaken('vgn_users', 'email', $email, $errors, 'email', $pdo);
 
   if(count($errors) == 0) {
@@ -53,16 +51,25 @@ if(!empty($_POST['nom-signin']) && !empty($_POST['prenom-signin']) && !empty($_P
       );
       
     }
-
     $success = true;
   }
+} else {
+  $errors['all'] = 'echec d\'envoi du formulaire, veuillez recommencer';
+}
 
+if(!empty($_SESSION['user'])){
   $data = array(
     'success' => $success,
     'errors' => $errors,
     'user' => $_SESSION['user']
   );
-  
-  showJson($data);
-
+} elseif(empty($_SESSION['user'])){
+  $data = array(
+    'success' => $success,
+    'errors' => $errors,
+  );
 }
+
+
+var_dump($errors);
+showJson($data);

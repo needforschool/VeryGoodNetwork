@@ -75,13 +75,15 @@ $(document).ready(function () {
 
             success: function(response) {
                 $('#btn-submit-signin').css('display', 'block');
-                MicroModal.close('modal-signin');
-
                 console.log(response)
                 if(response.success){
-                    console.log('yes')
+                    MicroModal.close('modal-signin');
+                    window.location.replace("client-area.php");
                 } else if(!response.success){
-                    console.log('no')
+                    console.log(response.errors)
+                    if (response.errors.all.length) {
+                        
+                    }
                 }
             }
         })
