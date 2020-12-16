@@ -7,7 +7,6 @@ $title = 'A propos';
 
 include('inc/header.php');
 ?>
-<<<<<<< HEAD
       
         <section class="about-section" id="about-section0">
                 <div class="flexbox">
@@ -24,24 +23,6 @@ include('inc/header.php');
                 <img id="about-picture1" class="about-picture responsive" src="asset/img/about-picture1.jpg" alt="">
                 <img id="about-picture2" class="about-picture responsive" src="asset/img/about-picture2.jpg" alt="">
                 <div class="leftpicture">
-=======
-
-<section class="about-section" id="about-section0">
-        <div class="title-page">
-                <p>About US</p>
-        </div>
-        <img src="asset/img/triangle.png" class="banner-img">
-</section>
-
-<section class="about-section" id="about-section1">
-        <div class="flexbox">
-                <h1 class="title">Nos services</h1>
-                <p>Analyse de votre réseau<br> pour votre entreprise <br>Des solutions innovantes<br> pour vous</p>
-        </div>
-        <img id="about-picture1" class="about-picture responsive" src="asset/img/about-picture1.jpg" alt="">
-        <img id="about-picture2" class="about-picture responsive" src="asset/img/about-picture2.jpg" alt="">
-        <div class="leftpicture">
->>>>>>> e9f101578107bf74ee73e8005730eab1401e0fb4
                 <img id="about-picture3" class="about-picture responsive" src="asset/img/about-picture3.jpg" alt="">
                 <img id="about-picture4" class="about-picture responsive" src="asset/img/about-picture4.jpg" alt="">
         </div>
