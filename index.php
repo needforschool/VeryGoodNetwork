@@ -91,9 +91,6 @@ include('inc/header.php');
                                         <p>Grâce à VGN, je peux analyser mon site web et comprendre les besoins de mes clients. Un Super Outil, je recommande.</p>
                                 </div>
                         </div>
-                        <div class="triangleinverse">
-                                <img id="triangle1" src="asset/img/triangleinverse.png" alt="Avatar">
-                        </div>
                 </div>
 </section>
 <?php
