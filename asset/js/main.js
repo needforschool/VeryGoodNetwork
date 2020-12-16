@@ -53,6 +53,10 @@ $(document).ready(function(){
         checkLengthPassword('password-signin');
     })
 
+    $('#confirm-password-signin').on('keyup', function(){
+        checkConfirmPassword('confirm-password-signin', 'password-signin');
+    })
+
 
     //Requete AJAX
     $('#formSignin').on('submit', function(e){
@@ -74,9 +78,10 @@ $(document).ready(function(){
             }
         })
     })
-//----------------------
-//Scroll reveal About us
-//----------------------
+
+    //----------------------
+    //Scroll reveal About us
+    //----------------------
 
     const sr = ScrollReveal();
 
@@ -341,5 +346,22 @@ function checkLengthPassword(id)
     } else if (checkPassword.length >= 9 && checkPassword.length <=49){
         error.css('color', '#27ae60');
         error.html('Mot de passe fort');
+    }
+}
+
+//Fonction check mdp
+
+function checkConfirmPassword(idBis, id)
+{
+    var error = $('span.error-' + idBis);
+    var champ1 = $('input#' + idBis);
+    var champ2 = $('input#' + id);
+    var checkPassword = champ2.val();
+    var password = champ1.val();
+
+    if(checkPassword != password){
+        error.html('<i class="fas fa-times" style="color: #ff6b6b;"></i>')
+    } else if (checkPassword === password) {
+        error.html('<i class="fas fa-check" style="color: #51cf66;"></i>');
     }
 }

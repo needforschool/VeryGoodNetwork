@@ -72,6 +72,12 @@
                                 <input type="password" id="password-signin" name="password-signin">
                                 <span class="error-password-signin"></span>
                             </div>
+
+                            <div class="input-area">
+                                <label for="confirm-password-signin"><strong>Confirmer mot de passe</strong></label>
+                                <input type="password" id="confirm-password-signin" name="confirm-password-signin">
+                                <span class="error-confirm-password-signin"></span>
+                            </div>
                         </div>
 
                         <footer class="modal__footer">
