@@ -602,7 +602,9 @@ body {
 p {
     font-size: 1em;
 }
-
+h1 {
+    font-size: 1.5em;
+}
 @media screen and (max-width: 64em) {
     body {
          font-size: 80%;
@@ -619,4 +621,23 @@ p {
       body {
            font-size: 50%;
      }
+   }
+
+   @media screen and (max-width: 700px) {
+    .banner-btn {
+        flex-direction: column;
+        margin-top: 5%;
+    }
+   }
+   @media screen and (max-width: 550px) {
+       .bigbox {
+           flex-direction: column;
+       }
+       .bigbox2 {
+        flex-direction: column;
+    }
+    .bigbox3 {
+        flex-direction: column;
+    }
+    
    }
