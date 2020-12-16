@@ -94,26 +94,24 @@
             <img id="triangle4" src="asset/img/triangleinverse.png" alt="Avatar">
             <div class="footer-box">
                 <div class="icons-box">
-                    <div class="icon facebook">
-                      <div class="tooltip">Facebook</div>  
-                      <span><i class="fab fa-facebook-f"></i></span>
+                    <div class="button">
+                        <div class="icon facebook">
+                            <i class="fab fa-facebook-f"></i></div>
+                        <span>Facebook</span>
                     </div>
-                    <div class="icon twitter">
-                      <div class="tooltip">Twitter</div>  
-                      <span><i class="fab fa-twitter"></i></span>
+                    <div class="button">
+                        <div class="icon twitter">
+                            <i class="fab fa-twitter"></i></div>
+                        <span>Twitter</span>
                     </div>
-                    <div class="icon github">
-                      <div class="tooltip">Github</div>  
-                      <span><i class="fab fa-github"></i></span>
+                    <div class="button">
+                        <div class="icon github">
+                            <a href="https://github.com/ImJustLucas/VeryGoodNetwork" target="_blank"><i class="fab fa-github"></i></a></div>
+                        <a href="https://github.com/ImJustLucas/VeryGoodNetwork" target="_blank"><span>Github</span></a>
                     </div>
-                    <!-- <ul class="icons">
-                        <li><a href="#" class="facebook"><i class="fab fa-facebook"></i></a></li>
-                        <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="https://github.com/ImJustLucas/VeryGoodNetwork" class="github"><i class="fab fa-github"></i></a></li>
-                    </ul> -->
                 </div>
                 <div class="copyright">
-                    <p>&copy; 2020 VeryGoodNetwork. All rights reserved.</p>
+                    <p>2020 &copy; VeryGoodNetwork. All rights reserved.</p>
                 </div>
             </div>
         </div>
