@@ -89,25 +89,40 @@
         </div>
 
 
-        
-        
-        
-        
-        
+
+        <div class="triangleinverse">
+            <img id="triangle4" src="asset/img/triangleinverse.png" alt="Avatar">
+            <div class="footer-box">
+                <div class="icons-box">
+                    <ul class="icons">
+                        <li><a href="#" class="facebook"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#" class="twitter"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://github.com/ImJustLucas/VeryGoodNetwork" class="github"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2020 VeryGoodNetwork. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+
+
+
         <footer>
-        <!--JQuery-->
-        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-        <!-- fatNav -->
-        <script type="text/javascript" src="asset/js/jquery.fatNav.min.js"></script>
-        <!--ScrollReveal.js-->
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <!--Parallax.js-->
-        <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
-        <!--Chart.js-->
-        <!--MicroModal-->
-        <script src="asset/js/micromodal.min.js"></script>
-        <!--JS Perso-->
-        <script src="asset/js/main.js" type="text/javascript"></script>
+            <!--JQuery-->
+            <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+            <!-- fatNav -->
+            <script type="text/javascript" src="asset/js/jquery.fatNav.min.js"></script>
+            <!--ScrollReveal.js-->
+            <script src="https://unpkg.com/scrollreveal"></script>
+            <!--Parallax.js-->
+            <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
+            <!--Chart.js-->
+            <!--MicroModal-->
+            <script src="asset/js/micromodal.min.js"></script>
+            <!--JS Perso-->
+            <script src="asset/js/main.js" type="text/javascript"></script>
         </footer>
-    </body>
-</html>
+        </body>
+
+        </html>

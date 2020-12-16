@@ -171,6 +171,11 @@ table {
   text-align: center;
   line-height: 30px;
   text-transform: uppercase;
+
+  }
+/***** overflow *****/
+html.sr {
+    overflow-x: hidden;
 }
 
 /* SCROLLBAR */
@@ -277,6 +282,13 @@ body::-webkit-scrollbar-thumb {
   background-color: #000;
 }
 
+/****** content ****/
+
+/* .content {
+    text-align: center;
+    line-height: 30px;
+    text-transform: uppercase;
+} */
 .content {
   text-align: center;
   line-height: 45px;
@@ -447,6 +459,20 @@ body::-webkit-scrollbar-thumb {
   padding: 5%;
   font-size: 3em;
   z-index: 99;
+ }
+#about-section0 .flexbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#about-section0 h1{
+    font-family: 'PT Sans', sans-serif;
+    position: absolute;
+    color: #fff;
+    margin: 5% 0 0 0;
+    font-size: 3em;
+    z-index: 99;
 }
 
 #about-section0 img {
@@ -455,12 +481,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 #about-section1 .flexbox {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: "PT Sans", sans-serif;
-  position: relative;
-  top: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'PT Sans', sans-serif;
+    position: relative;
+    top: 100px;
 }
 
 #about-section1 h1 {
@@ -480,8 +506,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 .about-picture {
-  border-radius: 50px;
-  position: relative;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
 }
 
 .responsive {
@@ -688,11 +715,45 @@ body::-webkit-scrollbar-thumb {
   white-space: nowrap;
 }
 
-#triangle4 {
-  width: 100%;
-  bottom: 0;
-  position: relative;
-  top: 40px;
+/* FOOTER */
+
+#triangle4{
+    width: 100%;
+    bottom: 0;
+    position: relative;
+    top: 40px;  
+}
+
+.footer-box {
+    width: 100%;
+    position: absolute;
+    line-height: 2;
+}
+.icons-box {
+    display: flex;
+    justify-content: center;
+}
+.icons {
+    width: 30%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -70px;
+}
+.icons i {
+    color: #000;
+    font-size: 45px;
+}
+.icons i:hover {
+    color: #fff;
+    transition: .9s;
+}
+.copyright {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-family: 'PT Sans', sans-serif;
 }
 
 /* RESPONSIVE */
