@@ -183,18 +183,13 @@ body::-webkit-scrollbar-thumb {
     color: #fff;
 }
 
-#openModalSignin:hover, #openModalLogin:hover {
+.banner-btn button:hover {
     color: #a51d0d;
-    background-color: #000;
+    background-color: #fff;
+    transition: .5s;
 }
 
 /****** content ****/
-
-/* .content {
-    text-align: center;
-    line-height: 30px;
-    text-transform: uppercase;
-} */
 
 .content {
     text-align: center;
@@ -205,8 +200,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .content h1 {
-  font-size: 2.8em;
-  font-weight: bold;
+    font-size: 2.8em;
+    font-weight: bold;
 }
 
 .content p {
@@ -295,6 +290,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #imgmiddle3 {
+    padding: 2%;
     width: 40%;
     transition: all 0.2s ease-in-out;
 }
@@ -311,9 +307,6 @@ body::-webkit-scrollbar-thumb {
 
 .text3 h1 {
     font-weight: bold;
-    padding: 5%;
-  font-weight: bold;
-  
 }
 
 .text3 p {

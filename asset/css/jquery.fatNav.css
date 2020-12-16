@@ -135,11 +135,13 @@
 }
 
 /***** Custom *******/
+
 .fat-nav li {
   text-transform: uppercase;
   font-family: 'PT Sans', sans-serif;
   transition: all .2s ease-in-out;
 }
+
 .fat-nav li:hover {
-  transform: scale(1.5); 
+  transform: scale(1.5);
 }

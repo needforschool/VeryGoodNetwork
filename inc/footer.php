@@ -26,7 +26,7 @@
                         </div>
 
                         <footer class="modal__footer">
-                            <input type="submit" name="submitted" class="modal__btn modal__btn-primary" value="Login">
+                            <input type="submit" name="submitted" class="modal__btn modal__btn-primary" value="Connexion">
                         </footer>
                     </form>
                 </div>
@@ -81,7 +81,7 @@
                         </div>
 
                         <footer class="modal__footer">
-                            <input id="btn-submit-signin" type="submit" name="submitted" class="modal__btn modal__btn-primary" value="Sign in">
+                            <input id="btn-submit-signin" type="submit" name="submitted" class="modal__btn modal__btn-primary" value="Inscription">
                         </footer>
                     </form>
                 </div>
