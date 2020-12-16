@@ -55,7 +55,7 @@ function verifText($errors, $notVerif, int $min, int $max, $key)
   return $errors;
 }
 
-function checkIfAlreadyTaken($table, $data, $databis, $errors, $key)
+function checkIfAlreadyTaken($table, $data, $databis, $errors, $key, $pdo)
 {
   $sql = "SELECT * FROM $table WHERE $data LIKE :databis";
   $query = $pdo->prepare($sql);
@@ -63,6 +63,38 @@ function checkIfAlreadyTaken($table, $data, $databis, $errors, $key)
   $query->execute();
   $verifData = $query->fetch();
   if (!empty($verifData)) {
-    $errors[$key] = $key . ' déjà utilisé';
+    return $errors[$key] = $key . ' déjà utilisé';
   }
+}
+
+function validateEmail($email, int $min, int $max, $errors, $key)
+{
+  if(!empty($email)){
+    if (mb_strlen($email) < $min) {
+      $errors[$key] = 'Veuillez renseigner au minimum '. $min .' caractères';
+    } elseif (mb_strlen($email) > $max) {
+        $errors[$key] = 'Veuillez renseigner au maximum '. $max .' caractères';
+      }elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            $errors[$key] = 'Veuillez renseigner un email valide';
+        }
+  } else {
+    $errors[$key] = 'Veuillez renseigner ce champ';
+  }
+
+  return $errors;
+}
+
+function validatePassword($password, $confirmPassword, $errors, $keyPassword, $keyConfirmPassword, int $min)
+{
+  if (!empty($password) && !empty($confirmPassword)) {
+    if (mb_strlen($password) < $min) {
+      $errors[$keyPassword] = 'Veuillez renseigner au minimum '. $min .' caractères';
+    } elseif ($confirmPassword != $password) {
+      $errors[$keyPassword][$keyConfirmPassword] = 'Les mots de passe ne correspondent pas';
+    }
+  } else {
+    $errors[$keyPassword] = 'Veuillez renseigner ce/ces champs';
+  }
+
+  return $errors;
 }

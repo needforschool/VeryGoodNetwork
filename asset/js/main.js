@@ -66,12 +66,12 @@ $(document).ready(function(){
             type: 'POST',
             url: form.attr('action'),
             data: form.serialize(),
-            dataType: 'json',
+            //dataType: 'json',
 
             beforeSend: function() {
                 $('#btn-submit-signin').css('display', 'none');
+                //console.log(form);
             },
-
             success: function(response) {
                 $('#btn-submit-signin').fadeIn(200);
                 console.log(response)
