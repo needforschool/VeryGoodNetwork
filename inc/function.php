@@ -63,8 +63,10 @@ function checkIfAlreadyTaken($table, $data, $databis, $errors, $key, $pdo)
   $query->execute();
   $verifData = $query->fetch();
   if (!empty($verifData)) {
-    return $errors[$key] = $key . ' déjà utilisé';
+    $errors[$key] = $key . ' deja pris';
+    return $errors;
   }
+  return $errors;
 }
 
 function validateEmail($email, int $min, int $max, $errors, $key)
@@ -97,4 +99,14 @@ function validatePassword($password, $confirmPassword, $errors, $keyPassword, $k
   }
 
   return $errors;
+}
+
+function querySQLWhere($table, $optionWhere1, $optionwhere2, $pdo)
+{
+  $sql = "SELECT * FROM $table WHERE $optionWhere1 = :query";
+  $query = $pdo->prepare($sql);
+  $query->bindValue(':query',$optionwhere2,PDO::PARAM_STR);
+  $query->execute();
+  $user = $query->fetch();
+  return $user;
 }

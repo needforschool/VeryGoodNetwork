@@ -66,15 +66,23 @@ $(document).ready(function () {
             type: 'POST',
             url: form.attr('action'),
             data: form.serialize(),
-            //dataType: 'json',
+            dataType: 'json',
 
             beforeSend: function () {
                 $('#btn-submit-signin').css('display', 'none');
                 //console.log(form);
             },
-            success: function (response) {
-                $('#btn-submit-signin').fadeIn(200);
+
+            success: function(response) {
+                $('#btn-submit-signin').css('display', 'block');
+                MicroModal.close('modal-signin');
+
                 console.log(response)
+                if(response.success){
+                    console.log('yes')
+                } else if(!response.success){
+                    console.log('no')
+                }
             }
         })
     })
@@ -344,11 +352,13 @@ $(document).ready(function () {
 
 
 
-    const parallax = document.querySelector('#about-picture2');
+    //const parallax = document.querySelector('#about-picture2');
 
-    window.addEventListener('scroll', () => {
-        parallax.style.backgroundPositionY = window.scrollY / 4 + "px";
-    });
+
+    //window.addEventListener('scroll', () =>{
+    //    parallax.style.backgroundPositionY = window.scrollY / 4 + "px";
+    //});
+
 
 
 

@@ -1,4 +1,5 @@
 <?php
+session_start();
 include('inc/pdo.php');
 include('inc/function.php');
 $title = 'Home';
@@ -24,6 +25,9 @@ include('inc/header.php');
                         <?php if (empty($_SESSION)) : ?>
                                 <button data-custom-open="modal-signin" id="openModalSignin">Inscription</button>
                                 <button data-custom-open="modal-login" id="openModalLogin">Connexion</button>
+                        <?php endif; ?>
+                        <?php if(!empty($_SESSION)) : ?>
+                                <a href="carnet.php">Mon espace client</a>
                         <?php endif; ?>
                 </div>
         </div>

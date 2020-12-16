@@ -356,10 +356,7 @@ body::-webkit-scrollbar-thumb {
 
 #about-section0 h1 {
     font-family: "PT Sans", sans-serif;
-    position: absolute;
-    left: 37%;
     color: #fff;
-    padding: 5%;
     font-size: 3em;
     z-index: 99;
 }
@@ -510,19 +507,20 @@ body::-webkit-scrollbar-thumb {
 #about-section3 .box div {
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
-    width: 25%;
+    width: 20%;
 }
 
 #about-section3 .number {
-    font-size: 6em;
+    font-size: 4em;
     font-weight: 900;
 }
 
 #about-section3 .text {
     padding-top: 15px;
     font-size: 1.4em;
-    white-space: nowrap;
+    text-align: center;
 }
 
 #about-section4 {
