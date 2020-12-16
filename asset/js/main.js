@@ -275,6 +275,11 @@ $(document).ready(function(){
         delay: 400,
     });
 
+    const parallax = document.querySelector('#about-picture2');
+
+    window.addEventListener('scroll', () =>{
+        parallax.style.backgroundPositionY = window.scrollY / 4 + "px";
+    });
 
 
 
