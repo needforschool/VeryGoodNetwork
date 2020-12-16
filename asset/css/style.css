@@ -337,12 +337,17 @@ body::-webkit-scrollbar-thumb {
     padding-bottom: 10em;
 }
 
+#about-section0 .flexbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #about-section0 h1{
     font-family: 'PT Sans', sans-serif;
     position: absolute;
-    left: 37%;
     color: #fff;
-    padding: 5%;
+    margin: 5% 0 0 0;
     font-size: 3em;
     z-index: 99;
 }
