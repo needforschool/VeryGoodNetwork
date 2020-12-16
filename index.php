@@ -23,11 +23,11 @@ include('inc/header.php');
 
                 <div class="banner-btn">
                         <?php if (!isLogged()) : ?>
-                                <button data-custom-open="modal-signin" id="openModalSignin">Inscription</button>
-                                <button data-custom-open="modal-login" id="openModalLogin">Connexion</button>
+                                <button type="button" data-custom-open="modal-signin" id="openModalSignin">Inscription</button>
+                                <button type="button" data-custom-open="modal-login" id="openModalLogin">Connexion</button>
                         <?php endif; ?>
-                        <?php if(isLogged()) : ?>
-                                <a href="carnet.php">Mon espace client</a>
+                        <?php if (isLogged()) : ?>
+                                <a href="client-area.php"><button type="button">Mon espace client</button></a>
                         <?php endif; ?>
                 </div>
         </div>

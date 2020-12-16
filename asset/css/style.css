@@ -175,7 +175,6 @@ body::-webkit-scrollbar-thumb {
     font-size: 2em;
     font-family: "PT Sans", sans-serif;
     cursor: pointer;
-    margin: 5%;
     z-index: 1;
     transition: 0.8s;
     /* position: relative; */
@@ -188,6 +187,15 @@ body::-webkit-scrollbar-thumb {
     background-color: #fff;
     transition: .5s;
 }
+
+.banner-btn button a {
+    text-decoration: none;
+    color: #fff;
+}
+/* .banner-btn button a:hover {
+    color: #a51d0d;
+    transition: 1;
+} */
 
 /****** content ****/
 
