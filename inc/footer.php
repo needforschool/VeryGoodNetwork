@@ -90,7 +90,9 @@
 
 
         
-        
+        <div class="triangleinverse">
+                <img id="triangle4" src="asset/img/triangleinverse.png" alt="Avatar">
+        </div>
         
         
         
