@@ -25,9 +25,9 @@
             <div class="fat-nav">
                 <div class="fat-nav__wrapper">
                     <ul>
-                        <li><a href="index.php">Home</a></li>
-                        <li><a href="about-us.php">About</a></li>
-                        <li><a href="client-area.php">Your space</a></li>
+                        <li><a href="index.php">Accueil</a></li>
+                        <li><a href="about-us.php">A Propos</a></li>
+                        <li><a href="client-area.php">Votre Espace</a></li>
                     </ul>
                 </div>
             </div>
