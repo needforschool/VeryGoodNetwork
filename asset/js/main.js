@@ -53,6 +53,10 @@ $(document).ready(function(){
         checkLengthPassword('password-signin');
     })
 
+    $('#confirm-password-signin').on('keyup', function(){
+        checkConfirmPassword('confirm-password-signin', 'password-signin');
+    })
+
 
     //Requete AJAX
     $('#formSignin').on('submit', function(e){
@@ -74,6 +78,208 @@ $(document).ready(function(){
             }
         })
     })
+
+    //----------------------
+    //Scroll reveal About us
+    //----------------------
+
+    const sr = ScrollReveal();
+
+    sr.reveal('#about-picture1', {
+        origin: 'left',
+        distance: '200px',
+        duration: 800,
+    });
+
+    sr.reveal('#about-picture2', {
+        origin: 'bottom',
+        distance: '100px',
+        duration: 500,
+        delay: 600,
+    });
+
+    sr.reveal('#about-picture3', {
+        origin: 'right',
+        distance: '100px',
+        duration: 500,
+        delay: 1000,
+    });
+
+    sr.reveal('#about-picture4', {
+        origin: 'left',
+        distance: '100px',
+        duration: 500,
+        delay: 1200,
+    });
+
+    sr.reveal('#about-section0 h1', {
+        origin: 'bottom',
+        distance: '200px',
+        duration: 500,
+        delay: 200,
+    });
+
+    sr.reveal('#about-section1 h1', {
+        origin: 'bottom',
+        distance: '200px',
+        duration: 500,
+        delay: 400,
+    });
+
+    sr.reveal('#about-section1 p', {
+        origin: 'bottom',
+        distance: '200px',
+        duration: 500,
+        delay: 800,
+    });
+
+    sr.reveal('#about-section2 h1', {
+        origin: 'bottom',
+        distance: '200px',
+        duration: 500,
+        delay: 200,
+    });
+
+    sr.reveal('.single-profil1', {
+        origin: 'bottom',
+        distance: '100px',
+        duration: 500,
+        delay: 400,
+    });
+
+    sr.reveal('.single-profil2', {
+        origin: 'bottom',
+        distance: '100px',
+        duration: 500,
+        delay: 800,
+    });
+
+    sr.reveal('.single-profil3', {
+        origin: 'bottom',
+        distance: '100px',
+        duration: 500,
+        delay: 1200,
+    });
+
+    sr.reveal('.single-profil4', {
+        origin: 'bottom',
+        distance: '100px',
+        duration: 500,
+        delay: 1600,
+    });
+
+    sr.reveal('#about-section3 h1', {
+        origin: 'bottom',
+        distance: '200px',
+        duration: 500,
+        delay: 200,
+    });
+
+    sr.reveal('.about-section3number1', {
+        origin: 'left',
+        distance: '200px',
+        duration: 500,
+        delay: 200,
+    });
+
+    sr.reveal('.about-section3number2', {
+        origin: 'left',
+        distance: '500px',
+        duration: 600,
+        delay: 600,
+    });
+
+    sr.reveal('.about-section3number3', {
+        origin: 'left',
+        distance: '800px',
+        duration: 700,
+        delay: 1000,
+    });
+
+    sr.reveal('.about-section3number4', {
+        origin: 'left',
+        distance: '1000px',
+        duration: 800,
+        delay: 1400,
+    });
+
+    sr.reveal('#about-section4 h1', {
+        origin: 'bottom',
+        distance: '200px',
+        duration: 500,
+        delay: 200,
+    });
+
+    sr.reveal('#about-section4 .picture', {
+        origin: 'bottom',
+        distance: '200px',
+        duration: 500,
+        delay: 400,
+    });
+
+
+    sr.reveal('#about-section4 .Stick', {
+        origin: 'bottom',
+        distance: '200px',
+        duration: 500,
+        delay: 600,
+    });
+
+
+    sr.reveal('#about-section4 .textarg', {
+        origin: 'bottom',
+        distance: '200px',
+        duration: 500,
+        delay: 800,
+    });
+
+    sr.reveal('#about-section5 h1', {
+        origin: 'bottom',
+        distance: '200px',
+        duration: 500,
+        delay: 200,
+    });
+
+    sr.reveal('#imagepubliciteaboutsection1', {
+        origin: 'bottom',
+        distance: '200px',
+        duration: 500,
+        delay: 400,
+    });
+
+    sr.reveal('#imagepubliciteaboutsection2', {
+        origin: 'bottom',
+        distance: '200px',
+        duration: 500,
+        delay: 600,
+    });
+
+    sr.reveal('#imagepubliciteaboutsection3', {
+        origin: 'bottom',
+        distance: '200px',
+        duration: 500,
+        delay: 800,
+    });
+
+    sr.reveal('#about-section6 h1', {
+        origin: 'bottom',
+        distance: '200px',
+        duration: 500,
+        delay: 200,
+    });
+
+    sr.reveal('#about-section6 #aboutusbutton', {
+        origin: 'bottom',
+        distance: '200px',
+        duration: 500,
+        delay: 400,
+    });
+
+    const parallax = document.querySelector('#about-picture2');
+
+    window.addEventListener('scroll', () =>{
+        parallax.style.backgroundPositionY = window.scrollY / 4 + "px";
+    });
 
 
 
@@ -145,5 +351,22 @@ function checkLengthPassword(id)
     } else if (checkPassword.length >= 9 && checkPassword.length <=49){
         error.css('color', '#27ae60');
         error.html('Mot de passe fort');
+    }
+}
+
+//Fonction check mdp
+
+function checkConfirmPassword(idBis, id)
+{
+    var error = $('span.error-' + idBis);
+    var champ1 = $('input#' + idBis);
+    var champ2 = $('input#' + id);
+    var checkPassword = champ2.val();
+    var password = champ1.val();
+
+    if(checkPassword != password){
+        error.html('<i class="fas fa-times" style="color: #ff6b6b;"></i>')
+    } else if (checkPassword === password) {
+        error.html('<i class="fas fa-check" style="color: #51cf66;"></i>');
     }
 }

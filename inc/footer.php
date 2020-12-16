@@ -72,6 +72,12 @@
                                 <input type="password" id="password-signin" name="password-signin">
                                 <span class="error-password-signin"></span>
                             </div>
+
+                            <div class="input-area">
+                                <label for="confirm-password-signin"><strong>Confirmer mot de passe</strong></label>
+                                <input type="password" id="confirm-password-signin" name="confirm-password-signin">
+                                <span class="error-confirm-password-signin"></span>
+                            </div>
                         </div>
 
                         <footer class="modal__footer">
@@ -93,6 +99,10 @@
         <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
         <!-- fatNav -->
         <script type="text/javascript" src="asset/js/jquery.fatNav.min.js"></script>
+        <!--ScrollReveal.js-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <!--Parallax.js-->
+        <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
         <!--Chart.js-->
         <!--MicroModal-->
         <script src="asset/js/micromodal.min.js"></script>

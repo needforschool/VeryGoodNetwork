@@ -337,6 +337,16 @@ body::-webkit-scrollbar-thumb {
     padding-bottom: 10em;
 }
 
+#about-section0 h1{
+    font-family: 'PT Sans', sans-serif;
+    position: absolute;
+    left: 37%;
+    color: #fff;
+    padding: 5%;
+    font-size: 3em;
+    z-index: 99;
+}
+
 #about-section0 img {
     z-index: 1;
     width: 100%;
@@ -577,7 +587,7 @@ body::-webkit-scrollbar-thumb {
     white-space: nowrap;
 }
 
-#triangle4 {
+#triangle4{
     width: 100%;
     bottom: 0;
     position: relative;
