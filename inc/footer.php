@@ -101,6 +101,8 @@
         <script type="text/javascript" src="asset/js/jquery.fatNav.min.js"></script>
         <!--ScrollReveal.js-->
         <script src="https://unpkg.com/scrollreveal"></script>
+        <!--Parallax.js-->
+        <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
         <!--Chart.js-->
         <!--MicroModal-->
         <script src="asset/js/micromodal.min.js"></script>
