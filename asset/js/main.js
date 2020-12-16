@@ -280,6 +280,82 @@ $(document).ready(function(){
         duration: 500,
         delay: 400,
     });
+    // SCROLL REVEAL HOME PAGE
+
+    sr.reveal('.wrap-banner', {
+        origin: 'bottom',
+        distance: '200px',
+        duration: 500,
+        delay: 400,
+    });
+
+    
+    sr.reveal('.banner-btn', {
+        origin: 'bottom',
+        distance: '200px',
+        duration: 500,
+        delay: 400,
+    });
+
+    sr.reveal('.content', {
+        origin: 'bottom',
+        distance: '200px',
+        duration: 500,
+        delay: 400,
+    });
+
+
+    sr.reveal('.text', {
+        origin: 'bottom',
+        distance: '200px',
+        duration: 500,
+        delay: 400,
+    });
+    
+    sr.reveal('.text2', {
+        origin: 'bottom',
+        distance: '200px',
+        duration: 500,
+        delay: 400,
+    });
+    
+    sr.reveal('#imgmiddle3', {
+        origin: 'bottom',
+        distance: '200px',
+        duration: 500,
+        delay: 400,
+    });
+
+    sr.reveal('.text3', {
+        origin: 'bottom',
+        distance: '200px',
+        duration: 500,
+        delay: 400,
+    });
+
+    sr.reveal('.text4', {
+        origin: 'bottom',
+        distance: '200px',
+        duration: 500,
+        delay: 400,
+    });
+
+    sr.reveal('.boximg4', {
+        origin: 'bottom',
+        distance: '200px',
+        duration: 500,
+        delay: 400,
+    });
+
+    sr.reveal('#imgmiddle4', {
+        origin: 'bottom',
+        distance: '200px',
+        duration: 500,
+        delay: 400,
+    });
+
+    
+
 
     //const parallax = document.querySelector('#about-picture2');
 

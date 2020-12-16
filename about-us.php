@@ -8,22 +8,22 @@ $title = 'A propos';
 
 include('inc/header.php');
 ?>
-      
-        <section class="about-section" id="about-section0">
-                <div class="flexbox">
-                        <h1>About US</h1> 
-                </div>
-                <img src="asset/img/triangle.png" class="banner-img">
-        </section>
-        
-        <section class="about-section" id="about-section1">
-                <div class="flexbox">
-                        <h1 class="title">Nos services</h1>
-                        <p>Analyse de votre réseau<br> pour votre entreprise <br>Des solutions innovantes<br> pour vous</p>
-                </div>
-                <img id="about-picture1" class="about-picture responsive" src="asset/img/about-picture1.jpg" alt="">
-                <img id="about-picture2" class="about-picture responsive" src="asset/img/about-picture2.jpg" alt="">
-                <div class="leftpicture">
+
+<section class="about-section" id="about-section0">
+        <div class="flexbox">
+                <h1>About US</h1>
+        </div>
+        <img src="asset/img/triangle.png" class="banner-img">
+</section>
+
+<section class="about-section" id="about-section1">
+        <div class="flexbox">
+                <h1 class="title">Nos services</h1>
+                <p>Analyse de votre réseau<br> pour votre entreprise <br>Des solutions innovantes<br> pour vous</p>
+        </div>
+        <img id="about-picture1" class="about-picture responsive" src="asset/img/about-picture1.jpg" alt="">
+        <img id="about-picture2" class="about-picture responsive" src="asset/img/about-picture2.jpg" alt="">
+        <div class="leftpicture">
                 <img id="about-picture3" class="about-picture responsive" src="asset/img/about-picture3.jpg" alt="">
                 <img id="about-picture4" class="about-picture responsive" src="asset/img/about-picture4.jpg" alt="">
         </div>
@@ -102,9 +102,6 @@ include('inc/header.php');
 <section class="about-section" id="about-section6">
         <h1>Satisfait ?</h1>
         <button id="aboutusbutton">Inscrivez vous</button>
-        <div class="triangleinverse">
-                <img id="triangle4" src="asset/img/triangleinverse.png" alt="Avatar">
-        </div>
 </section>
 
 
