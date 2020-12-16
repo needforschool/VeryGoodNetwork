@@ -2,7 +2,7 @@
 //OUVERTURE JQUERY
 //----------------------
 
-$(document).ready(function(){
+$(document).ready(function () {
 
     //-----------------
     //PLUGIN MICROMODAL
@@ -11,13 +11,13 @@ $(document).ready(function(){
     MicroModal.init({
         onShow: modal => console.info(`${modal.id} is shown`),
         onClose: modal => console.info(`${modal.id} is hidden`),
-        openTrigger: 'data-custom-open', 
+        openTrigger: 'data-custom-open',
         closeTrigger: 'data-custom-close',
         openClass: 'is-open',
         disableScroll: true,
-        disableFocus: false, 
-        awaitOpenAnimation: false, 
-        awaitCloseAnimation: false, 
+        disableFocus: false,
+        awaitOpenAnimation: false,
+        awaitCloseAnimation: false,
         debugMode: true
     });
 
@@ -25,10 +25,10 @@ $(document).ready(function(){
     //PLUGIN MENU NAVIGATION
     //----------------------
 
-    (function() {
-        
+    (function () {
+
         $.fatNav();
-        
+
     }());
 
 
@@ -37,29 +37,29 @@ $(document).ready(function(){
     //-------------------------
 
     //Verification formulaire en JS (Pas sécurisé)
-    $('#nom-signin').on('keyup', function(){
+    $('#nom-signin').on('keyup', function () {
         verifText('nom-signin', 2, 50);
     })
 
-    $('#prenom-signin').on('keyup', function(){
+    $('#prenom-signin').on('keyup', function () {
         verifText('prenom-signin', 2, 50);
     })
 
-    $('#email-signin').on('keyup', function(){
+    $('#email-signin').on('keyup', function () {
         verifEmail('email-signin');
     })
 
-    $('#password-signin').on('keyup', function(){
+    $('#password-signin').on('keyup', function () {
         checkLengthPassword('password-signin');
     })
 
-    $('#confirm-password-signin').on('keyup', function(){
+    $('#confirm-password-signin').on('keyup', function () {
         checkConfirmPassword('confirm-password-signin', 'password-signin');
     })
 
 
     //Requete AJAX
-    $('#formSignin').on('submit', function(e){
+    $('#formSignin').on('submit', function (e) {
         e.preventDefault();
         let form = $('#formSignin');
         $.ajax({
@@ -68,13 +68,15 @@ $(document).ready(function(){
             data: form.serialize(),
             dataType: 'json',
 
-            beforeSend: function() {
+            beforeSend: function () {
                 $('#btn-submit-signin').css('display', 'none');
                 //console.log(form);
             },
+
             success: function(response) {
                 $('#btn-submit-signin').css('display', 'block');
                 MicroModal.close('modal-signin');
+
                 console.log(response)
                 if(response.success){
                     console.log('yes')
@@ -289,7 +291,7 @@ $(document).ready(function(){
         delay: 400,
     });
 
-    
+
     sr.reveal('.banner-btn', {
         origin: 'bottom',
         distance: '200px',
@@ -311,15 +313,8 @@ $(document).ready(function(){
         duration: 500,
         delay: 400,
     });
-    
+
     sr.reveal('.text2', {
-        origin: 'bottom',
-        distance: '200px',
-        duration: 500,
-        delay: 400,
-    });
-    
-    sr.reveal('#imgmiddle3', {
         origin: 'bottom',
         distance: '200px',
         duration: 500,
@@ -354,10 +349,11 @@ $(document).ready(function(){
         delay: 400,
     });
 
-    
+
 
 
     //const parallax = document.querySelector('#about-picture2');
+
 
     //window.addEventListener('scroll', () =>{
     //    parallax.style.backgroundPositionY = window.scrollY / 4 + "px";
@@ -365,9 +361,10 @@ $(document).ready(function(){
 
 
 
-//----------------------
-//FERMETURE JQUERY
-//----------------------
+
+    //----------------------
+    //FERMETURE JQUERY
+    //----------------------
 })
 
 
@@ -376,44 +373,41 @@ $(document).ready(function(){
 //----------------------
 
 //fonction pour verifier la longueur du texte
-function verifText(id, min, max)
-{
-  var error = $('span.error-' + id);
-  var champ = $('input#' + id);
-  var isGood = champ.val().length;
+function verifText(id, min, max) {
+    var error = $('span.error-' + id);
+    var champ = $('input#' + id);
+    var isGood = champ.val().length;
 
-  if(isGood == 0){
-    error.html('Veuillez remplir le champ');
-  }else if (isGood < min){
-    error.html('Veuillez utiliser au minimum '+ min +' caractères');
-  }else if (isGood > max){
-    error.html('Veuillez utiliser au maximum '+ max +' caractères');
-  }else {
-    error.html('<i class="fas fa-check" style="color: #51cf66;"></i>');
-  }
+    if (isGood == 0) {
+        error.html('Veuillez remplir le champ');
+    } else if (isGood < min) {
+        error.html('Veuillez utiliser au minimum ' + min + ' caractères');
+    } else if (isGood > max) {
+        error.html('Veuillez utiliser au maximum ' + max + ' caractères');
+    } else {
+        error.html('<i class="fas fa-check" style="color: #51cf66;"></i>');
+    }
 }
 
 //Fonction pour verifier qu'un email est valide
-function verifEmail(id)
-{
+function verifEmail(id) {
     var error = $('span.error-' + id);
     var champ = $('input#' + id);
     var checkEmail = champ.val()
 
     var testEmail = /.+@.+\..+/;
 
-    if(champ.val().length == 0){
+    if (champ.val().length == 0) {
         error.html('Veuillez remplir le champ');
-    }else if (!testEmail.test(checkEmail)){
+    } else if (!testEmail.test(checkEmail)) {
         error.html('Email non valide');
-    }else{
+    } else {
         error.html('<i class="fas fa-check" style="color: #51cf66;"></i>');
     }
 }
 
 //fonction pour verifier la longueur du mot de passe
-function checkLengthPassword(id)
-{
+function checkLengthPassword(id) {
     var error = $('span.error-' + id);
     var champ = $('input#' + id);
     var checkPassword = champ.val();
@@ -421,16 +415,16 @@ function checkLengthPassword(id)
     if (checkPassword.length == 0) {
         error.css('color', '#e74c3c');
         error.html('Veuillez remplir le champ');
-    } else if (checkPassword.length >= 50){
+    } else if (checkPassword.length >= 50) {
         error.css('color', '#e74c3c');
         error.html('Maximum 50 caractères');
-    } else if(checkPassword.length >= 1 && checkPassword.length <= 4){
+    } else if (checkPassword.length >= 1 && checkPassword.length <= 4) {
         error.css('color', '#e74c3c');
         error.html('Mot de passe faible');
-    } else if (checkPassword.length >= 5 && checkPassword.length <= 8){
+    } else if (checkPassword.length >= 5 && checkPassword.length <= 8) {
         error.css('color', '#f39c12');
         error.html('Mot de passe moyen');
-    } else if (checkPassword.length >= 9 && checkPassword.length <=49){
+    } else if (checkPassword.length >= 9 && checkPassword.length <= 49) {
         error.css('color', '#27ae60');
         error.html('Mot de passe fort');
     }
@@ -438,15 +432,14 @@ function checkLengthPassword(id)
 
 //Fonction check mdp
 
-function checkConfirmPassword(idBis, id)
-{
+function checkConfirmPassword(idBis, id) {
     var error = $('span.error-' + idBis);
     var champ1 = $('input#' + idBis);
     var champ2 = $('input#' + id);
     var checkPassword = champ2.val();
     var password = champ1.val();
 
-    if(checkPassword != password){
+    if (checkPassword != password) {
         error.html('<i class="fas fa-times" style="color: #ff6b6b;"></i>')
     } else if (checkPassword === password) {
         error.html('<i class="fas fa-check" style="color: #51cf66;"></i>');
