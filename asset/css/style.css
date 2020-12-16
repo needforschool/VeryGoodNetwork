@@ -599,11 +599,45 @@ body::-webkit-scrollbar-thumb {
     white-space: nowrap;
 }
 
+/* FOOTER */
+
 #triangle4{
     width: 100%;
     bottom: 0;
     position: relative;
     top: 40px;  
+}
+
+.footer-box {
+    width: 100%;
+    position: absolute;
+    line-height: 2;
+}
+.icons-box {
+    display: flex;
+    justify-content: center;
+}
+.icons {
+    width: 30%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -70px;
+}
+.icons i {
+    color: #000;
+    font-size: 45px;
+}
+.icons i:hover {
+    color: #fff;
+    transition: .9s;
+}
+.copyright {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-family: 'PT Sans', sans-serif;
 }
 
 /* RESPONSIVE */
