@@ -10,7 +10,7 @@ include('inc/header.php');
 ?>
 
 <section class="about-section" id="about-section0">
-<img src="asset/img/triangle.png" class="banner-img">
+        <img src="asset/img/triangle.png" class="banner-img">
         <div class="flexbox">
                 <h1>À propos</h1>
         </div>

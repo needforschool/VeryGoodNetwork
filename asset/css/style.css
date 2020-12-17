@@ -633,6 +633,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 /***** Client area *****/
+
 a {
     text-decoration: none;
     color: #000;
@@ -641,6 +642,7 @@ a {
 ul, li {
     list-style: none;
 }
+
 #banner-client {
     height: 100vh;
 }
@@ -722,7 +724,6 @@ ul, li {
     height: 9vh;
 }
 
-
 /* FOOTER */
 
 #triangle4 {
@@ -768,8 +769,6 @@ ul, li {
     color: #fff;
     font-family: 'PT Sans', sans-serif;
 }
-
-
 
 /* RESPONSIVE */
 
