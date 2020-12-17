@@ -75,13 +75,11 @@ $(document).ready(function () {
 
             success: function(response) {
                 $('#btn-submit-signin').fadeIn('200');
-                console.log(response)
-                console.log(response.errors)
+                //console.log(response)
+                //console.log(response.errors)
                 if(response.success){
-                    MicroModal.close('modal-signin');
-                    window.location.replace("client-area.php");
+                    connexionSuccess
                 } else if(!response.success){
-                    //if(){}
                     $.each(response.errors, function(index, value){
                         $('span.error-'+ index +'-signin').css('color', '#ff6b6b')
                         $('span.error-'+ index +'-signin').html(value)
@@ -113,13 +111,42 @@ $(document).ready(function () {
 
             success: function(response){
                 $('#btn-submit-login').fadeIn('200');
-                console.log(response)
+                //console.log(response)
                 if(response.success){
-                    MicroModal.close('modal-login');
-                    window.location.replace("client-area.php");
+                    connexionSuccess();
                 } else if(!response.success){
                     $('span.error-password-login').html('Email ou mot de passe incorrect');
                 }
+            },
+        })
+    })
+
+
+
+
+    $('img.clicktest').on('click', function(){
+        console.log('click')
+        $.ajax({
+            type: 'POST',
+            url: 'https://floriandoyen.fr/resources/frames.php',
+            data: '',
+            dataType: 'json',
+    
+            beforeSend: function(){
+            },
+    
+            success: function(response){
+                console.log(response)
+                $.ajax({
+                    type: 'POST',
+                    url: 'ajax/ajax-updateTrame.php',
+                    data: {trames:response},
+                    //dataType: 'json',
+
+                    success: function(response2){
+                        console.log(response2)
+                    }
+                })
             },
         })
     })
@@ -482,3 +509,12 @@ function checkConfirmPassword(idBis, id) {
         error.html('<i class="fas fa-check" style="color: #51cf66;"></i>');
     }
 }
+
+function connexionSuccess()
+{
+    MicroModal.close('modal-login');
+    window.location.replace("client-area.php");
+}
+
+
+

@@ -90,7 +90,7 @@ include('inc/header.php');
                                         <p>Grâce à VGN, je peux analyser mon site web et comprendre les besoins de mes clients. Un Super Outil, je recommande.</p>
                                 </div>
                                 <div class="boximg4">
-                                        <img id="imgmiddle4" src="asset/img/alphawan.jpg" alt="Avatar">
+                                        <img class="clicktest" id="imgmiddle4" src="asset/img/alphawan.jpg" alt="Avatar">
                                 </div>
                                 <div class="text5">
                                         <p>Grâce à VGN, je peux analyser mon site web et comprendre les besoins de mes clients. Un Super Outil, je recommande.</p>
