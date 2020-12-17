@@ -92,6 +92,38 @@ $(document).ready(function () {
         })
     })
 
+
+
+    //-------------------------
+    //FORMULAIRE DE CONNEXION
+    //-------------------------
+
+    $('#formLogin').on('submit', function(e){
+        e.preventDefault();        
+        let formLogin = $('#formLogin');
+        $.ajax({
+            type: 'POST',
+            url: formLogin.attr('action'),
+            data: formLogin.serialize(),
+            dataType: 'json',
+
+            beforeSend: function(){
+                $('#btn-submit-login').css('display', 'none');
+            },
+
+            success: function(response){
+                $('#btn-submit-login').fadeIn('200');
+                console.log(response)
+                if(response.success){
+                    MicroModal.close('modal-login');
+                    window.location.replace("client-area.php");
+                } else if(!response.success){
+                    $('span.error-password-login').html('Email ou mot de passe incorrect');
+                }
+            },
+        })
+    })
+
     //----------------------
     //Scroll reveal About us
     //----------------------

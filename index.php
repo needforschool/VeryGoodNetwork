@@ -28,6 +28,7 @@ include('inc/header.php');
                         <?php endif; ?>
                         <?php if (isLogged()) : ?>
                                 <a href="client-area.php"><button type="button">Mon espace client</button></a>
+                                <a href="logout.php"><button type="button">Se deconnecter</button></a>
                         <?php endif; ?>
                 </div>
         </div>
