@@ -13,7 +13,6 @@ include('inc/header.php');
         <div class="flexbox">
                 <h1>À propos</h1>
         </div>
-        <img src="asset/img/triangle.png" class="banner-img">
 </section>
 
 <section class="about-section" id="about-section1" data-parallax="scroll" data-image-src="asset/img/parallax-about.jpg">
