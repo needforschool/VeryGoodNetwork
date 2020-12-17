@@ -192,10 +192,6 @@ body::-webkit-scrollbar-thumb {
     text-decoration: none;
     color: #fff;
 }
-/* .banner-btn button a:hover {
-    color: #a51d0d;
-    transition: 1;
-} */
 
 /****** content ****/
 
@@ -492,6 +488,7 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column;
 }
 
+
 #about-section3 {
     padding: 50px 0;
     font-family: "PT Sans", sans-serif;
@@ -512,24 +509,25 @@ body::-webkit-scrollbar-thumb {
     margin: 15px 0;
 }
 
-#about-section3 .box div {
+#about-section3 .box {
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 20%;
+    justify-content: space-around;
+    width: 100%;
 }
 
-#about-section3 .number {
+ #about-section3 .number {
     font-size: 4em;
     font-weight: 900;
+    text-align: center;
 }
 
 #about-section3 .text {
     padding-top: 15px;
     font-size: 1.4em;
     text-align: center;
-}
+    width: 100%;
+} 
 
 #about-section4 {
     font-family: "PT Sans", sans-serif;

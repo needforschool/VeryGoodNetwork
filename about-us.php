@@ -11,7 +11,7 @@ include('inc/header.php');
 
 <section class="about-section" id="about-section0">
         <div class="flexbox">
-                <h1>About US</h1>
+                <h1>À propos</h1>
         </div>
         <img src="asset/img/triangle.png" class="banner-img">
 </section>
