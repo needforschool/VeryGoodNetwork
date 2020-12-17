@@ -93,25 +93,12 @@
         <div class="triangleinverse">
             <img id="triangle4" src="asset/img/triangleinverse.png" alt="Avatar">
             <div class="footer-box">
-                <div class="icons-box">
-                    <div class="button">
-                        <div class="icon facebook">
-                            <i class="fab fa-facebook-f"></i></div>
-                        <span>Facebook</span>
-                    </div>
-                    <div class="button">
-                        <div class="icon twitter">
-                            <i class="fab fa-twitter"></i></div>
-                        <span>Twitter</span>
-                    </div>
-                    <div class="button">
-                        <div class="icon github">
-                            <a href="https://github.com/ImJustLucas/VeryGoodNetwork" target="_blank"><i class="fab fa-github"></i></a></div>
-                        <a href="https://github.com/ImJustLucas/VeryGoodNetwork" target="_blank"><span>Github</span></a>
-                    </div>
-                </div>
-                <div class="copyright">
-                    <p>2020 &copy; VeryGoodNetwork. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" ><i class="fa fa-facebook"></i></a>
+                    <a href="#" ><i class="fa fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fa fa-github"></i></a>
+
+                    <p class="copyright">2020 &copy; VeryGoodNetwork. All rights reserved.</p>
                 </div>
             </div>
         </div>
@@ -126,7 +113,7 @@
             <!--ScrollReveal.js-->
             <script src="https://unpkg.com/scrollreveal"></script>
             <!--Parallax.js-->
-            <script src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.6.1/dist/simpleParallax.min.js"></script>
+            <script src="asset/js/parallax.min.js"></script>
             <!--Chart.js-->
             <!--MicroModal-->
             <script src="asset/js/micromodal.min.js"></script>
