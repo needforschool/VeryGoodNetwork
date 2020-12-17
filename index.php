@@ -91,6 +91,9 @@ include('inc/header.php');
                                 </div>
                         </div>
                 </div>
-</section>
+        </section>
+
+        <!-- <img id="triangle4" src="asset/img/triangleinverse.png" alt="Avatar"> -->
+      
 <?php
 include('inc/footer.php');

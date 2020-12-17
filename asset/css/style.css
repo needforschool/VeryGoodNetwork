@@ -632,6 +632,97 @@ body::-webkit-scrollbar-thumb {
     color: #fff;
 }
 
+/***** Client area *****/
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul, li {
+    list-style: none;
+}
+#banner-client {
+    height: 100vh;
+}
+
+.navBar {
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgb(167, 12, 12);
+    height: 9vh;
+    padding: 10px 20px;
+}
+
+.title {
+    font-size: 50px;
+    color: #fff;
+}
+
+.title-main {
+    height: 9.7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-main h1 {
+    font-size: 50px;
+}
+
+.select {
+    display: flex;
+    height: 70vh;
+    justify-content: space-between;
+}
+
+.split {
+    width: 5px;
+    background-color: #000;
+    border-radius: 4px;
+    margin-top: 50px;
+}
+
+.graph {
+    width: 45%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.logs {
+    width: 45%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.graph img {
+    width: 80%;
+    margin-left: 60px;
+}
+
+.graph a {
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.logs img {
+    width: 80%;
+    margin-left: 60px;
+}
+
+.logs a {
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.footer-client {
+    margin-top: 17px;
+    background-color: rgb(167, 12, 12);
+    height: 9vh;
+}
+
+
 /* FOOTER */
 
 #triangle4 {
@@ -677,6 +768,8 @@ body::-webkit-scrollbar-thumb {
     color: #fff;
     font-family: 'PT Sans', sans-serif;
 }
+
+
 
 /* RESPONSIVE */
 

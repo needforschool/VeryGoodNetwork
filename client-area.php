@@ -12,7 +12,29 @@ if(!isLogged()){
 include('inc/header.php');
 ?>
       
-    <h1>Client area</h1>
+      <section id="banner-client">
+        <div class="navBar">
+
+            <div class="title">Votre Espace</div>
+        </div>
+        <div class="title-main">
+            <h1>Mode de consultation</h1>
+        </div>
+        <div class="select">
+            <div class="graph">
+                <img src="asset/img/graphique.svg" alt="">
+                <a href="#">Graphiques</a>
+                <!-- <p>Graphiques</p> -->
+            </div>
+            <div class="split"></div>
+            <div class="logs">
+                <img src="asset/img/logs.svg" alt="">
+                <a href="#">Logs</a>
+                <!-- <p>Logs</p> -->
+            </div>
+        </div>
+        <!-- <div class="footer-client"></div> -->
+    </section>
 
 <?php
 include('inc/footer.php');

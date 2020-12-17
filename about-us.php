@@ -95,6 +95,7 @@ include('inc/header.php');
 <section class="about-section" id="about-section6">
         <h1>Satisfait ?</h1>
         <button id="aboutusbutton">Inscrivez vous</button>
+        <!-- <img id="triangle4" src="asset/img/triangleinverse.png" alt="Avatar"> -->
 </section>
 
 
