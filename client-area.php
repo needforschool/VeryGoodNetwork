@@ -5,7 +5,7 @@ include('inc/function.php');
 $title = 'Client area';
 
 if(!isLogged()){
-    header('location: index.php?error=403');
+    header('location: 403.php');
 }
 
 
