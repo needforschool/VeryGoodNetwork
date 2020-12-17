@@ -28,6 +28,7 @@ include('inc/header.php');
                         <?php endif; ?>
                 </div>
         </div>
+        <img src="asset/img/triangle-blanc.png" class="banner-img-bottom">
 </section>
 
 

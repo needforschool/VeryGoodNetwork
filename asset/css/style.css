@@ -661,7 +661,7 @@ ul, li {
 }
 
 .title-main {
-    height: 9.7vh;
+    height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -669,6 +669,7 @@ ul, li {
 
 .title-main h1 {
     font-size: 50px;
+    margin-top: 20px;
 }
 
 .select {
@@ -701,8 +702,8 @@ ul, li {
     margin-left: 60px;
 }
 
-.graph a {
-    margin-bottom: 80px;
+.graph .btn {
+    margin-bottom: 60px;
     text-align: center;
     font-size: 30px;
 }
@@ -712,17 +713,105 @@ ul, li {
     margin-left: 60px;
 }
 
-.logs a {
-    margin-bottom: 80px;
+.logs .btn {
+    margin-bottom: 70px;
     text-align: center;
     font-size: 30px;
 }
+/* ~~~~~~~ INIT. BTN ~~~~~~~ */
 
-.footer-client {
+.btn {		
+	position: relative;	
+	padding: 1rem 1rem;
+	padding-left: 2rem;
+    font-size: 1.4rem;
+	color: #000;
+	letter-spacing: 1.1rem;
+	text-transform: uppercase;
+	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
+	cursor: pointer;
+    user-select: none;
+    border-radius: 10px;
+}
+
+.btn:before, .btn:after {
+	content: '';
+	position: absolute;	
+	transition: inherit;
+	z-index: -1;
+}
+
+.btn:hover {
+	color: #fff;
+	transition-delay: .5s;
+}
+
+.btn:hover:before {
+	transition-delay: 0s;
+}
+
+.btn:hover:after {
+	background: #a51d0d;
+    transition-delay: .35s;
+    border-radius: 10px;
+}
+/* From Left */
+
+.from-left:before, 
+.from-left:after {
+	top: 0;
+	width: 0;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.from-left:before {
+	right: 0;
+    border: 1px solid #a51d0d;
+    border-radius: 10px;
+	border-left: 0;
+	border-right: 0;	
+}
+
+.from-left:after {
+	left: 0;
+}
+
+.from-left:hover:before,
+.from-left:hover:after {
+	width: 100%;
+}
+
+/* From Right */
+
+.from-right:before, 
+.from-right:after {
+	top: 0;
+	width: 0;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.from-right:before {
+	left: 0;
+	border: 1px solid #a51d0d;
+	border-left: 0;
+	border-right: 0;	
+}
+
+.from-right:after {
+	right: 0;
+}
+
+.from-right:hover:before,
+.from-right:hover:after {
+	width: 100%;
+}
+/* .footer-client {
     margin-top: 17px;
     background-color: rgb(167, 12, 12);
     height: 9vh;
-}
+} */
 
 /* FOOTER */
 

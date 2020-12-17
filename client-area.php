@@ -23,13 +23,17 @@ include('inc/header.php');
     <div class="select">
         <div class="graph">
             <img src="asset/img/graphique.svg" alt="">
-            <a href="#">Graphiques</a>
+            <div class="btn">
+                <a href="#" class="btn from-left">Graphiques</a>
+            </div>
             <!-- <p>Graphiques</p> -->
         </div>
         <div class="split"></div>
         <div class="logs">
             <img src="asset/img/logs.svg" alt="">
-            <a href="#">Logs</a>
+            <div class="btn">
+                <a href="#" class="btn from-right">Logs</a>
+            </div>
             <!-- <p>Logs</p> -->
         </div>
     </div>
