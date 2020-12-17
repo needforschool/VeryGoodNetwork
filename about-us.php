@@ -16,16 +16,10 @@ include('inc/header.php');
         <img src="asset/img/triangle.png" class="banner-img">
 </section>
 
-<section class="about-section" id="about-section1">
+<section class="about-section" id="about-section1" data-parallax="scroll" data-image-src="asset/img/parallax-about.jpg">
         <div class="flexbox">
                 <h1 class="title">Nos services</h1>
-                <p>Analyse de votre réseau<br> pour votre entreprise <br>Des solutions innovantes<br> pour vous</p>
-        </div>
-        <img id="about-picture1" class="about-picture responsive" src="asset/img/about-picture1.jpg" alt="">
-        <img id="about-picture2" class="about-picture responsive" src="asset/img/about-picture2.jpg" alt="">
-        <div class="leftpicture">
-                <img id="about-picture3" class="about-picture responsive" src="asset/img/about-picture3.jpg" alt="">
-                <img id="about-picture4" class="about-picture responsive" src="asset/img/about-picture4.jpg" alt="">
+                <p>Analyse de votre réseau pour votre entreprise. Des solutions innovantes pour vous.</p>
         </div>
 </section>
 
@@ -33,19 +27,19 @@ include('inc/header.php');
         <h1>Notre Équipe</h1>
         <div class="profils">
                 <div class="single-profil single-profil1">
-                        <img src="asset/img/profil.png" alt="">
+                        <img src="asset/img/lucas.jpg" alt="">
                         <p>Lucas</p>
                 </div>
                 <div class="single-profil single-profil2">
-                        <img src="asset/img/profil.png" alt="">
+                        <img src="asset/img/quentin.png" alt="" class="quentin">
                         <p>Quentin</p>
                 </div>
                 <div class="single-profil single-profil3">
-                        <img src="asset/img/profil.png" alt="">
+                        <img src="asset/img/cyril.jfif" alt="">
                         <p>Cyril</p>
                 </div>
                 <div class="single-profil single-profil4">
-                        <img src="asset/img/profil.png" alt="">
+                        <img src="asset/img/theo.jpg" alt="">
                         <p>Théo</p>
                 </div>
         </div>
