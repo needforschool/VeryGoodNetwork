@@ -74,16 +74,19 @@ $(document).ready(function () {
             },
 
             success: function(response) {
-                $('#btn-submit-signin').css('display', 'block');
+                $('#btn-submit-signin').fadeIn('200');
                 console.log(response)
+                console.log(response.errors)
                 if(response.success){
                     MicroModal.close('modal-signin');
                     window.location.replace("client-area.php");
                 } else if(!response.success){
-                    console.log(response.errors)
-                    if (response.errors.all.length) {
-                        
-                    }
+                    //if(){}
+                    $.each(response.errors, function(index, value){
+                        $('span.error-'+ index +'-signin').css('color', '#ff6b6b')
+                        $('span.error-'+ index +'-signin').html(value)
+                    })
+                    
                 }
             }
         })

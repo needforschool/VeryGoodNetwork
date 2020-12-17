@@ -26,7 +26,7 @@ function showJson($data)
 function isLogged(): bool
 {
   $isLogged = true;
-  if (empty($_SESSION['user'])) {
+  if (empty($_SESSION['user']) || $_SESSION['user'] == '' ) {
     $isLogged = false;
     return $isLogged;
   } else {
@@ -92,7 +92,7 @@ function validatePassword($password, $confirmPassword, $errors, $keyPassword, $k
     if (mb_strlen($password) < $min) {
       $errors[$keyPassword] = 'Veuillez renseigner au minimum '. $min .' caractères';
     } elseif ($confirmPassword != $password) {
-      $errors[$keyPassword][$keyConfirmPassword] = 'Les mots de passe ne correspondent pas';
+      $errors[$keyPassword] = 'Les mots de passe ne correspondent pas';
     }
   } else {
     $errors[$keyPassword] = 'Veuillez renseigner ce/ces champs';

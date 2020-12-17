@@ -70,6 +70,4 @@ if(!empty($_SESSION['user'])){
   );
 }
 
-
-var_dump($errors);
 showJson($data);

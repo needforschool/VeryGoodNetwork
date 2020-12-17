@@ -186,3 +186,7 @@
 .input-area input {
   height: 30px;
 }
+
+.input-area span {
+  color: #ff6b6b;
+}
