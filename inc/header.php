@@ -31,4 +31,5 @@
                     </ul>
                 </div>
             </div>
+            <img src="asset/img/triangle.png" class="banner-img">
         </header>

@@ -11,16 +11,12 @@ include('inc/header.php');
 
 
 <section id="banner">
-        <!-- <div class="title-page">
-                <p>Home</p>
-        </div> -->
         <img src="asset/img/triangle.png" class="banner-img">
         <div class="wrap-banner">
                 <div class="banner-text">
                         <h1>Very <span class="red">Good </span>Network</h1>
                         <p>Analyse Web</p>
                 </div>
-
                 <div class="banner-btn">
                         <?php if (!isLogged()) : ?>
                                 <button type="button" data-custom-open="modal-signin" id="openModalSignin">Inscription</button>
@@ -32,8 +28,6 @@ include('inc/header.php');
                         <?php endif; ?>
                 </div>
         </div>
-        <img src="asset/img/triangle-blanc.png" class="banner-img-bottom">
-
 </section>
 
 
