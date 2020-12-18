@@ -61,6 +61,7 @@ include('inc/header.php');
     </section>
 
     <section id="client-area-logs">
+        <div class="box-log"></div>
     </section>
 
     <!-- <div class="footer-client"></div> -->
