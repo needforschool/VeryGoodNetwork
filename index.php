@@ -28,6 +28,7 @@ include('inc/header.php');
                         <?php endif; ?>
                 </div>
         </div>
+        <img src="asset/img/triangle-blanc.png" class="banner-img-bottom">
 </section>
 
 
@@ -84,13 +85,16 @@ include('inc/header.php');
                                         <p>Grâce à VGN, je peux analyser mon site web et comprendre les besoins de mes clients. Un Super Outil, je recommande.</p>
                                 </div>
                                 <div class="boximg4">
-                                        <img id="imgmiddle4" src="asset/img/alphawan.jpg" alt="Avatar">
+                                        <img class="clicktest" id="imgmiddle4" src="asset/img/alphawan.jpg" alt="Avatar">
                                 </div>
                                 <div class="text5">
                                         <p>Grâce à VGN, je peux analyser mon site web et comprendre les besoins de mes clients. Un Super Outil, je recommande.</p>
                                 </div>
                         </div>
                 </div>
-</section>
+        </section>
+
+        <!-- <img id="triangle4" src="asset/img/triangleinverse.png" alt="Avatar"> -->
+      
 <?php
 include('inc/footer.php');

@@ -94,8 +94,8 @@
             <img id="triangle4" src="asset/img/triangleinverse.png" alt="Avatar">
             <div class="footer-box">
                 <div class="social-links">
-                    <a href="#" ><i class="fa fa-facebook"></i></a>
-                    <a href="#" ><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
                     <a href="#" target="_blank"><i class="fa fa-github"></i></a>
 
                     <p class="copyright">2020 &copy; VeryGoodNetwork. All rights reserved.</p>
