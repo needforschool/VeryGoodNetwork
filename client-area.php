@@ -18,8 +18,8 @@ include('inc/header.php');
     </div>
     <div class="button-choose">
         <button id="btn-ca-main">Graph / Logs</button>
-        <!-- <button id="btn-ca-graph">Graph</button>
-        <button id="btn-ca-logs">Logs</button> -->
+        <button id="update">update-date</button>
+        <!-- <button id="btn-ca-logs">Logs</button> -->
     </div>
     <section id="client-area-main">
         <div class="title-main">
