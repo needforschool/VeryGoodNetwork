@@ -660,6 +660,10 @@ body::-webkit-scrollbar-thumb {
     transition-duration: 0.5s;
 }
 
+#client-area-graph .graph-test{
+    width: 40%;
+}
+
 #banner-client {
     height: 100vh;
 }
