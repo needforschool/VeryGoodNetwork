@@ -621,6 +621,7 @@ body::-webkit-scrollbar-thumb {
 
 #about-section6 button {
     border: 1px solid #a51d0d;
+    border-radius: 4px;
     background: #a51d0d;
     padding: 10px 20px;
     font-size: 35px;
