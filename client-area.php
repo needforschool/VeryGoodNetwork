@@ -16,6 +16,11 @@ include('inc/header.php');
     <div class="navBar">
         <div class="title">Votre Espace</div>
     </div>
+    <div class="button-choose">
+        <button id="btn-ca-main">Acceuil</button>
+        <button id="btn-ca-graph">Graph</button>
+        <button id="btn-ca-logs">Logs</button>
+    </div>
     <section id="client-area-main">
         <div class="title-main">
             <h1>Mode de consultation</h1>

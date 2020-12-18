@@ -641,6 +641,24 @@ body::-webkit-scrollbar-thumb {
     width: 50%;
 }
 /******** Client area ********/
+
+#client-area-graph .navbar-graph ul{
+    display: flex;
+    flex-direction: row;
+    border-bottom: #000 1px solid;
+}
+
+#client-area-graph .navbar-graph ul li{
+    font-size: 1.2em;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+#client-area-graph .navbar-graph ul li:hover{
+    background-color: rgba(255, 199, 199, 0.527);
+    transition-duration: 0.5s;
+}
+
+
 #banner-client {
     height: 100vh;
 }

@@ -430,8 +430,26 @@ $(document).ready(function () {
     //    parallax.style.backgroundPositionY = window.scrollY / 4 + "px";
     //});
 
+    //Client area
 
+        $("#btn-ca-main").on("click",function(){
+              $('#client-area-main').show();
+              $('#client-area-graph').hide();
+              $('#client-area-logs').hide();
+              console.log("main");
+        });
 
+        $("#btn-ca-graph").on("click",function(){
+            $('#client-area-main').hide();
+            $('#client-area-graph').show();
+            $('#client-area-logs').hide();
+        });
+
+        $("#btn-ca-logs").on("click",function(){
+            $('#client-area-main').hide();
+            $('#client-area-graph').hide();
+            $('#client-area-logs').show();
+        });
 
     //----------------------
     //FERMETURE JQUERY
