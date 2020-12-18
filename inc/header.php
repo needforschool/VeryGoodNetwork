@@ -15,6 +15,8 @@
         <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="asset/css/jquery.fatNav.css">
         <!--Style micromodal-->
+        <link rel="stylesheet" href="asset/flexslider/flexslider.css">
+        <!--Style micromodal-->
         <link rel="stylesheet" href="asset/css/micromodal-style.css">
         <!--Style Perso-->
         <link rel="stylesheet" href="asset/css/style.css">

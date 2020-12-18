@@ -82,6 +82,47 @@ include('inc/header.php');
                 </div>
         </div>
 </section>
+<!-- Place somewhere in the <body> of your page -->
+<section id="about-section4bis">
+        <div class="flexslider carousel">
+                   <ul class="slides">
+                        <li>
+                                <img src="https://picsum.photos/400/200" />
+                        </li>
+                        <li>
+                                <img src="https://picsum.photos/400/200" />
+                        </li>
+                        <li>
+                                <img src="https://picsum.photos/400/200" />
+                        </li>
+                        <li>
+                                <img src="https://picsum.photos/400/200" />
+                        </li>
+                        <li>
+                                <img src="https://picsum.photos/400/200" />
+                        </li>
+                        <li>
+                                <img src="https://picsum.photos/400/200" />
+                        </li>
+                        <li>
+                                <img src="https://picsum.photos/400/200" />
+                        </li>
+                        <li>
+                                <img src="https://picsum.photos/400/200" />
+                        </li>
+                        <li>
+                                <img src="https://picsum.photos/400/200" />
+                        </li>
+                        <li>
+                                <img src="https://picsum.photos/400/200" />
+                        </li>
+                        <li>
+                                <img src="https://picsum.photos/400/200" />
+                        </li>
+                          
+                </ul>
+        </div>
+</section>
 
 <section class="about-section" id="about-section5">
         <h1>Ils parlent de nous</h1>

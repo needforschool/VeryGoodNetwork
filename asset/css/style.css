@@ -632,6 +632,15 @@ body::-webkit-scrollbar-thumb {
     color: #fff;
 }
 
+#about-section4bis{
+    display: flex;
+    justify-content: center;
+}
+
+#about-section4bis .flexslider{
+    width: 50%;
+}
+
 /* FOOTER */
 
 #triangle4 {
