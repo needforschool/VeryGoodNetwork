@@ -112,6 +112,8 @@
             <script type="text/javascript" src="asset/js/jquery.fatNav.min.js"></script>
             <!--ScrollReveal.js-->
             <script src="https://unpkg.com/scrollreveal"></script>
+            <!--Chart.js-->
+            <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
             <!--Parallax.js-->
             <script src="asset/js/parallax.min.js"></script>
             <!--flexslider.js-->
