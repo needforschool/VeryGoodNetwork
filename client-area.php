@@ -27,19 +27,17 @@ include('inc/header.php');
         </div>
         <div class="select">
             <div class="graph">
-                <img src="asset/img/graphique.svg" alt="">
-                <div class="btn" id="btn-ca-graph">
-                    <a href="#" class="btn from-left">Graphiques</a>
+                <a href="#" id="btn-ca-graph"><img src="asset/img/graphique.svg" alt="" class="img-log"></a>
+                <div class="btn">
+                    <p>Graphiques</p>
                 </div>
-                <!-- <p>Graphiques</p> -->
             </div>
             <div class="split"></div>
             <div class="logs">
-                <img src="asset/img/logs.svg" alt="">
-                <div class="btn" id="btn-ca-logs">
-                    <a href="#" class="btn from-right">Logs</a>
+                <a href="#" id="btn-ca-logs"><img src="asset/img/logs.svg" alt="" class="img-log"></a>
+                <div class="btn">
+                    <p>Logs</p>
                 </div>
-                <!-- <p>Logs</p> -->
             </div>
         </div>
     </section>
@@ -47,17 +45,17 @@ include('inc/header.php');
     <section id="client-area-graph">
         <div>
         </div>
-       <div class="navbar-graph">
+        <div class="navbar-graph">
             <ul>
                 <li>Graphique Principal</li>
                 <li>Graphique Complémentaire 1</li>
                 <li>Graphique Complémentaire 2</li>
                 <li>Graphique Complémentaire 3</li>
             </ul>
-       </div>
-       <div class="graph graph-test">
-        <canvas id="myChart"></canvas> 
-       </div>
+        </div>
+        <div class="graph graph-test">
+            <canvas id="myChart"></canvas>
+        </div>
     </section>
 
     <section id="client-area-logs">
