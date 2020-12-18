@@ -119,3 +119,4 @@ function getAllFrom($table, $pdo)
   $data = $query->fetchAll();
   return $data;
 }
+
