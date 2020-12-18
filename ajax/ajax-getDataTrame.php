@@ -39,3 +39,5 @@ setlocale(LC_ALL,'fr_FR');
     }
 
     debug($trames);
+
+    showJson($trames);
