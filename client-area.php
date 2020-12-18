@@ -14,29 +14,45 @@ include('inc/header.php');
 
 <section id="banner-client">
     <div class="navBar">
-
         <div class="title">Votre Espace</div>
     </div>
-    <div class="title-main">
-        <h1>Mode de consultation</h1>
-    </div>
-    <div class="select">
-        <div class="graph">
-            <img src="asset/img/graphique.svg" alt="">
-            <div class="btn">
-                <a href="#" class="btn from-left">Graphiques</a>
-            </div>
-            <!-- <p>Graphiques</p> -->
+    <section id="client-area-main">
+        <div class="title-main">
+            <h1>Mode de consultation</h1>
         </div>
-        <div class="split"></div>
-        <div class="logs">
-            <img src="asset/img/logs.svg" alt="">
-            <div class="btn">
-                <a href="#" class="btn from-right">Logs</a>
+        <div class="select">
+            <div class="graph">
+                <img src="asset/img/graphique.svg" alt="">
+                <div class="btn">
+                    <a href="#" class="btn from-left">Graphiques</a>
+                </div>
+                <!-- <p>Graphiques</p> -->
             </div>
-            <!-- <p>Logs</p> -->
+            <div class="split"></div>
+            <div class="logs">
+                <img src="asset/img/logs.svg" alt="">
+                <div class="btn">
+                    <a href="#" class="btn from-right">Logs</a>
+                </div>
+                <!-- <p>Logs</p> -->
+            </div>
         </div>
-    </div>
+    </section>
+
+    <section id="client-area-graph">
+       <div class="navbar-graph">
+            <ul>
+                <li>Graphique 1</li>
+                <li>Graphique 2</li>
+                <li>Graphique 3</li>
+                <li>Graphique 4</li>
+            </ul>
+       </div>
+    </section>
+
+    <section id="client-area-logs">
+    </section>
+
     <!-- <div class="footer-client"></div> -->
 </section>
 
