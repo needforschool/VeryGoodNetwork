@@ -640,6 +640,13 @@ body::-webkit-scrollbar-thumb {
 #about-section4bis .flexslider{
     width: 50%;
 }
+/* Client Area */
+
+#client-area-graph .navbar-graph ul{
+    display: flex;
+    flex-direction: row;
+}
+
 
 /* FOOTER */
 
