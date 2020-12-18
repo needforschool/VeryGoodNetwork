@@ -110,3 +110,12 @@ function querySQLWhere($table, $optionWhere1, $optionwhere2, $pdo)
   $user = $query->fetch();
   return $user;
 }
+
+function getAllFrom($table, $pdo)
+{
+  $sql = "SELECT * FROM $table";
+  $query = $pdo->prepare($sql);
+  $query->execute();
+  $data = $query->fetchAll();
+  return $data;
+}

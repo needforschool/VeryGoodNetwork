@@ -58,8 +58,10 @@ foreach ($trames as $trame) {
 
 
     if(empty($verifData)){
+
+        //------------------
         //insertion en BDD
-        echo 'pouet';
+        //------------------
 
         $sql = "INSERT INTO vgn_trames (date,version,headerLength,service,identification,status,flags_code,ttl,protocol_name,protocol_flags_code,protocol_checksum_status,protocol_checksum_code,protocol_ports_from,protocol_ports_dest,protocol_version,protocol_contentType,protocol_type,protocol_code,headerChecksum,ip_from,ip_dest)
             VALUES (:date,:version,:headerLength,:service,:idbis,:status,:flagscode,:ttlbis,:protocolname,:protocolflagscode,:protocolchecksumstatus,:protocolchecksumcode,:protocolportsfrom,:protocolportsdest,:protocolversion,:protocolcontentType,:protocoltype,:protocolcode,:headerChecksum,:ipfrom,:ipdest)";
@@ -89,9 +91,5 @@ foreach ($trames as $trame) {
 
     } else {
         //Ne rien faire
-        echo 'nothing';
     }
 }
-
-//var_dump($_POST['trames']);
-debug($_POST['trames']);
