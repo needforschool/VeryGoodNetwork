@@ -632,17 +632,15 @@ body::-webkit-scrollbar-thumb {
     color: #fff;
 }
 
-/***** Client area *****/
-
-a {
-    text-decoration: none;
-    color: #000;
+#about-section4bis{
+    display: flex;
+    justify-content: center;
 }
 
-ul, li {
-    list-style: none;
+#about-section4bis .flexslider{
+    width: 50%;
 }
-
+/******** Client area ********/
 #banner-client {
     height: 100vh;
 }
@@ -652,15 +650,33 @@ ul, li {
     justify-content: flex-start;
     background-color: rgb(167, 12, 12);
     height: 9vh;
-    padding: 10px 20px;
+    padding-left: 20px;
+}
+
+.navBar nav {
+    width: 30%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.nav li a {
+    font-size: 30px;
+    color: #fff;
 }
 
 .title {
     font-size: 50px;
     color: #fff;
+    padding: 10px 10px;
+    font-family: 'PT Sans', sans-serif;
 }
 
 .title-main {
+    height: 9.7vh;
     height: 10vh;
     display: flex;
     justify-content: center;
@@ -670,6 +686,8 @@ ul, li {
 .title-main h1 {
     font-size: 50px;
     margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'PT Sans', sans-serif;
 }
 
 .select {
@@ -703,7 +721,7 @@ ul, li {
 }
 
 .graph .btn {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     text-align: center;
     font-size: 30px;
 }
@@ -714,7 +732,7 @@ ul, li {
 }
 
 .logs .btn {
-    margin-bottom: 70px;
+    margin-bottom: 60px;
     text-align: center;
     font-size: 30px;
 }
@@ -727,7 +745,8 @@ ul, li {
     font-size: 1.4rem;
 	color: #000;
 	letter-spacing: 1.1rem;
-	text-transform: uppercase;
+    text-transform: uppercase;
+    font-family: 'PT Sans', sans-serif;
 	transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);	
 	cursor: pointer;
     user-select: none;
@@ -791,7 +810,6 @@ ul, li {
     height: 100%;
     border-radius: 10px;
 }
-
 .from-right:before {
 	left: 0;
 	border: 1px solid #a51d0d;
@@ -807,26 +825,22 @@ ul, li {
 .from-right:hover:after {
 	width: 100%;
 }
-/* .footer-client {
-    margin-top: 17px;
-    background-color: rgb(167, 12, 12);
-    height: 9vh;
-} */
-
 /* FOOTER */
 
 #triangle4 {
     width: 100%;
     bottom: 0;
     position: relative;
-    top: 40px;
+    top: 1px;
+    left: 0;
+    right: 0;
 }
 
 .footer-box {
     width: 100%;
     position: absolute;
     line-height: 2;
-    margin-top: -80px;
+    margin-top: -130px;
 }
 
 .social-links {

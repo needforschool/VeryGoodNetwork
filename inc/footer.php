@@ -114,6 +114,8 @@
             <script src="https://unpkg.com/scrollreveal"></script>
             <!--Parallax.js-->
             <script src="asset/js/parallax.min.js"></script>
+            <!--flexslider.js-->
+            <script src="asset/flexslider/jquery.flexslider.js"></script>
             <!--Chart.js-->
             <!--MicroModal-->
             <script src="asset/js/micromodal.min.js"></script>
