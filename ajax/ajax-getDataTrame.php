@@ -39,7 +39,7 @@ setlocale(LC_ALL,'fr_FR');
         } else {
             $trames[$i]['status'] = 'TIMEOUT'; 
         }
-        $logTrame = $trames[$i]['date-log'] . ' - Source : '. $trames[$i]['ip-from-decrypt'] .' vers '. $trames[$i]['ip-dest-decrypt'] .' - requête '. $trames[$i]['protocol_name'] .' : ' . $trames[$i]['status'];
+        $logTrame = $trames[$i]['date-log'] . ' - Source : '. $trames[$i]['ip-from-decrypt'] .' vers '. $trames[$i]['ip-dest-decrypt'] .' - requête '. $trames[$i]['protocol_name'] .' - ' . $trames[$i]['status'];
         $trames[$i]['log'] = $logTrame;
 
         ++$i;
