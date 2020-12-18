@@ -96,7 +96,7 @@
                 <div class="social-links">
                     <a href="#"><i class="fa fa-facebook"></i></a>
                     <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#" target="_blank"><i class="fa fa-github"></i></a>
+                    <a href="https://github.com/ImJustLucas/VeryGoodNetwork" target="_blank"><i class="fa fa-github"></i></a>
 
                     <p class="copyright">2020 &copy; VeryGoodNetwork. All rights reserved.</p>
                 </div>
@@ -112,6 +112,8 @@
             <script type="text/javascript" src="asset/js/jquery.fatNav.min.js"></script>
             <!--ScrollReveal.js-->
             <script src="https://unpkg.com/scrollreveal"></script>
+            <!--Chart.js-->
+            <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
             <!--Parallax.js-->
             <script src="asset/js/parallax.min.js"></script>
             <!--flexslider.js-->

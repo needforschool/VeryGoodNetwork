@@ -73,18 +73,18 @@ $(document).ready(function () {
                 //console.log(form);
             },
 
-            success: function(response) {
+            success: function (response) {
                 $('#btn-submit-signin').fadeIn('200');
                 //console.log(response)
                 //console.log(response.errors)
-                if(response.success){
+                if (response.success) {
                     connexionSuccess();
-                } else if(!response.success){
-                    $.each(response.errors, function(index, value){
-                        $('span.error-'+ index +'-signin').css('color', '#ff6b6b')
-                        $('span.error-'+ index +'-signin').html(value)
+                } else if (!response.success) {
+                    $.each(response.errors, function (index, value) {
+                        $('span.error-' + index + '-signin').css('color', '#ff6b6b')
+                        $('span.error-' + index + '-signin').html(value)
                     })
-                    
+
                 }
             }
         })
@@ -96,8 +96,8 @@ $(document).ready(function () {
     //FORMULAIRE DE CONNEXION
     //-------------------------
 
-    $('#formLogin').on('submit', function(e){
-        e.preventDefault();        
+    $('#formLogin').on('submit', function (e) {
+        e.preventDefault();
         let formLogin = $('#formLogin');
         $.ajax({
             type: 'POST',
@@ -105,16 +105,16 @@ $(document).ready(function () {
             data: formLogin.serialize(),
             dataType: 'json',
 
-            beforeSend: function(){
+            beforeSend: function () {
                 $('#btn-submit-login').css('display', 'none');
             },
 
-            success: function(response){
+            success: function (response) {
                 $('#btn-submit-login').fadeIn('200');
                 //console.log(response)
-                if(response.success){
+                if (response.success) {
                     connexionSuccess();
-                } else if(!response.success){
+                } else if (!response.success) {
                     $('span.error-password-login').html('Email ou mot de passe incorrect');
                 }
             },
@@ -386,14 +386,14 @@ $(document).ready(function () {
     });
 
 
-    $(window).load(function() {
+    $(window).load(function () {
         $('.flexslider').flexslider({
-          animation: "slide",
-          animationLoop: false,
-          itemWidth: 210,
-          itemMargin: 5
+            animation: "slide",
+            animationLoop: false,
+            itemWidth: 210,
+            itemMargin: 5
         });
-      });
+    });
 
     //const parallax = document.querySelector('#about-picture2');
 
@@ -402,32 +402,62 @@ $(document).ready(function () {
     //    parallax.style.backgroundPositionY = window.scrollY / 4 + "px";
     //});
 
+    //----------------------
     //Client area
+    //----------------------
 
-        $("#btn-ca-main").on("click",function(){
-              $('#client-area-main').show();
-              $('#client-area-graph').hide();
-              $('#client-area-logs').hide();
-              console.log("main");
-        });
 
-        $("#btn-ca-graph").on("click",function(){
-            $('#client-area-main').hide();
-            $('#client-area-graph').show();
-            $('#client-area-logs').hide();
-        });
+    $("#btn-ca-main").on("click", function () {
+        $('#client-area-main').show();
+        $('#client-area-graph').hide();
+        $('#client-area-logs').hide();
+        console.log("main");
+    });
 
-        $("#btn-ca-logs").on("click",function(){
-            $('#client-area-main').hide();
-            $('#client-area-graph').hide();
-            $('#client-area-logs').show();
-        });
+    $(".btn-ca-main").on("click", function () {
+        $('#client-area-main').show();
+        $('#client-area-graph').hide();
+        $('#client-area-logs').hide();
+        console.log("main");
+    });
+
+    $("#btn-ca-graph").on("click", function () {
+        $('#client-area-main').hide();
+        $('#client-area-graph').show();
+        $('#client-area-logs').hide();
+    });
+
+    $("#btn-ca-logs").on("click", function () {
+        $('#client-area-main').hide();
+        $('#client-area-graph').hide();
+        $('#client-area-logs').show();
+    });
 
     //----------------------
     //FERMETURE JQUERY
     //----------------------
 })
 
+
+var ctx = document.getElementById('myChart').getContext('2d');
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'line',
+
+    // The data for our dataset
+    data: {
+        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        datasets: [{
+            label: 'My First dataset',
+            backgroundColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(255, 99, 132)',
+            data: [0, 10, 5, 2, 20, 30, 45]
+        }]
+    },
+
+    // Configuration options go here
+    options: {}
+});
 
 //----------------------
 //FONCTIONS JS
@@ -509,26 +539,25 @@ function checkConfirmPassword(idBis, id) {
 
 
 //Fonction pur mettre ajours la base de donnée des trames
-function connexionSuccess()
-{
+function connexionSuccess() {
     $.ajax({
         type: 'POST',
         url: 'https://floriandoyen.fr/resources/frames.php',
         data: '',
         dataType: 'json',
 
-        beforeSend: function(){
+        beforeSend: function () {
         },
 
-        success: function(response){
+        success: function (response) {
             //console.log(response)
             $.ajax({
                 type: 'POST',
                 url: 'ajax/ajax-updateTrame.php',
-                data: {trames:response},
+                data: { trames: response },
                 //dataType: 'json',
 
-                success: function(response2){
+                success: function (response2) {
                     //console.log(response2)
                 }
             })

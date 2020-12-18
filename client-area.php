@@ -17,9 +17,9 @@ include('inc/header.php');
         <div class="title">Votre Espace</div>
     </div>
     <div class="button-choose">
-        <button id="btn-ca-main">Acceuil</button>
-        <button id="btn-ca-graph">Graph</button>
-        <button id="btn-ca-logs">Logs</button>
+        <button id="btn-ca-main">Graph / Logs</button>
+        <!-- <button id="btn-ca-graph">Graph</button>
+        <button id="btn-ca-logs">Logs</button> -->
     </div>
     <section id="client-area-main">
         <div class="title-main">
@@ -28,7 +28,7 @@ include('inc/header.php');
         <div class="select">
             <div class="graph">
                 <img src="asset/img/graphique.svg" alt="">
-                <div class="btn">
+                <div class="btn" id="btn-ca-graph">
                     <a href="#" class="btn from-left">Graphiques</a>
                 </div>
                 <!-- <p>Graphiques</p> -->
@@ -36,7 +36,7 @@ include('inc/header.php');
             <div class="split"></div>
             <div class="logs">
                 <img src="asset/img/logs.svg" alt="">
-                <div class="btn">
+                <div class="btn" id="btn-ca-logs">
                     <a href="#" class="btn from-right">Logs</a>
                 </div>
                 <!-- <p>Logs</p> -->
@@ -45,17 +45,23 @@ include('inc/header.php');
     </section>
 
     <section id="client-area-graph">
+        <div>
+        </div>
        <div class="navbar-graph">
             <ul>
-                <li>Graphique 1</li>
-                <li>Graphique 2</li>
-                <li>Graphique 3</li>
-                <li>Graphique 4</li>
+                <li>Graphique Principal</li>
+                <li>Graphique Complémentaire 1</li>
+                <li>Graphique Complémentaire 2</li>
+                <li>Graphique Complémentaire 3</li>
             </ul>
+       </div>
+       <div>
+        <canvas id="myChart"></canvas> 
        </div>
     </section>
 
     <section id="client-area-logs">
+        <div class="box-log"></div>
     </section>
 
     <!-- <div class="footer-client"></div> -->
