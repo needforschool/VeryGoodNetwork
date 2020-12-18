@@ -45,13 +45,18 @@ include('inc/header.php');
     </section>
 
     <section id="client-area-graph">
+        <div>
+        </div>
        <div class="navbar-graph">
             <ul>
-                <li>Graphique 1</li>
-                <li>Graphique 2</li>
-                <li>Graphique 3</li>
-                <li>Graphique 4</li>
+                <li>Graphique Principal</li>
+                <li>Graphique Complémentaire 1</li>
+                <li>Graphique Complémentaire 2</li>
+                <li>Graphique Complémentaire 3</li>
             </ul>
+       </div>
+       <div>
+        <canvas id="myChart"></canvas> 
        </div>
     </section>
 
