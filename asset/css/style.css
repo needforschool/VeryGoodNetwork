@@ -764,20 +764,15 @@ body::-webkit-scrollbar-thumb {
 /* ~~~~~~~ INIT. BTN ~~~~~~~ */
 
 .btn {
-    position: relative;
-    padding: 1rem 1rem;
-    padding-left: 2rem;
     font-size: 1.4rem;
     color: #000;
     letter-spacing: 1.1rem;
     text-transform: uppercase;
     font-family: 'PT Sans', sans-serif;
-    transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
-    cursor: pointer;
-    user-select: none;
     border-radius: 10px;
+    border: 2px solid #a51d0d;
 }
-
+/*
 .btn:before, .btn:after {
     content: '';
     position: absolute;
@@ -798,10 +793,10 @@ body::-webkit-scrollbar-thumb {
     background: #a51d0d;
     transition-delay: .35s;
     border-radius: 10px;
-}
+} */
 
 /* From Left */
-
+/* 
 .from-left:before, .from-left:after {
     top: 0;
     width: 0;
@@ -823,10 +818,10 @@ body::-webkit-scrollbar-thumb {
 
 .from-left:hover:before, .from-left:hover:after {
     width: 100%;
-}
+} */
 
 /* From Right */
-
+/* 
 .from-right:before, .from-right:after {
     top: 0;
     width: 0;
@@ -847,8 +842,29 @@ body::-webkit-scrollbar-thumb {
 
 .from-right:hover:before, .from-right:hover:after {
     width: 100%;
-}
+} */
 
+.img-log:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    perspective: 1000px;
+  }
+  
+  @keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+    
+    30%, 50%, 70% {
+      transform: translate3d(-2px, 0, 0);
+    }
+    40%, 60% {
+      transform: translate3d(2px, 0, 0);
+  }
+}
 /*********** Log ********/
 
 #client-area-graph {
