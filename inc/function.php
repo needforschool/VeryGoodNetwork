@@ -120,3 +120,12 @@ function getAllFrom($table, $pdo)
   return $data;
 }
 
+
+function ConvertHexIPToBase10($ip) {
+  $vals = str_split($ip, 2);
+  $op = [];
+  for ($i = 0; $i < count($vals); $i++) {
+      $vals[$i] = intval($vals[$i], 16);
+  }
+  return join(".", $vals);
+}

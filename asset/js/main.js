@@ -131,7 +131,7 @@ $(document).ready(function () {
             type: 'post',
             url: 'ajax/ajax-getDataTrame.php',
             //data: ,
-            //dataType: 'json',
+            dataType: 'json',
 
             success: function(trames){
                 console.log(trames)

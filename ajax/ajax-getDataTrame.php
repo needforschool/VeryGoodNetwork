@@ -19,8 +19,8 @@ setlocale(LC_ALL,'fr_FR');
         $trames[$i]['status'] = $dataTrame['status'];
         $trames[$i]['ttl'] = $dataTrame['ttl'];
         $trames[$i]['protocol_name'] = $dataTrame['protocol_name'];
-        $trames[$i]['ip_from'] = $dataTrame['ip_from'];
-        $trames[$i]['ip_dest'] = $dataTrame['ip_dest'];
+        $trames[$i]['ip-from'] = $dataTrame['ip_from'];
+        $trames[$i]['ip-dest'] = $dataTrame['ip_dest'];
 
 
         //Décryptage des dates
@@ -29,15 +29,22 @@ setlocale(LC_ALL,'fr_FR');
         $trames[$i]['date-log'] = $dateLog;
         $trames[$i]['date-graph'] = $dateGraph;
 
-        //Création des logs
+        $trames[$i]['ip-from-decrypt'] = ConvertHexIPToBase10($trames[$i]['ip-from']);
+        $trames[$i]['ip-dest-decrypt'] = ConvertHexIPToBase10($trames[$i]['ip-dest']);
+        
 
-        $logTrame = $trames[$i]['date-log'] . ' - Source (X.X.X.X.) vers (X.X.X.X.) - requête '. $trames[$i]['protocol_name'] .' - OK';
+        //Création des logs
+        if(empty($trames[$i]['status'])){
+            $trames[$i]['status'] = 'OK';
+        } else {
+            $trames[$i]['status'] = 'TIMEOUT'; 
+        }
+        $logTrame = $trames[$i]['date-log'] . ' - Source : '. $trames[$i]['ip-from-decrypt'] .' vers '. $trames[$i]['ip-dest-decrypt'] .' - requête '. $trames[$i]['protocol_name'] .' : ' . $trames[$i]['status'];
         $trames[$i]['log'] = $logTrame;
-        //echo $dateLog;
-        //debug($trames);
+
         ++$i;
     }
 
-    debug($trames);
+    //debug($trames);
 
     showJson($trames);
