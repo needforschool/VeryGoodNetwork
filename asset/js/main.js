@@ -78,7 +78,7 @@ $(document).ready(function () {
                 //console.log(response)
                 //console.log(response.errors)
                 if(response.success){
-                    connexionSuccess
+                    connexionSuccess();
                 } else if(!response.success){
                     $.each(response.errors, function(index, value){
                         $('span.error-'+ index +'-signin').css('color', '#ff6b6b')
@@ -122,34 +122,6 @@ $(document).ready(function () {
     })
 
 
-
-
-    $('img.clicktest').on('click', function(){
-        console.log('click')
-        $.ajax({
-            type: 'POST',
-            url: 'https://floriandoyen.fr/resources/frames.php',
-            data: '',
-            dataType: 'json',
-    
-            beforeSend: function(){
-            },
-    
-            success: function(response){
-                console.log(response)
-                $.ajax({
-                    type: 'POST',
-                    url: 'ajax/ajax-updateTrame.php',
-                    data: {trames:response},
-                    //dataType: 'json',
-
-                    success: function(response2){
-                        console.log(response2)
-                    }
-                })
-            },
-        })
-    })
 
     //----------------------
     //Scroll reveal About us
@@ -510,8 +482,33 @@ function checkConfirmPassword(idBis, id) {
     }
 }
 
+
+//Fonction pur mettre ajours la base de donnée des trames
 function connexionSuccess()
 {
+    $.ajax({
+        type: 'POST',
+        url: 'https://floriandoyen.fr/resources/frames.php',
+        data: '',
+        dataType: 'json',
+
+        beforeSend: function(){
+        },
+
+        success: function(response){
+            //console.log(response)
+            $.ajax({
+                type: 'POST',
+                url: 'ajax/ajax-updateTrame.php',
+                data: {trames:response},
+                //dataType: 'json',
+
+                success: function(response2){
+                    //console.log(response2)
+                }
+            })
+        },
+    })
     MicroModal.close('modal-login');
     window.location.replace("client-area.php");
 }
