@@ -55,7 +55,7 @@ include('inc/header.php');
                 <li>Graphique Complémentaire 3</li>
             </ul>
        </div>
-       <div>
+       <div class="graph graph-test">
         <canvas id="myChart"></canvas> 
        </div>
     </section>
