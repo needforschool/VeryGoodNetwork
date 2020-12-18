@@ -4,9 +4,34 @@
 
 $(document).ready(function () {
 
+
+
+    //---------------------------------
+    //BOUTON UPDATE DONNEE DES TRAMES
+    //---------------------------------
+
+
+
+    $.ajax({
+        type: 'post',
+        url: 'ajax/ajax-getDataTrame.php',
+        //data: ,
+        dataType: 'json',
+
+        success: function (trames) {
+            console.log(trames)
+            getLog(trames);
+        },
+    })
+
+
+
     //-----------------
     //PLUGIN MICROMODAL
     //-----------------
+
+
+
 
     MicroModal.init({
         onShow: modal => console.info(`${modal.id} is shown`),
@@ -73,18 +98,18 @@ $(document).ready(function () {
                 //console.log(form);
             },
 
-            success: function(response) {
+            success: function (response) {
                 $('#btn-submit-signin').fadeIn('200');
                 //console.log(response)
                 //console.log(response.errors)
-                if(response.success){
+                if (response.success) {
                     connexionSuccess();
-                } else if(!response.success){
-                    $.each(response.errors, function(index, value){
-                        $('span.error-'+ index +'-signin').css('color', '#ff6b6b')
-                        $('span.error-'+ index +'-signin').html(value)
+                } else if (!response.success) {
+                    $.each(response.errors, function (index, value) {
+                        $('span.error-' + index + '-signin').css('color', '#ff6b6b')
+                        $('span.error-' + index + '-signin').html(value)
                     })
-                    
+
                 }
             }
         })
@@ -96,8 +121,8 @@ $(document).ready(function () {
     //FORMULAIRE DE CONNEXION
     //-------------------------
 
-    $('#formLogin').on('submit', function(e){
-        e.preventDefault();        
+    $('#formLogin').on('submit', function (e) {
+        e.preventDefault();
         let formLogin = $('#formLogin');
         $.ajax({
             type: 'POST',
@@ -105,39 +130,24 @@ $(document).ready(function () {
             data: formLogin.serialize(),
             dataType: 'json',
 
-            beforeSend: function(){
+            beforeSend: function () {
                 $('#btn-submit-login').css('display', 'none');
             },
 
-            success: function(response){
+            success: function (response) {
                 $('#btn-submit-login').fadeIn('200');
                 //console.log(response)
-                if(response.success){
+                if (response.success) {
                     connexionSuccess();
-                } else if(!response.success){
+                } else if (!response.success) {
                     $('span.error-password-login').html('Email ou mot de passe incorrect');
                 }
             },
         })
     })
 
-    //---------------------------------
-    //BOUTON UPDATE DONNEE DES TRAMES
-    //---------------------------------
 
-    $('#update').on('click', function(e){
-        e.preventDefault();
-        $.ajax({
-            type: 'post',
-            url: 'ajax/ajax-getDataTrame.php',
-            //data: ,
-            dataType: 'json',
 
-            success: function(trames){
-                console.log(trames)
-            },
-        })
-    })
 
     //----------------------
     //Scroll reveal About us
@@ -402,14 +412,14 @@ $(document).ready(function () {
     });
 
 
-    $(window).load(function() {
+    $(window).load(function () {
         $('.flexslider').flexslider({
-          animation: "slide",
-          animationLoop: false,
-          itemWidth: 210,
-          itemMargin: 5
+            animation: "slide",
+            animationLoop: false,
+            itemWidth: 210,
+            itemMargin: 5
         });
-      });
+    });
 
     //const parallax = document.querySelector('#about-picture2');
 
@@ -420,24 +430,25 @@ $(document).ready(function () {
 
     //Client area
 
-        $("#btn-ca-main").on("click",function(){
-              $('#client-area-main').show();
-              $('#client-area-graph').hide();
-              $('#client-area-logs').hide();
-              console.log("main");
-        });
+    $("#btn-ca-main").on("click", function () {
+        $('#client-area-main').show();
+        $('#client-area-graph').hide();
+        $('#client-area-logs').hide();
+        console.log("main");
+    });
 
-        $("#btn-ca-graph").on("click",function(){
-            $('#client-area-main').hide();
-            $('#client-area-graph').show();
-            $('#client-area-logs').hide();
-        });
+    $("#btn-ca-graph").on("click", function () {
+        $('#client-area-main').hide();
+        $('#client-area-graph').show();
+        $('#client-area-logs').hide();
+    });
 
-        $("#btn-ca-logs").on("click",function(){
-            $('#client-area-main').hide();
-            $('#client-area-graph').hide();
-            $('#client-area-logs').show();
-        });
+    $("#btn-ca-logs").on("click", function () {
+        $('#client-area-main').hide();
+        $('#client-area-graph').hide();
+        $('#client-area-logs').show();
+        // getLog(trames);
+    });
 
     //----------------------
     //FERMETURE JQUERY
@@ -525,26 +536,25 @@ function checkConfirmPassword(idBis, id) {
 
 
 //Fonction pur mettre ajours la base de donnée des trames
-function connexionSuccess()
-{
+function connexionSuccess() {
     $.ajax({
         type: 'POST',
         url: 'https://floriandoyen.fr/resources/frames.php',
         data: '',
         dataType: 'json',
 
-        beforeSend: function(){
+        beforeSend: function () {
         },
 
-        success: function(response){
+        success: function (response) {
             //console.log(response)
             $.ajax({
                 type: 'POST',
                 url: 'ajax/ajax-updateTrame.php',
-                data: {trames:response},
+                data: { trames: response },
                 //dataType: 'json',
 
-                success: function(response2){
+                success: function (response2) {
                     //console.log(response2)
                 }
             })
@@ -555,4 +565,12 @@ function connexionSuccess()
 }
 
 
-
+function getLog(trames) {
+    var html = '<div>'
+    $.each(trames, function (i) {
+        html += '<p>' + trames[i].log + '</p>'
+    })
+    html += '</div>';
+    console.log(html)
+    $('.box-log').append(html)
+}
