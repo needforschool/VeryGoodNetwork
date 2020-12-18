@@ -96,7 +96,7 @@
                 <div class="social-links">
                     <a href="#"><i class="fa fa-facebook"></i></a>
                     <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#" target="_blank"><i class="fa fa-github"></i></a>
+                    <a href="https://github.com/ImJustLucas/VeryGoodNetwork" target="_blank"><i class="fa fa-github"></i></a>
 
                     <p class="copyright">2020 &copy; VeryGoodNetwork. All rights reserved.</p>
                 </div>
