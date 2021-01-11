@@ -566,7 +566,7 @@ function connexionSuccess() {
 
 
 function getLog(trames) {
-    var html = '<div>'
+    var html = '<div class="logTrame">'
     $.each(trames, function (i) {
         html += '<p>' + trames[i].log + '</p>'
     })
