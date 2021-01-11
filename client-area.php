@@ -7,7 +7,9 @@ $title = 'Client area';
 if (!isLogged()) {
     header('location: 403.php');
 }
-
+?>
+<div class="wrapper">
+<?php    
 
 include('inc/header.php');
 ?>
