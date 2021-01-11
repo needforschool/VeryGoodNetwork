@@ -55,9 +55,17 @@ include('inc/header.php');
                 <li>Graphique Complémentaire 3</li>
             </ul>
         </div>
-        <div class="graph graph-test">
-            <canvas id="myChart"></canvas>
-        </div>
+        <section id="client-area-graph-section1">
+            <div id="graph-circulairetimeok">
+                <canvas id="graphcamenbert" width="400" height="400"></canvas>
+            </div>
+            <div id="graph-protocol">
+                <canvas id="graphbarprotocol" width="400" height="400"></canvas>
+            </div>
+            <div id="graph-ttl">
+                <canvas id="graphbarttl" width="400" height="400"></canvas>
+            </div>
+        </section>
     </section>
 
     <section id="client-area-logs">

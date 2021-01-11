@@ -20,6 +20,9 @@ $(document).ready(function () {
 
         success: function (trames) {
             console.log(trames)
+            isTimeoutOk(trames);
+            showBarProtocol(trames);
+            showBarTTLProtcol(trames);
             getLog(trames);
         },
     })
@@ -83,7 +86,7 @@ $(document).ready(function () {
     })
 
 
-    //Requete AJAX
+    //Requete AJAX pour l'inscription
     $('#formSignin').on('submit', function (e) {
         e.preventDefault();
         let form = $('#formSignin');
@@ -100,7 +103,7 @@ $(document).ready(function () {
 
             success: function (response) {
                 $('#btn-submit-signin').fadeIn('200');
-                //console.log(response)
+                console.log(response)
                 //console.log(response.errors)
                 if (response.success) {
                     connexionSuccess();
@@ -450,6 +453,8 @@ $(document).ready(function () {
         // getLog(trames);
     });
 
+
+
     //----------------------
     //FERMETURE JQUERY
     //----------------------
@@ -535,7 +540,7 @@ function checkConfirmPassword(idBis, id) {
 }
 
 
-//Fonction pur mettre ajours la base de donnée des trames
+//Fonction pour mettre ajours la base de donnée des trames
 function connexionSuccess() {
     $.ajax({
         type: 'POST',
@@ -565,6 +570,7 @@ function connexionSuccess() {
 }
 
 
+
 function getLog(trames) {
     var html = '<div class="logTrame">'
     $.each(trames, function (i) {
@@ -573,4 +579,169 @@ function getLog(trames) {
     html += '</div>';
     console.log(html)
     $('.box-log').append(html)
+}
+
+function isTimeoutOk(trames){
+
+    const countTrameStatusOK = trames.filter(trame => trame.status === "OK").length
+    const countTrameStatusTimeOut = trames.filter(trame => trame.status === "TIMEOUT").length
+
+
+    //Début graphique camenbert circulaire rotatif qui ressembleu au soleil r=pi Trame OK TIMEOUT
+
+    var ctxlined = document.getElementById('graphcamenbert').getContext('2d');
+
+    var myDoughnutChart = new Chart(ctxlined, {
+        type: 'doughnut',
+        data: {
+            labels: ['Ok', 'Timeout'],
+            datasets: [{
+                label: '',
+                data: [countTrameStatusOK,countTrameStatusTimeOut],
+                backgroundColor: [
+                    '#ABDA56',
+                    '#DA5669',
+                ],
+                borderWidth: 1,
+                pointRadius: 9,
+            }]
+        },
+        options: {
+            title: {
+                display: true,
+                text: 'Graphique',
+                fontSize: 32,
+                fontColor: '#000',
+
+            },
+            legend:{
+                position: 'bottom',
+            },
+            scales: {
+                display: false,
+                yAxes: [{
+                    ticks: {
+                        beginAtZero: true
+                    }
+                }],
+                xAxes: [{
+                    display:false,
+                    }],
+                yAxes: [{
+                    display:false,
+                }]
+            }
+        }
+    });
+}
+
+function showBarProtocol(trames){
+
+    const countUDP = trames.filter(trame => trame.protocol_name === "UDP").length;
+    const countTLS = trames.filter(trame => trame.protocol_name === "TLSv1.2").length;
+    const countICMP = trames.filter(trame => trame.protocol_name === "ICMP").length;
+    const countTCP = trames.filter(trame => trame.protocol_name === "TCP").length;
+    //const total = countUPD + countTLS + countICMP + countTCP;
+
+
+    var barlined = document.getElementById('graphbarprotocol').getContext('2d');
+
+    var myBarChart = new Chart(barlined, {
+        type: 'pie',
+        data: {
+            labels: ['UDP', 'TLS','ICMP','TCP'],
+            datasets: [{
+                label: '',
+                data: [countUDP,countTLS,countICMP,countTCP],
+                backgroundColor: [
+                    '#DA5669',
+                    '#ABDA56',
+                    '#56DAC7',
+                    '#8556DA'
+                ],
+                borderWidth: 1,
+                pointRadius: 9,
+            }]
+        },
+        options:{
+            legend:{
+                position: 'bottom',
+            },
+            title: {
+                display: true,
+                text: 'Graphique 2',
+                fontSize: 32,
+                fontColor: '#000',
+
+            },
+        }
+    });
+}
+
+function moyenne(trames, method){
+
+    const array = trames.filter(trame => {
+        if(trame.protocol_name === method){
+            return trame;
+        }})
+        .map((item) =>{
+            return item.ttl;
+        })
+
+        const somme = array.reduce(( currentTotal, item ) => {
+            return parseInt(item) + currentTotal;
+        },0)
+
+        const moyenne = somme / array.length
+        return moyenne
+}
+
+function showBarTTLProtcol(trames){
+
+    var udp = moyenne(trames, "UDP");
+    var tls = moyenne(trames, "TLSv1.2");
+    var icmp = moyenne(trames, "ICMP");
+    var tcp = moyenne(trames, "TCP");
+
+    var moy = (udp + tls + icmp + tcp) / 4;
+    
+
+    var ctx = document.getElementById('graphbarttl').getContext('2d');
+    var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['UDP', 'TLS', 'ICMP', 'TCP', 'Moyenne'],
+        datasets: [{
+            label: '# of Votes',
+            data: [udp, tls, icmp, tcp, moy, 115,135],
+            backgroundColor: [
+                '#DA5669',
+                '#ABDA56',
+                '#56DAC7',
+                '#8556DA',
+                '#7a8584'
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        title: {
+            display: true,
+            text: 'Graphique 3',
+            fontSize: 32,
+            fontColor: '#000',
+
+        },
+        legend:{
+            display: false,
+        },
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: false
+                }
+            }]
+        }
+    }
+});
 }
