@@ -65,6 +65,9 @@ include('inc/header.php');
             <div id="graph-ttl">
                 <canvas id="graphbarttl" width="400" height="400"></canvas>
             </div>
+            <div id="graph-day">
+                <canvas id="graphlineday" width="400" height="400"></canvas>
+            </div>
         </section>
     </section>
 
