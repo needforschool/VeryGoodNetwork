@@ -86,7 +86,7 @@ $(document).ready(function () {
     })
 
 
-    //Requete AJAX
+    //Requete AJAX pour l'inscription
     $('#formSignin').on('submit', function (e) {
         e.preventDefault();
         let form = $('#formSignin');
@@ -540,7 +540,7 @@ function checkConfirmPassword(idBis, id) {
 }
 
 
-//Fonction pur mettre ajours la base de donnée des trames
+//Fonction pour mettre ajours la base de donnée des trames
 function connexionSuccess() {
     $.ajax({
         type: 'POST',
@@ -572,7 +572,7 @@ function connexionSuccess() {
 
 
 function getLog(trames) {
-    var html = '<div>'
+    var html = '<div class="logTrame">'
     $.each(trames, function (i) {
         html += '<p>' + trames[i].log + '</p>'
     })

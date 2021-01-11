@@ -90,6 +90,11 @@
 
 
 
+        
+
+
+
+        <footer>
         <div class="triangleinverse">
             <img id="triangle4" src="asset/img/triangleinverse.png" alt="Avatar">
             <div class="footer-box">
@@ -104,8 +109,8 @@
         </div>
 
 
-
-        <footer>
+        </footer>
+        
             <!--JQuery-->
             <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
             <!-- fatNav -->
@@ -119,11 +124,14 @@
             <!--flexslider.js-->
             <script src="asset/flexslider/jquery.flexslider.js"></script>
             <!--Chart.js-->
+
+            <!-- TypeType  -->
+            <!-- <script src="http://iamdanfox.github.io/typetype/jquery.typetype.min.js" type="text/javascript"></script> -->
+            
             <!--MicroModal-->
             <script src="asset/js/micromodal.min.js"></script>
             <!--JS Perso-->
             <script src="asset/js/main.js" type="text/javascript"></script>
-        </footer>
         </body>
 
         </html>
