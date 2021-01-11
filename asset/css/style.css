@@ -1257,3 +1257,25 @@ h1 {
         padding-top: 30px;
     }
 }
+
+/*------Graphique-------*/
+
+#graph-circulairetimeok{
+    width: 500px;
+    height: 500px;
+}
+
+#graph-protocol{
+    width: 500px;
+    height: 500px;
+}
+
+#graph-ttl{
+    width: 500px;
+    height: 500px;
+}
+
+#client-area-graph-section1{
+    display: flex;
+    flex-direction: row;
+}
