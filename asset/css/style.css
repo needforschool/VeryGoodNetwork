@@ -661,7 +661,7 @@ body::-webkit-scrollbar-thumb {
     transition-duration: 0.5s;
 }
 
-#client-area-graph .graph-test{
+#client-area-graph .graph-test {
     width: 40%;
 }
 
@@ -772,6 +772,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 10px;
     border: 2px solid #a51d0d;
 }
+
 /*
 .btn:before, .btn:after {
     content: '';
@@ -796,6 +797,7 @@ body::-webkit-scrollbar-thumb {
 } */
 
 /* From Left */
+
 /* 
 .from-left:before, .from-left:after {
     top: 0;
@@ -821,6 +823,7 @@ body::-webkit-scrollbar-thumb {
 } */
 
 /* From Right */
+
 /* 
 .from-right:before, .from-right:after {
     top: 0;
@@ -845,26 +848,26 @@ body::-webkit-scrollbar-thumb {
 } */
 
 .img-log:hover {
-    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
     transform: translate3d(0, 0, 0);
     perspective: 1000px;
-  }
-  
-  @keyframes shake {
+}
+
+@keyframes shake {
     10%, 90% {
-      transform: translate3d(-1px, 0, 0);
+        transform: translate3d(-1px, 0, 0);
     }
     20%, 80% {
-      transform: translate3d(2px, 0, 0);
+        transform: translate3d(2px, 0, 0);
     }
-    
     30%, 50%, 70% {
-      transform: translate3d(-2px, 0, 0);
+        transform: translate3d(-2px, 0, 0);
     }
     40%, 60% {
-      transform: translate3d(2px, 0, 0);
-  }
+        transform: translate3d(2px, 0, 0);
+    }
 }
+
 /*********** Log ********/
 
 #client-area-graph {
@@ -878,14 +881,24 @@ body::-webkit-scrollbar-thumb {
 .box-log {
     width: 80%;
     height: 90vh;
-    background-color: #fff;
+    background-color: black;
+    /* background-image: radial-gradient(rgba(87, 87, 87, 0.75), black 120%); */
     margin: 0 auto;
     border: 1px solid black;
-    overflow: scroll;
-    overflow-x: hidden;
+    border-radius: 10px;
+    /* overflow: scroll;
+    overflow-x: hidden; */
+    color: white;
+    font-family: 'Inconsolata', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 2;
+    font-weight: bold;
+    font-size: 19px;
 }
 
-.box-log::-webkit-scrollbar {
+/* .box-log::-webkit-scrollbar {
     width: 4px;
 }
 
@@ -895,10 +908,10 @@ body::-webkit-scrollbar-thumb {
 
 .box-log::-webkit-scrollbar-thumb {
     border-radius: 30px;
-    background: transparent;
+    background: transparent; */
     /* opacity: 0; should do the thing either */
-    box-shadow: 0px 0px 0px 100000vh black;
-}
+    /* box-shadow: 0px 0px 0px 100000vh black;
+} */
 
 /* FOOTER */
 

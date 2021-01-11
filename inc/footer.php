@@ -119,6 +119,10 @@
             <!--flexslider.js-->
             <script src="asset/flexslider/jquery.flexslider.js"></script>
             <!--Chart.js-->
+
+            <!-- TypeType  -->
+            <!-- <script src="http://iamdanfox.github.io/typetype/jquery.typetype.min.js" type="text/javascript"></script> -->
+            
             <!--MicroModal-->
             <script src="asset/js/micromodal.min.js"></script>
             <!--JS Perso-->
