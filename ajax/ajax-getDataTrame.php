@@ -28,7 +28,9 @@ setlocale(LC_ALL,'fr_FR');
         $dateGraph = strftime("%A %d %B", $dataTrame['date']);
         $trames[$i]['date-log'] = $dateLog;
         $trames[$i]['date-graph'] = $dateGraph;
-
+        $trames[$i]['date-year-trame'] = date("Y", $dataTrame['date']);
+        $trames[$i]['date-month-trame'] = date("m", $dataTrame['date']);
+        $trames[$i]['date-day-trame'] = date("d", $dataTrame['date']);
         $trames[$i]['ip-from-decrypt'] = ConvertHexIPToBase10($trames[$i]['ip-from']);
         $trames[$i]['ip-dest-decrypt'] = ConvertHexIPToBase10($trames[$i]['ip-dest']);
         
