@@ -8,9 +8,7 @@ if (!isLogged()) {
     header('location: 403.php');
 }
 
-?>
-<div class="wrapper">
-<?php
+
 include('inc/header.php');
 ?>
 
@@ -63,11 +61,9 @@ include('inc/header.php');
     <section id="client-area-logs">
         <div class="box-log"></div>
     </section>
-   
 
     <!-- <div class="footer-client"></div> -->
 </section>
-</div>
 
 <?php
 include('inc/footer.php');

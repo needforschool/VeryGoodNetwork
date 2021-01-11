@@ -1311,7 +1311,7 @@ h1 {
 }
 
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 700px) {
     .select {
         display: flex;
         flex-direction: column;
