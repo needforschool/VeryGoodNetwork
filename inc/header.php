@@ -31,7 +31,9 @@
                 <ul>
                     <li><a href="index.php">Accueil</a></li>
                     <li><a href="about-us.php">A Propos</a></li>
-                    <li><a href="client-area.php">Votre Espace</a></li>
+                    <?php if (!isLogged()) {
+                        echo '<li><a href="client-area.php">Votre Espace</a></li>';
+                    } ?>
                 </ul>
             </div>
         </div>
