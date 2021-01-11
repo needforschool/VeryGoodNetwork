@@ -31,11 +31,10 @@
                 <ul>
                     <li><a href="index.php">Accueil</a></li>
                     <li><a href="about-us.php">A Propos</a></li>
-                    <?php if (!isLogged()) {
+                    <?php if (isLogged()) {
                         echo '<li><a href="client-area.php">Votre Espace</a></li>';
-                    }else {
                         echo '<li><a href="logout.php">Se deconnecter</a></li>';
-                    } ?>
+                    }?>
                 </ul>
             </div>
         </div>
