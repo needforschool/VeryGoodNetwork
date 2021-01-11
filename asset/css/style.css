@@ -79,6 +79,8 @@ table {
 
 html.sr {
     overflow-x: hidden;
+    /* overflow: visible; */
+
 }
 
 /* SCROLLBAR */
