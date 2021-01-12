@@ -742,7 +742,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .graph img {
-    width: 80%;
+    width: 100%;
     display: flex;
     align-items: center;
 }
@@ -755,7 +755,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .logs img {
-    width: 80%;
+    width: 100%;
     display: flex;
     align-items: center;
 }
@@ -1352,7 +1352,13 @@ h1 {
     flex-direction: row;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 770px) {
+    .title-main {
+        margin-bottom: 20%;
+    }
+    #btn-ca-logs {
+        margin-bottom: 10%;
+    }
     .select {
         display: flex;
         flex-direction: column;
@@ -1367,6 +1373,14 @@ h1 {
         display: flex;
         justify-content: center;
     }
-
     
+}
+
+@media screen and (max-width: 320px) {
+    .title-main {
+        margin-bottom: 20%;
+    }
+    .img-log {
+        margin-bottom: 50%;
+    }
 }
