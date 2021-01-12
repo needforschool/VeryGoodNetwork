@@ -68,6 +68,22 @@ include('inc/header.php');
             <div id="graph-day">
                 <canvas id="graphlineday" width="400" height="400"></canvas>
             </div>
+            <div id="graph-time">
+            <form action="">
+                    <label for="cars">Choose a car:</label>
+                <select id="cars" name="cars">
+                    <option value="years">Année</option>
+                    <option value="mois">Mois</option>
+                </select>
+                <div id="btngraphtime">ss</div>
+
+                <select name="" id="formyearstime">
+                <option value="years">Année</option>
+                </select>
+                <div id="btngraphtimeyears">Show graph</div>
+            </form>
+                <canvas id="graphlinetime" width="400" height="400"></canvas>
+            </div>
         </section>
     </section>
 

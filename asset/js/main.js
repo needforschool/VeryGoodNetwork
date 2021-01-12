@@ -24,6 +24,7 @@ $(document).ready(function () {
             showBarProtocol(trames);
             showBarTTLProtcol(trames);
             showLineTrendDay(trames);
+            showTimesGraph(trames);
             getLog(trames);
         },
     })
@@ -752,9 +753,7 @@ function showLineTrendDay(trames){
     var h = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
     for(let index = 0; index < trames.length; index++) {
-        console.log(trames[index]['date-trame-hour'])
         h[trames[index]['date-trame-hour']] = h[trames[index]['date-trame-hour']] + 1
-        console.log(h[trames[index]['date-trame-hour']])
     }
 
     var ctxmpo = document.getElementById('graphlineday').getContext('2d');
@@ -812,5 +811,116 @@ function showLineTrendDay(trames){
         }
     }
     });
+
+}
+
+function showTimesGraph(trames){
+    var mL = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    var data = [0,0,0,0,0,0,0,0,0,0,0,0];
+
+    let chooseyearstime = "null"
+
+    $('#btngraphtime').on('click',function(){
+
+        console.log("------------");
+        var chooseyearstime = $('#cars').children("option:selected").val();
+        console.log(chooseyearstime)
+
+        if(chooseyearstime === "null"){
+            console.log("start")
+        }else if(chooseyearstime === "mois"){
+            console.log("tu as choisit le mois bg")
+        }else if(chooseyearstime === "years"){
+
+            let datetoday = new Date();
+            datetoday = datetoday.getFullYear()
+            console.log(datetoday);
+            $('#formyearstime').empty();
+            for (let index = datetoday - 5 ; index < datetoday + 1; index++) {
+                $('#formyearstime').append('<option value="'+ index +'">'+ index +'</option>')
+            }
+
+
+            console.log("tu as choisit l année petit gros bg")
+        }else{
+            alert("Erreur");
+            window.location.replace("403.php");
+        }
+    })
+
+    $('#btngraphtimeyears').on('click',function(){
+        let yearschoosenumber = $('#formyearstime').children("option:selected").val()
+        databis = trames.map((trame) => [trame['date-trame-year'], trame['date-trame-month']]).filter((trame) => trame[0] === yearschoosenumber).map((trame) => trame[1])
+        data = [0,0,0,0,0,0,0,0,0,0,0,0];
+        for(let index = 0; index < databis.length; index++) {
+            data[[databis[index]] - 1] = data[[databis[index]] - 1] + 1;
+            // 0[[ 12 - 1]](0) = 0[[ 12 - 1]] (0) + 1 = 1
+        }
+        console.log(data)
+
+
+        showTimeGraphVisual(data, mL);
+    })
+
+
+function showTimeGraphVisual(data, mL){
+    var ctxmpot = document.getElementById('graphlinetime').getContext('2d');
+    var chart5 = new Chart(ctxmpot, {
+        type: 'bar',
+    data: {
+        labels: mL,
+        datasets: [{
+            label: '# of Votes',
+            data: data,
+            backgroundColor: [
+                'rgba(196, 229, 56,1.0)',
+                'rgba(196, 229, 56,1.0)',
+                'rgba(196, 229, 56,1.0)',
+                'rgba(196, 229, 56,1.0)',
+                'rgba(196, 229, 56,1.0)',
+                'rgba(196, 229, 56,1.0)',
+                'rgba(196, 229, 56,1.0)',
+                'rgba(196, 229, 56,1.0)',
+                'rgba(196, 229, 56,1.0)',
+                'rgba(196, 229, 56,1.0)',
+                'rgba(196, 229, 56,1.0)',
+                'rgba(196, 229, 56,1.0)',
+                'rgba(196, 229, 56,1.0)',
+                'rgba(196, 229, 56,1.0)',
+                'rgba(196, 229, 56,1.0)',
+                'rgba(196, 229, 56,1.0)',
+                'rgba(196, 229, 56,1.0)',
+                'rgba(196, 229, 56,1.0)',
+                'rgba(196, 229, 56,1.0)',
+                'rgba(196, 229, 56,1.0)',
+                'rgba(196, 229, 56,1.0)',
+
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        legend:{
+            display: false,
+        },
+        title: {
+            display: true,
+            text: 'Connexion',
+            fontSize: 32,
+            fontColor: '#000',
+
+        },
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+    });
+}
+
+
 
 }
