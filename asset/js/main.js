@@ -23,6 +23,7 @@ $(document).ready(function () {
             isTimeoutOk(trames);
             showBarProtocol(trames);
             showBarTTLProtcol(trames);
+            showLineTrendDay(trames);
             getLog(trames);
         },
     })
@@ -592,7 +593,7 @@ function isTimeoutOk(trames){
     var ctxlined = document.getElementById('graphcamenbert').getContext('2d');
 
     var myDoughnutChart = new Chart(ctxlined, {
-        type: 'doughnut',
+        type: 'pie',
         data: {
             labels: ['Ok', 'Timeout'],
             datasets: [{
@@ -647,7 +648,7 @@ function showBarProtocol(trames){
     var barlined = document.getElementById('graphbarprotocol').getContext('2d');
 
     var myBarChart = new Chart(barlined, {
-        type: 'pie',
+        type: 'doughnut',
         data: {
             labels: ['UDP', 'TLS','ICMP','TCP'],
             datasets: [{
@@ -713,7 +714,7 @@ function showBarTTLProtcol(trames){
         labels: ['UDP', 'TLS', 'ICMP', 'TCP', 'Moyenne'],
         datasets: [{
             label: '# of Votes',
-            data: [udp, tls, icmp, tcp, moy, 115,135],
+            data: [udp, tls, icmp, tcp, moy, 100],
             backgroundColor: [
                 '#DA5669',
                 '#ABDA56',
@@ -744,4 +745,72 @@ function showBarTTLProtcol(trames){
         }
     }
 });
+}
+
+function showLineTrendDay(trames){
+
+    var h = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+
+    for(let index = 0; index < trames.length; index++) {
+        console.log(trames[index]['date-trame-hour'])
+        h[trames[index]['date-trame-hour']] = h[trames[index]['date-trame-hour']] + 1
+        console.log(h[trames[index]['date-trame-hour']])
+    }
+
+    var ctxmpo = document.getElementById('graphlineday').getContext('2d');
+    var chart4 = new Chart(ctxmpo, {
+        type: 'bar',
+    data: {
+        labels: ['0h','1h', '2h','3h','4h','5h','6h','7h','8h','9h','10h','11h','12h','13h','14h','15h','16h','17h','18h','19h','20h','21h','22h','23h'],
+        datasets: [{
+            label: '# of Votes',
+            data: h,
+            backgroundColor: [
+                'rgba(196, 229, 56,1.0)',
+                'rgba(196, 229, 56,1.0)',
+                'rgba(196, 229, 56,1.0)',
+                'rgba(196, 229, 56,1.0)',
+                'rgba(196, 229, 56,1.0)',
+                'rgba(196, 229, 56,1.0)',
+                'rgba(196, 229, 56,1.0)',
+                'rgba(196, 229, 56,1.0)',
+                'rgba(196, 229, 56,1.0)',
+                'rgba(196, 229, 56,1.0)',
+                'rgba(196, 229, 56,1.0)',
+                'rgba(196, 229, 56,1.0)',
+                'rgba(196, 229, 56,1.0)',
+                'rgba(196, 229, 56,1.0)',
+                'rgba(196, 229, 56,1.0)',
+                'rgba(196, 229, 56,1.0)',
+                'rgba(196, 229, 56,1.0)',
+                'rgba(196, 229, 56,1.0)',
+                'rgba(196, 229, 56,1.0)',
+                'rgba(196, 229, 56,1.0)',
+                'rgba(196, 229, 56,1.0)',
+
+            ],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        legend:{
+            display: false,
+        },
+        title: {
+            display: true,
+            text: 'Tendance journaliere',
+            fontSize: 32,
+            fontColor: '#000',
+
+        },
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+    });
+
 }
