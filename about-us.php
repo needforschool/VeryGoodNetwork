@@ -88,39 +88,30 @@ include('inc/header.php');
         <div class="flexslider carousel">
                    <ul class="slides">
                         <li>
-                                <img src="https://picsum.photos/400/200" />
+                                <img src="asset/img/caroussel 1.jpg" />
                         </li>
                         <li>
-                                <img src="https://picsum.photos/400/200" />
+                                <img src="asset/img/caroussel 2.jpg" />
                         </li>
                         <li>
-                                <img src="https://picsum.photos/400/200" />
+                                <img src="asset/img/caroussel 3.jpg" />
                         </li>
                         <li>
-                                <img src="https://picsum.photos/400/200" />
+                                <img src="asset/img/caroussel 4.jpg" />
                         </li>
                         <li>
-                                <img src="https://picsum.photos/400/200" />
+                                <img src="asset/img/caroussel 5.jpg" />
                         </li>
                         <li>
-                                <img src="https://picsum.photos/400/200" />
+                                <img src="asset/img/caroussel 6.jpg" />
                         </li>
                         <li>
-                                <img src="https://picsum.photos/400/200" />
+                                <img src="asset/img/caroussel 7.jpg" />
                         </li>
                         <li>
-                                <img src="https://picsum.photos/400/200" />
+                                <img src="asset/img/caroussel 8.jpg" />
                         </li>
-                        <li>
-                                <img src="https://picsum.photos/400/200" />
-                        </li>
-                        <li>
-                                <img src="https://picsum.photos/400/200" />
-                        </li>
-                        <li>
-                                <img src="https://picsum.photos/400/200" />
-                        </li>
-                          
+                        
                 </ul>
         </div>
 </section>
