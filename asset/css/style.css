@@ -27,6 +27,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 body {
     line-height: 1;
+
 }
 
 ol, ul {
@@ -79,6 +80,8 @@ table {
 
 html.sr {
     overflow-x: hidden;
+    /* overflow: visible; */
+
 }
 
 /* SCROLLBAR */
@@ -667,9 +670,9 @@ body::-webkit-scrollbar-thumb {
 .button-choose {
     margin-top: 1%;
 }
- #banner-client {
+ /* #banner-client {
     height: 100vh;
-} 
+}  */
 
 .navBar {
     display: flex;
@@ -761,6 +764,20 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 60px;
     text-align: center;
     font-size: 1.8em;
+}
+
+/* html, body {
+  height: 100%;
+  margin: 0;
+} */
+.wrapper {
+  
+  min-height: 100%;
+  margin: 0 auto -50px;
+}
+.mainfooter,
+.push {
+  height: 50px;
 }
 
 /* ~~~~~~~ INIT. BTN ~~~~~~~ */
@@ -897,7 +914,7 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 30px;
     /* position: relative; */
 }
-
+/* Quentin tu saoule !!! */
 .logTrame {
     line-height: 1.5;
     font-weight: bold;
@@ -1337,7 +1354,7 @@ h1 {
     flex-direction: row;
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 700px) {
     .select {
         display: flex;
         flex-direction: column;
@@ -1352,6 +1369,6 @@ h1 {
         display: flex;
         justify-content: center;
     }
-    
+
     
 }
