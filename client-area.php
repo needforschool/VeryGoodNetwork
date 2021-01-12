@@ -16,12 +16,7 @@ include('inc/header.php');
 
 <section id="banner-client">
     <div class="navBar">
-        <div class="title">Votre Espace</div>
-    </div>
-    <div class="button-choose">
-        <i class="fas fa-arrow-alt-circle-left" id="btn-ca-main"></i>
-        
-        <!-- <button id="btn-ca-logs">Logs</button> -->
+        <div class="title"><span id="btn-ca-main"><i class="fas fa-arrow-left fa-sm"></i> | </span>Votre Espace</div>
     </div>
 </section>
 
