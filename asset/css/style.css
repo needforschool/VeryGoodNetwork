@@ -1285,6 +1285,9 @@ h1 {
         width: 95%;
         background-size: contain;
     }
+    .logTrame {
+        font-size: 1.2em;
+    }
 }
 
 @media screen and (max-width: 400px) {
