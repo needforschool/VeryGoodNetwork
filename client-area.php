@@ -19,12 +19,12 @@ include('inc/header.php');
         <div class="title">Votre Espace</div>
     </div>
     <div class="button-choose">
-        <button id="btn-ca-main">Graph / Logs</button>
-        <button id="update">update-date</button>
+        <i class="fas fa-arrow-alt-circle-left" id="btn-ca-main"></i>
+        
         <!-- <button id="btn-ca-logs">Logs</button> -->
     </div>
     <section id="client-area-main">
-        <div class="title-main">
+        <div class="title-main"> 
             <h1>Mode de consultation</h1>
         </div>
         <div class="select">

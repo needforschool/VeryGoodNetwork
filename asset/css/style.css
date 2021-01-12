@@ -702,7 +702,10 @@ body::-webkit-scrollbar-thumb {
     padding: 10px 10px;
     font-family: 'PT Sans', sans-serif;
 }
-
+#btn-ca-main{
+    margin-left: 2%;
+    font-size: 2.5em;
+}
 .title-main {
     display: flex;
     justify-content: center;
