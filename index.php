@@ -50,14 +50,14 @@ include('inc/header.php');
                                 <div class="text">
                                         <h1>Des outils ergonomiques</h1>
                                         <br>
-                                        <p>Nos outils d'analyse vous permet de <br> comprendre toutes les infos que vous<br> avez besoin pour votre site web. Avec <br>des modules facile à comprendre</p>
+                                        <p>Nos outils d'analyse vous permettent de <br> comprendre toutes les infos dont vous<br> avez besoin pour votre site web,<br>avec des modules faciles à comprendre</p>
                                 </div>
                         </div>
                         <div class="bigbox2">
                                 <div class="text2">
                                         <h1>MADE IN <span id="bleu">FR</span><span id="blanc">AN</span><span id="rouge">CE</span></h1>
                                         <br>
-                                        <p>Entreprise établie en france</p>
+                                        <p>Entreprise établie en France</p>
                                 </div>
 
                                 <img id="imgmiddle2" src="asset/img/imgmiddle2.svg" alt="Avatar">
@@ -70,7 +70,7 @@ include('inc/header.php');
                                 <div class="text3">
                                         <h1>Analyse en temps réel</h1>
                                         <br>
-                                        <p>Avec ses outils vous pouvez avoir <br> accès à des graphiques qui vous<br> permets de comprendre les besoins <br>de votre site</p>
+                                        <p>Avec ses outils, vous pouvez avoir <br> accès à des graphiques qui vous<br> permettent de comprendre les besoins <br>de votre site</p>
                                 </div>
                         </div>
 

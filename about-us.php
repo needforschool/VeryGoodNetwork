@@ -62,7 +62,7 @@ include('inc/header.php');
                 </div>
                 <div class="about-section3number4">
                         <p class="number">6</p>
-                        <p class="text">Module d'analyse</p>
+                        <p class="text">Modules d'analyse</p>
                 </div>
         </div>
 </section>
