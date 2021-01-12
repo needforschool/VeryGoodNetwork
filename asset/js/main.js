@@ -14,7 +14,7 @@ $(document).ready(function () {
     dataType: "json",
 
     success: function (trames) {
-      console.log(trames);
+      //console.log(trames);
       isTimeoutOk(trames);
       showBarProtocol(trames);
       showBarTTLProtcol(trames);
@@ -437,7 +437,6 @@ $(document).ready(function () {
     $("#client-area-graph").hide();
     $("#client-area-logs").hide();
     $("#btn-ca-main").hide();
-    console.log("main");
   });
 
   $("#btn-ca-graph").on("click", function () {
@@ -572,7 +571,6 @@ function getLog(trames) {
     html += "<p>" + trames[i].log + "</p>";
   });
   html += "</div>";
-  console.log(html);
   $(".box-log").append(html);
 }
 
