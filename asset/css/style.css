@@ -767,17 +767,14 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
 }
 
-.graph .btn {
+.btn {
     margin-bottom: 50px;
-    text-align: center;
-    font-size: 1.8em;
+    text-align: center; 
 }
 
 .logs .btn {
     margin-bottom: 60px;
-    text-align: center;
-    font-size: 1.8em;
-}
+} 
 
 /* html, body {
   height: 100%;
@@ -1223,24 +1220,6 @@ h1 {
     .logs {
         width: 95%;
     }
-}
-
-@media screen and (max-width: 770px) {
-    /* .title-main {
-        margin-bottom: 20%;
-    }
-    #btn-ca-logs {
-        margin-bottom: 10%;
-    } */
-    
-    /* .graph {
-        display: flex;
-        align-items: center;
-    } */
-    /* .graph img {
-        display: flex;
-        justify-content: center;
-    } */
 }
 
 @media screen and (max-width: 750px) {
