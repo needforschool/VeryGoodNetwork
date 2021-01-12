@@ -817,7 +817,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #btn-ca-main:hover {
-  transition: 0.5s;
+  cursor: pointer;
 }
 
 .title-main {
@@ -838,6 +838,10 @@ body::-webkit-scrollbar-thumb {
   justify-content: space-around;
   margin-top: 50px;
 }
+
+.select p {
+    font-size: 1.6em;
+  }
 
 /* .split {
     width: 5px;
@@ -1009,13 +1013,11 @@ body::-webkit-scrollbar-thumb {
   display: none;
 }
 
+
 .box-log {
-  width: 85%;
-  /* height: 90vh; */
+  width: auto;
+  height: 350px;
   background-color: black;
-  /* background-image: radial-gradient(rgba(87, 87, 87, 0.75), black 120%); */
-  margin: 0 auto;
-  /* border: 1px solid black; */
   border-radius: 3px;
   overflow: scroll;
   overflow-x: hidden;
@@ -1024,9 +1026,7 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   justify-content: center;
   padding: 20px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  /* position: relative; */
+  margin-top: 100px;
 }
 
 /* Quentin tu saoule !!! */
@@ -1134,23 +1134,11 @@ body::-webkit-scrollbar-thumb {
 
 /* RESPONSIVE */
 
-/* body {
-    font-size: 100%;
-}
-*/
-
-/* p {
-    font-size: 1em;
-}  */
-
 h1 {
   font-size: 1.5em;
 }
 
 @media screen and (max-width: 64em) {
-  /* body {
-        font-size: 80%;
-    } */
   .wrap-banner {
     font-size: 70%;
   }
@@ -1172,9 +1160,6 @@ h1 {
   .wrap-banner {
     font-size: 85%;
   }
-  /* .banner-btn {
-        font-size: 1.4em;
-    } */
   .bigbox4 {
     font-size: 1.4em;
   }
@@ -1185,12 +1170,6 @@ h1 {
     width: 60%;
   }
 }
-
-/* @media (min-width: 800px) and (max-width: 1040px) {
-    .logTrame {
-        font-size: 1.1em;
-    }
-} */
 
 @media screen and (max-width: 1041px) {
   .logTrame {
@@ -1221,8 +1200,7 @@ h1 {
 
 @media screen and (max-width: 920px) {
   .logTrame {
-    line-height: 1.2;
-    font-size: 1.2em;
+    font-size: 1.4em;
   }
 }
 
@@ -1255,12 +1233,6 @@ h1 {
   }
   #about-section4 .stick {
     display: none;
-  }
-}
-
-@media screen and (max-width: 824px) {
-  .logTrame {
-    line-height: 1;
   }
 }
 
@@ -1456,7 +1428,7 @@ h1 {
     background-size: contain;
   }
   .logTrame {
-    font-size: 1.6em;
+    font-size: 1.9em;
   }
 }
 
@@ -1476,6 +1448,11 @@ h1 {
   }
 }
 
+@media screen and (max-width: 355px) {
+  .select p {
+    font-size: 1.1em;
+  }
+}
 @media screen and (max-width: 350px) {
   .banner-text {
     margin-top: -100px;
@@ -1536,14 +1513,12 @@ h1 {
 }
 
 @media screen and (max-width: 320px) {
-    .title-main {
-        margin-bottom: 20%;
-    }
-    .img-log {
-        margin-bottom: 50%;
-    } 
+  .title-main {
+    margin-bottom: 20%;
+  }
+  .img-log {
+    margin-bottom: 50%;
+  }
 }
-
-
 
 /* hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh */

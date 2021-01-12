@@ -2,7 +2,7 @@
 session_start();
 include('inc/pdo.php');
 include('inc/function.php');
-$title = 'Client area';
+$title = 'Espace Client';
 
 if (!isLogged()) {
     header('location: 403.php');
@@ -16,7 +16,7 @@ include('inc/header.php');
 
 <section id="banner-client">
     <div class="navBar">
-        <div class="title"><span id="btn-ca-main"><i class="fas fa-arrow-left fa-sm"></i> | </span>Votre Espace</div>
+        <div class="title"><span id="btn-ca-main"><i class="fas fa-arrow-left fa-sm arrow"></i> | </span>Votre Espace</div>
     </div>
 </section>
 
