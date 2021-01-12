@@ -45,30 +45,43 @@ include('inc/header.php');
     </section>
 
     <section id="client-area-graph">
-        <div>
-        </div>
         <div class="navbar-graph">
             <ul>
-                <li>Graphique Principal</li>
-                <li>Graphique Complémentaire 1</li>
-                <li>Graphique Complémentaire 2</li>
-                <li>Graphique Complémentaire 3</li>
+                <li class="tabButton active" id="buttonOnglet-1">Onglet 1</li>
+                <li class="tabButton" id="buttonOnglet-2">Onglet 2</li>
+                <li class="tabButton" id="buttonOnglet-3">Onglet 3</li>
+                <li class="tabButton" id="buttonOnglet-4">Onglet 4</li>
             </ul>
         </div>
-        <section id="client-area-graph-section1">
-            <div id="graph-circulairetimeok">
-                <canvas id="graphcamenbert" width="400" height="400"></canvas>
-            </div>
-            <div id="graph-protocol">
-                <canvas id="graphbarprotocol" width="400" height="400"></canvas>
-            </div>
-            <div id="graph-ttl">
-                <canvas id="graphbarttl" width="400" height="400"></canvas>
-            </div>
-            <div id="graph-day">
-                <canvas id="graphlineday" width="400" height="400"></canvas>
-            </div>
-        </section>
+        <div id="tabs">
+            <section id="client-area-graph-onglet-1">
+                <div id="graph-circulairetimeok">
+                    <canvas id="graphcamenbert" width="400" height="400"></canvas>
+                </div>
+                <div id="graph-protocol">
+                    <canvas id="graphbarprotocol" width="400" height="400"></canvas>
+                </div>
+                <div id="graph-ttl">
+                    <canvas id="graphbarttl" width="400" height="400"></canvas>
+                </div>
+                <div id="graph-day">
+                    <canvas id="graphlineday" width="400" height="400"></canvas>
+                </div>
+            </section>
+
+            <section id="client-area-graph-onglet-2" class=" hidden-onglet">
+                <p>Onglet 2</p>
+            </section>
+
+            <section id="client-area-graph-onglet-3" class=" hidden-onglet">
+                <p>Onglet 3</p>
+            </section>
+
+            <section id="client-area-graph-onglet-4" class=" hidden-onglet">
+                <p>Onglet 4</p>
+            </section>
+        </div>
+
     </section>
 
     <section id="client-area-logs">

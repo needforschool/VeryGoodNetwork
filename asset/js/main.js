@@ -7,7 +7,7 @@ $(document).ready(function () {
 
 
     //---------------------------------
-    //BOUTON UPDATE DONNEE DES TRAMES
+    //UPDATE DONNEE DES TRAMES
     //---------------------------------
 
 
@@ -26,6 +26,29 @@ $(document).ready(function () {
             showLineTrendDay(trames);
             getLog(trames);
         },
+    })
+
+
+    //-----------------
+    //TAB Button 
+    //-----------------
+
+    $('.tabButton').on('click', (button) => {
+        const tabButtonId = button.target.id.split('-')
+        const tabIdButton = $('section#client-area-graph-onglet-' + tabButtonId[1])
+        const tabs = tabIdButton.parent()
+        const countIdTabs = tabs.children().length
+        
+        for (let i = 1; i <= countIdTabs; i++) {
+            if(i == tabButtonId[1]) {
+                $('section#client-area-graph-onglet-' + i).fadeIn()
+                $('#buttonOnglet-' + i).addClass('active')
+            } else {
+                $('section#client-area-graph-onglet-' + i).fadeOut()
+                $('#buttonOnglet-' + i).removeClass('active')
+            }
+            
+        }
     })
 
 

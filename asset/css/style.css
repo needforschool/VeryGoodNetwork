@@ -657,11 +657,17 @@ body::-webkit-scrollbar-thumb {
     font-size: 1.2em;
     padding: 10px 20px;
     cursor: pointer;
+    border-radius: 5px 5px 0 0;
 }
 
 #client-area-graph .navbar-graph ul li:hover {
     background-color: rgba(255, 199, 199, 0.527);
     transition-duration: 0.5s;
+}
+
+#client-area-graph .navbar-graph ul li.active{
+    background-color: rgba(255, 199, 199, 0.527);
+
 }
 
 #client-area-graph .graph-test {
@@ -670,6 +676,12 @@ body::-webkit-scrollbar-thumb {
 .button-choose {
     margin-top: 1%;
 }
+
+#client-area-graph section.hidden-onglet {
+    display: none;
+}
+
+
  /* #banner-client {
     height: 100vh;
 }  */
@@ -987,6 +999,33 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
     color: #fff;
     font-family: 'PT Sans', sans-serif;
+}
+
+/*------Graphique-------*/
+
+#graph-circulairetimeok{
+    width: 500px;
+    height: 500px;
+}
+
+#graph-protocol{
+    width: 500px;
+    height: 500px;
+}
+
+#graph-ttl{
+    width: 500px;
+    height: 500px;
+}
+
+#graph-day{
+    width: 500px;
+    height: 500px;
+}
+
+#client-area-graph-onglet-1{
+    display: flex;
+    flex-direction: row;
 }
 
 /* RESPONSIVE */
@@ -1325,33 +1364,6 @@ h1 {
     .social-links p {
         padding-top: 30px;
     }
-}
-
-/*------Graphique-------*/
-
-#graph-circulairetimeok{
-    width: 500px;
-    height: 500px;
-}
-
-#graph-protocol{
-    width: 500px;
-    height: 500px;
-}
-
-#graph-ttl{
-    width: 500px;
-    height: 500px;
-}
-
-#graph-day{
-    width: 500px;
-    height: 500px;
-}
-
-#client-area-graph-section1{
-    display: flex;
-    flex-direction: row;
 }
 
 @media screen and (max-width: 700px) {
