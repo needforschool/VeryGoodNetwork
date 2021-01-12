@@ -817,7 +817,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #btn-ca-main:hover {
-  transition: 0.5s;
+  cursor: pointer;
 }
 
 .title-main {
@@ -1513,14 +1513,12 @@ h1 {
 }
 
 @media screen and (max-width: 320px) {
-    .title-main {
-        margin-bottom: 20%;
-    }
-    .img-log {
-        margin-bottom: 50%;
-    } 
+  .title-main {
+    margin-bottom: 20%;
+  }
+  .img-log {
+    margin-bottom: 50%;
+  }
 }
-
-
 
 /* hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh */

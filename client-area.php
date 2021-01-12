@@ -16,7 +16,7 @@ include('inc/header.php');
 
 <section id="banner-client">
     <div class="navBar">
-        <div class="title"><span id="btn-ca-main"><i class="fas fa-arrow-left fa-sm"></i> | </span>Votre Espace</div>
+        <div class="title"><span id="btn-ca-main"><i class="fas fa-arrow-left fa-sm arrow"></i> | </span>Votre Espace</div>
     </div>
 </section>
 
