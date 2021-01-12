@@ -1077,7 +1077,7 @@ h1 {
 @media screen and (max-width: 920px) {
     .logTrame {
         line-height: 1.2;
-        font-size: 1em;
+        font-size: 1.2em;
     }
 }
 
@@ -1116,11 +1116,6 @@ h1 {
     }
 }
 
-/* @media screen and (max-width: 862px) {
-    .logTrame {
-        line-height: 1.2;
-    }
-} */
 @media screen and (max-width: 824px) {
     .logTrame {
         line-height: 1;
@@ -1286,7 +1281,7 @@ h1 {
         background-size: contain;
     }
     .logTrame {
-        font-size: 1.2em;
+        font-size: 1.6em;
     }
 }
 
