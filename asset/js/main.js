@@ -461,7 +461,6 @@ $(document).ready(function () {
         $('#client-area-main').show();
         $('#client-area-graph').hide();
         $('#client-area-logs').hide();
-        $('#btn-ca-main').hide();
         console.log("main");
     });
 
@@ -469,14 +468,12 @@ $(document).ready(function () {
         $('#client-area-main').hide();
         $('#client-area-graph').show();
         $('#client-area-logs').hide();
-        $('#btn-ca-main').show();
     });
 
     $("#btn-ca-logs").on("click", function () {
         $('#client-area-main').hide();
         $('#client-area-graph').hide();
         $('#client-area-logs').show();
-        $('#btn-ca-main').show();
         // getLog(trames);
     });
 
