@@ -27,7 +27,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 body {
     line-height: 1;
-
 }
 
 ol, ul {
@@ -81,7 +80,6 @@ table {
 html.sr {
     overflow-x: hidden;
     /* overflow: visible; */
-
 }
 
 /* SCROLLBAR */
@@ -673,16 +671,21 @@ body::-webkit-scrollbar-thumb {
 #client-area-graph .graph-test {
     width: 40%;
 }
+
 .button-choose {
     margin-top: 1%;
 }
 
+<<<<<<< HEAD
 #client-area-graph section.hidden-onglet {
     display: none;
 }
 
 
  /* #banner-client {
+=======
+/* #banner-client {
+>>>>>>> 718e9f8a1ed8bcdce2d9f105a6d16c9f81a88a7b
     height: 100vh;
 }  */
 
@@ -715,6 +718,16 @@ body::-webkit-scrollbar-thumb {
     font-family: 'PT Sans', sans-serif;
 }
 
+#btn-ca-main {
+    margin-left: 2%;
+    font-size: 2.5em;
+    display: none;
+}
+
+#btn-ca-main:hover {
+    transition: .5s;
+}
+
 .title-main {
     display: flex;
     justify-content: center;
@@ -728,9 +741,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .select {
-    margin-top: 2%;
+    /* margin-top: 2%; */
+    height: 80%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .split {
@@ -738,27 +753,27 @@ body::-webkit-scrollbar-thumb {
     background-color: #000;
     border-radius: 4px;
     margin-top: 50px;
+    height: auto;
 }
 
 .graph {
-    width: 35%;
+    width: 45%;
     display: flex;
     flex-direction: column-reverse;
-   
 }
 
 .logs {
-    width: 35%;
+    width: 45%;
     display: flex;
     flex-direction: column-reverse;
 }
 
-.graph img {
-    width: 80%;
-    display: flex;
-    align-items: center;
-}
+.select img {
+    width: 100%;
+    /* display: flex;
+    align-items: center; */
 
+}
 
 .graph .btn {
     margin-bottom: 50px;
@@ -766,11 +781,11 @@ body::-webkit-scrollbar-thumb {
     font-size: 1.8em;
 }
 
-.logs img {
-    width: 80%;
+/* .logs img {
+    width: 100%;
     display: flex;
     align-items: center;
-}
+} */
 
 .logs .btn {
     margin-bottom: 60px;
@@ -782,14 +797,14 @@ body::-webkit-scrollbar-thumb {
   height: 100%;
   margin: 0;
 } */
+
 .wrapper {
-  
-  min-height: 100%;
-  margin: 0 auto -50px;
+    min-height: 100%;
+    margin: 0 auto -50px;
 }
-.mainfooter,
-.push {
-  height: 50px;
+
+.mainfooter, .push {
+    height: 50px;
 }
 
 /* ~~~~~~~ INIT. BTN ~~~~~~~ */
@@ -926,7 +941,9 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 30px;
     /* position: relative; */
 }
+
 /* Quentin tu saoule !!! */
+
 .logTrame {
     line-height: 1.5;
     font-weight: bold;
@@ -1081,11 +1098,13 @@ h1 {
         width: 60%;
     }
 }
+
 /* @media (min-width: 800px) and (max-width: 1040px) {
     .logTrame {
         font-size: 1.1em;
     }
 } */
+
 @media screen and (max-width: 1041px) {
     .logTrame {
         font-size: 1.1em;
@@ -1116,7 +1135,7 @@ h1 {
 @media screen and (max-width: 920px) {
     .logTrame {
         line-height: 1.2;
-        font-size: 1em;
+        font-size: 1.2em;
     }
 }
 
@@ -1155,11 +1174,6 @@ h1 {
     }
 }
 
-/* @media screen and (max-width: 862px) {
-    .logTrame {
-        line-height: 1.2;
-    }
-} */
 @media screen and (max-width: 824px) {
     .logTrame {
         line-height: 1;
@@ -1324,6 +1338,9 @@ h1 {
         width: 95%;
         background-size: contain;
     }
+    .logTrame {
+        font-size: 1.6em;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -1366,7 +1383,44 @@ h1 {
     }
 }
 
+<<<<<<< HEAD
 @media screen and (max-width: 700px) {
+=======
+/*------Graphique-------*/
+
+#graph-circulairetimeok {
+    width: 500px;
+    height: 500px;
+}
+
+#graph-protocol {
+    width: 500px;
+    height: 500px;
+}
+
+#graph-ttl {
+    width: 500px;
+    height: 500px;
+}
+
+#graph-day {
+    width: 500px;
+    height: 500px;
+}
+
+#client-area-graph-section1 {
+    display: flex;
+    flex-direction: row;
+}
+
+@media screen and (max-width: 770px) {
+    .title-main {
+        margin-bottom: 20%;
+    }
+    #btn-ca-logs {
+        margin-bottom: 10%;
+    }
+>>>>>>> 718e9f8a1ed8bcdce2d9f105a6d16c9f81a88a7b
     .select {
         display: flex;
         flex-direction: column;
@@ -1381,6 +1435,13 @@ h1 {
         display: flex;
         justify-content: center;
     }
+}
 
-    
+@media screen and (max-width: 320px) {
+    .title-main {
+        margin-bottom: 20%;
+    }
+    .img-log {
+        margin-bottom: 50%;
+    }
 }
