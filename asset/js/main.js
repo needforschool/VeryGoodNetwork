@@ -7,7 +7,7 @@ $(document).ready(function () {
 
 
     //---------------------------------
-    //BOUTON UPDATE DONNEE DES TRAMES
+    //UPDATE DONNEE DES TRAMES
     //---------------------------------
 
 
@@ -27,6 +27,29 @@ $(document).ready(function () {
             showTimesGraph(trames);
             getLog(trames);
         },
+    })
+
+
+    //-----------------
+    //TAB Button 
+    //-----------------
+
+    $('.tabButton').on('click', (button) => {
+        const tabButtonId = button.target.id.split('-')
+        const tabIdButton = $('section#client-area-graph-onglet-' + tabButtonId[1])
+        const tabs = tabIdButton.parent()
+        const countIdTabs = tabs.children().length
+        
+        for (let i = 1; i <= countIdTabs; i++) {
+            if(i == tabButtonId[1]) {
+                $('section#client-area-graph-onglet-' + i).fadeIn()
+                $('#buttonOnglet-' + i).addClass('active')
+            } else {
+                $('section#client-area-graph-onglet-' + i).fadeOut()
+                $('#buttonOnglet-' + i).removeClass('active')
+            }
+            
+        }
     })
 
 
@@ -439,6 +462,7 @@ $(document).ready(function () {
         $('#client-area-main').show();
         $('#client-area-graph').hide();
         $('#client-area-logs').hide();
+        $('#btn-ca-main').hide();
         console.log("main");
     });
 
@@ -446,12 +470,14 @@ $(document).ready(function () {
         $('#client-area-main').hide();
         $('#client-area-graph').show();
         $('#client-area-logs').hide();
+        $('#btn-ca-main').show();
     });
 
     $("#btn-ca-logs").on("click", function () {
         $('#client-area-main').hide();
         $('#client-area-graph').hide();
         $('#client-area-logs').show();
+        $('#btn-ca-main').show();
         // getLog(trames);
     });
 

@@ -27,7 +27,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 body {
     line-height: 1;
-
 }
 
 ol, ul {
@@ -81,7 +80,6 @@ table {
 html.sr {
     overflow-x: hidden;
     /* overflow: visible; */
-
 }
 
 /* SCROLLBAR */
@@ -657,6 +655,7 @@ body::-webkit-scrollbar-thumb {
     font-size: 1.2em;
     padding: 10px 20px;
     cursor: pointer;
+    border-radius: 5px 5px 0 0;
 }
 
 #client-area-graph .navbar-graph ul li:hover {
@@ -664,12 +663,24 @@ body::-webkit-scrollbar-thumb {
     transition-duration: 0.5s;
 }
 
+#client-area-graph .navbar-graph ul li.active{
+    background-color: rgba(255, 199, 199, 0.527);
+
+}
+
 #client-area-graph .graph-test {
     width: 40%;
 }
+
 .button-choose {
     margin-top: 1%;
 }
+
+#client-area-graph section.hidden-onglet {
+    display: none;
+}
+
+
  /* #banner-client {
     height: 100vh;
 }  */
@@ -703,61 +714,63 @@ body::-webkit-scrollbar-thumb {
     font-family: 'PT Sans', sans-serif;
 }
 
+#btn-ca-main {
+    margin-left: 2%;
+    font-size: 2.5em;
+    display: none;
+}
+
+#btn-ca-main:hover {
+    transition: .5s;
+}
+
 .title-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
 }
 
 .title-main h1 {
     font-size: 2.5em;
-    margin-bottom: 20px;
+    margin-top: 20px;
     font-family: 'PT Sans', sans-serif;
+    /* font-family: 'Inconsolata', monospace; */
+    font-weight: bold;
 }
 
 .select {
-    margin-top: 2%;
+    height: auto;
     display: flex;
     justify-content: space-around;
+    margin-top: 50px;
 }
 
-.split {
+/* .split {
     width: 5px;
     background-color: #000;
     border-radius: 4px;
     margin-top: 50px;
-}
+    height: auto;
+} */
 
 .graph {
-    width: 35%;
+    width: 45%;
     display: flex;
     flex-direction: column-reverse;
-   
 }
 
 .logs {
-    width: 35%;
+    width: 45%;
     display: flex;
     flex-direction: column-reverse;
 }
 
-.graph img {
-    width: 80%;
-    display: flex;
-    align-items: center;
+.select img {
+    width: 100%;
 }
-
 
 .graph .btn {
     margin-bottom: 50px;
     text-align: center;
     font-size: 1.8em;
-}
-
-.logs img {
-    width: 80%;
-    display: flex;
-    align-items: center;
 }
 
 .logs .btn {
@@ -770,14 +783,14 @@ body::-webkit-scrollbar-thumb {
   height: 100%;
   margin: 0;
 } */
+
 .wrapper {
-  
-  min-height: 100%;
-  margin: 0 auto -50px;
+    min-height: 100%;
+    margin: 0 auto -50px;
 }
-.mainfooter,
-.push {
-  height: 50px;
+
+.mainfooter, .push {
+    height: 50px;
 }
 
 /* ~~~~~~~ INIT. BTN ~~~~~~~ */
@@ -787,7 +800,9 @@ body::-webkit-scrollbar-thumb {
     color: #000;
     letter-spacing: 1.1rem;
     text-transform: uppercase;
-    font-family: 'PT Sans', sans-serif;
+    /* font-family: 'PT Sans', sans-serif; */
+    font-family: 'Inconsolata', monospace;
+    font-weight: 700;
 }
 
 /*
@@ -914,7 +929,9 @@ body::-webkit-scrollbar-thumb {
     margin-bottom: 30px;
     /* position: relative; */
 }
+
 /* Quentin tu saoule !!! */
+
 .logTrame {
     line-height: 1.5;
     font-weight: bold;
@@ -989,6 +1006,33 @@ body::-webkit-scrollbar-thumb {
     font-family: 'PT Sans', sans-serif;
 }
 
+/*------Graphique-------*/
+
+#graph-circulairetimeok{
+    width: 500px;
+    height: 500px;
+}
+
+#graph-protocol{
+    width: 500px;
+    height: 500px;
+}
+
+#graph-ttl{
+    width: 500px;
+    height: 500px;
+}
+
+#graph-day{
+    width: 500px;
+    height: 500px;
+}
+
+#client-area-graph-onglet-1{
+    display: flex;
+    flex-direction: row;
+}
+
 /* RESPONSIVE */
 
 /* body {
@@ -1042,11 +1086,13 @@ h1 {
         width: 60%;
     }
 }
+
 /* @media (min-width: 800px) and (max-width: 1040px) {
     .logTrame {
         font-size: 1.1em;
     }
 } */
+
 @media screen and (max-width: 1041px) {
     .logTrame {
         font-size: 1.1em;
@@ -1077,7 +1123,7 @@ h1 {
 @media screen and (max-width: 920px) {
     .logTrame {
         line-height: 1.2;
-        font-size: 1em;
+        font-size: 1.2em;
     }
 }
 
@@ -1116,11 +1162,6 @@ h1 {
     }
 }
 
-/* @media screen and (max-width: 862px) {
-    .logTrame {
-        line-height: 1.2;
-    }
-} */
 @media screen and (max-width: 824px) {
     .logTrame {
         line-height: 1;
@@ -1149,6 +1190,54 @@ h1 {
     .footer-box {
         margin-top: -110px;
     }
+}
+
+@media screen and (max-width: 770px) {
+    .title-main h1 {
+        font-size: 3.5em;
+    }
+    .select {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .select p {
+        margin-top: 70px;
+        margin-bottom: -30px;
+        font-size: 1.5em;
+    }
+    .select img {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    .graph {
+        width: 95%;
+        margin-top: -100px;
+    }
+    .logs {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .title-main {
+        margin-bottom: 20%;
+    }
+    #btn-ca-logs {
+        margin-bottom: 10%;
+    }
+    
+    /* .graph {
+        display: flex;
+        align-items: center;
+    } */
+    /* .graph img {
+        display: flex;
+        justify-content: center;
+    } */
 }
 
 @media screen and (max-width: 750px) {
@@ -1271,6 +1360,9 @@ h1 {
 }
 
 @media screen and (max-width: 480px) {
+    .title-main h1 {
+        font-size: 4.5em;
+    }
     .social-links {
         margin-top: -40px;
     }
@@ -1284,6 +1376,9 @@ h1 {
     #about-section4 .picture {
         width: 95%;
         background-size: contain;
+    }
+    .logTrame {
+        font-size: 1.6em;
     }
 }
 
@@ -1327,24 +1422,25 @@ h1 {
     }
 }
 
+@media screen and (max-width: 700px) { }
 /*------Graphique-------*/
 
-#graph-circulairetimeok{
+#graph-circulairetimeok {
     width: 500px;
     height: 500px;
 }
 
-#graph-protocol{
+#graph-protocol {
     width: 500px;
     height: 500px;
 }
 
-#graph-ttl{
+#graph-ttl {
     width: 500px;
     height: 500px;
 }
 
-#graph-day{
+#graph-day {
     width: 500px;
     height: 500px;
 }
@@ -1360,7 +1456,14 @@ h1 {
     flex-direction: column;
 }
 
-@media screen and (max-width: 700px) {
+
+@media screen and (max-width: 770px) {
+    .title-main {
+        margin-bottom: 20%;
+    }
+    #btn-ca-logs {
+        margin-bottom: 10%;
+    }
     .select {
         display: flex;
         flex-direction: column;
@@ -1375,6 +1478,13 @@ h1 {
         display: flex;
         justify-content: center;
     }
+}
 
-    
+@media screen and (max-width: 320px) {
+    .title-main {
+        margin-bottom: 20%;
+    }
+    .img-log {
+        margin-bottom: 50%;
+    } 
 }

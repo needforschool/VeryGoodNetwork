@@ -19,12 +19,12 @@ include('inc/header.php');
         <div class="title">Votre Espace</div>
     </div>
     <div class="button-choose">
-        <button id="btn-ca-main">Graph / Logs</button>
-        <button id="update">update-date</button>
+        <i class="fas fa-arrow-alt-circle-left" id="btn-ca-main"></i>
+        
         <!-- <button id="btn-ca-logs">Logs</button> -->
     </div>
     <section id="client-area-main">
-        <div class="title-main">
+        <div class="title-main"> 
             <h1>Mode de consultation</h1>
         </div>
         <div class="select">
@@ -45,46 +45,59 @@ include('inc/header.php');
     </section>
 
     <section id="client-area-graph">
-        <div>
-        </div>
         <div class="navbar-graph">
             <ul>
-                <li>Graphique Principal</li>
-                <li>Graphique Complémentaire 1</li>
-                <li>Graphique Complémentaire 2</li>
-                <li>Graphique Complémentaire 3</li>
+                <li class="tabButton active" id="buttonOnglet-1">Onglet 1</li>
+                <li class="tabButton" id="buttonOnglet-2">Onglet 2</li>
+                <li class="tabButton" id="buttonOnglet-3">Onglet 3</li>
+                <li class="tabButton" id="buttonOnglet-4">Onglet 4</li>
             </ul>
         </div>
-        <section id="client-area-graph-section1">
-            <div id="graph-circulairetimeok">
-                <canvas id="graphcamenbert" width="400" height="400"></canvas>
-            </div>
-            <div id="graph-protocol">
-                <canvas id="graphbarprotocol" width="400" height="400"></canvas>
-            </div>
-            <div id="graph-ttl">
-                <canvas id="graphbarttl" width="400" height="400"></canvas>
-            </div>
-            <div id="graph-day">
-                <canvas id="graphlineday" width="400" height="400"></canvas>
-            </div>
-            <div id="graph-time">
-            <form action="">
-                    <label for="cars">Choose a car:</label>
-                <select id="cars" name="cars">
-                    <option value="years">Année</option>
-                    <option value="mois">Mois</option>
-                </select>
-                <div id="btngraphtime">ss</div>
+        <div id="tabs">
+            <section id="client-area-graph-onglet-1">
+                <div id="graph-circulairetimeok">
+                    <canvas id="graphcamenbert" width="400" height="400"></canvas>
+                </div>
+                <div id="graph-protocol">
+                    <canvas id="graphbarprotocol" width="400" height="400"></canvas>
+                </div>
+                <div id="graph-ttl">
+                    <canvas id="graphbarttl" width="400" height="400"></canvas>
+                </div>
+                <div id="graph-day">
+                    <canvas id="graphlineday" width="400" height="400"></canvas>
+                </div>
+                <div id="graph-time">
+                <form action="">
+                        <label for="cars">Choose a car:</label>
+                    <select id="cars" name="cars">
+                        <option value="years">Année</option>
+                        <option value="mois">Mois</option>
+                    </select>
+                    <div id="btngraphtime">ss</div>
 
-                <select name="" id="formyearstime">
-                <option value="years">Année</option>
-                </select>
-                <div id="btngraphtimeyears">Show graph</div>
-            </form>
-                <canvas id="graphlinetime" width="400" height="400"></canvas>
-            </div>
-        </section>
+                    <select name="" id="formyearstime">
+                    <option value="years">Année</option>
+                    </select>
+                    <div id="btngraphtimeyears">Show graph</div>
+                </form>
+                    <canvas id="graphlinetime" width="400" height="400"></canvas>
+                </div>
+            </section>
+
+            <section id="client-area-graph-onglet-2" class=" hidden-onglet">
+                <p>Onglet 2</p>
+            </section>
+
+            <section id="client-area-graph-onglet-3" class=" hidden-onglet">
+                <p>Onglet 3</p>
+            </section>
+
+            <section id="client-area-graph-onglet-4" class=" hidden-onglet">
+                <p>Onglet 4</p>
+            </section>
+        </div>
+
     </section>
 
     <section id="client-area-logs">
