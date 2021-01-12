@@ -2,7 +2,7 @@
 session_start();
 include('inc/pdo.php');
 include('inc/function.php');
-$title = 'Client area';
+$title = 'Espace Client';
 
 if (!isLogged()) {
     header('location: 403.php');
