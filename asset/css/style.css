@@ -767,17 +767,14 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
 }
 
-.graph .btn {
+.btn {
     margin-bottom: 50px;
-    text-align: center;
-    font-size: 1.8em;
+    text-align: center; 
 }
 
 .logs .btn {
     margin-bottom: 60px;
-    text-align: center;
-    font-size: 1.8em;
-}
+} 
 
 /* html, body {
   height: 100%;
@@ -1131,9 +1128,6 @@ h1 {
     .footer-box {
         margin-top: -110px;
     }
-    .hamburger {
-        top: 30px;
-    }
 }
 
 @media screen and (max-width: 880px) {
@@ -1196,6 +1190,12 @@ h1 {
     .title-main h1 {
         font-size: 3.5em;
     }
+    .title-main {
+        margin-bottom: 20%;
+    }
+    #btn-ca-logs {
+        margin-bottom: 10%;
+    }
     .select {
         display: flex;
         flex-direction: column;
@@ -1222,33 +1222,9 @@ h1 {
     }
 }
 
-@media screen and (max-width: 770px) {
-    .title-main {
-        margin-bottom: 20%;
-    }
-    #btn-ca-logs {
-        margin-bottom: 10%;
-    }
-    
-    /* .graph {
-        display: flex;
-        align-items: center;
-    } */
-    /* .graph img {
-        display: flex;
-        justify-content: center;
-    } */
-}
-
 @media screen and (max-width: 750px) {
     #about-section0 h1 {
         margin: 50px 0 0 0;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .hamburger {
-        top: 10px;
     }
 }
 
@@ -1386,9 +1362,6 @@ h1 {
     #about-section0 h1 {
         margin: 30px 0 0 0;
     }
-    .hamburger {
-        top: 10px;
-    }
     #about-section4 .picture {
         height: 200px;
     }
@@ -1411,6 +1384,12 @@ h1 {
     #about-section4 .picture {
         height: 150px;
     }
+    .title-main {
+        margin-bottom: 20%;
+    }
+    .img-log {
+        margin-bottom: 50%;
+    }
 }
 
 @media screen and (max-width: 300px) {
@@ -1422,7 +1401,6 @@ h1 {
     }
 }
 
-@media screen and (max-width: 700px) { }
 /*------Graphique-------*/
 
 #graph-circulairetimeok {
@@ -1445,33 +1423,15 @@ h1 {
     height: 500px;
 }
 
-#client-area-graph-section1 {
-    display: flex;
-    flex-direction: row;
+#graph-time{
+    width: 500px;
+    height: 500px;
 }
 
 
-@media screen and (max-width: 770px) {
-    .title-main {
-        margin-bottom: 20%;
-    }
-    #btn-ca-logs {
-        margin-bottom: 10%;
-    }
-    .select {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .graph {
-        display: flex;
-        align-items: center;
-    }
-    .graph img {
-        display: flex;
-        justify-content: center;
-    }
+#client-area-graph-section1{
+    display: flex;
+    flex-direction: column;
 }
 
 @media screen and (max-width: 320px) {
