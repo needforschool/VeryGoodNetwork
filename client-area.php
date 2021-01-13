@@ -46,7 +46,7 @@ include('inc/header.php');
         <ul>
             <li class="tabButton active" id="buttonOnglet-1">Dashboard</li>
             <li class="tabButton" id="buttonOnglet-2">Type de protocole</li>
-            <li class="tabButton" id="buttonOnglet-3">Analyse des Trames sur le temps</li>
+            <li class="tabButton" id="buttonOnglet-3">Analyse temporelle des trames</li>
             <li class="tabButton" id="buttonOnglet-4">Aide</li>
         </ul>
     </div>
