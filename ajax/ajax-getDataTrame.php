@@ -5,10 +5,7 @@ $trames = array();
 $i = 0;
 setlocale(LC_ALL,'fr_FR');
 
-$sql = "SELECT date,version,status,ttl,protocol_name,ip_from,ip_dest FROM vgn_trames";
-$query = $pdo->prepare($sql);
-$query->execute();
-$dataTrames = $query->fetchAll();
+$dataTrames = getAllFrom('vgn_trames', $pdo);
 
 //var_dump($trames);
 

@@ -52,6 +52,46 @@ include('inc/header.php');
     </div>
     <div id="tabs">
         <section id="client-area-graph-onglet-1">
+
+            <div class="allcards">
+
+                <div class="card-1 card">
+                    <div class="titleCard">
+                        <h2>Bienvenue</h2>
+                    </div>
+                    <div class="contentCard">
+                        <p><?php echo ucfirst($_SESSION['user']['prenom']) ?></p>
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+
+                <div class="card-2 card">
+                    <div class="titleCard">
+                        <h2>Nombre total de trames</h2>
+                    </div>
+                    <div class="contentCard">
+                        <p class="numberOfAllTrame">0</p>
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                </div>
+
+                <div class="card-3 card">
+                    <div class="titleCard">
+                        <h2>Qualité de votre trame :</h2>
+                    </div>
+                    <div class="contentCard">
+                        <p class="qualityTrame">Erreur</p>
+                        <i id="qualityIcon" class="fas fa-smile"></i>
+                    </div>
+                </div>
+
+            </div>
+            
+        </section>
+
+        <section id="client-area-graph-onglet-2" class=" hidden-onglet">
+            <p>Onglet 2</p>
+
             <div id="graph-circulairetimeok">
                 <canvas id="graphcamenbert" width="400" height="400"></canvas>
             </div>
@@ -100,12 +140,10 @@ include('inc/header.php');
             </div>
         </section>
 
-        <section id="client-area-graph-onglet-2" class=" hidden-onglet">
-            <p>Onglet 2</p>
-        </section>
-
         <section id="client-area-graph-onglet-3" class=" hidden-onglet">
             <p>Onglet 3</p>
+
+
         </section>
 
         <section id="client-area-graph-onglet-4" class=" hidden-onglet">

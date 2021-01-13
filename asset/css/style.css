@@ -10,7 +10,87 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -21,7 +101,17 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 /* HTML5 display-role reset for older browsers */
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -29,11 +119,13 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
@@ -41,7 +133,10 @@ a {
   text-decoration: none;
 }
 
-blockquote:before, blockquote:after, q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -51,12 +146,15 @@ table {
   border-spacing: 0;
 }
 
-*, *:after, *:before {
+*,
+*:after,
+*:before {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-.clear:before, .clear:after {
+.clear:before,
+.clear:after {
   content: "";
   display: table;
 }
@@ -796,8 +894,52 @@ body::-webkit-scrollbar-thumb {
   margin: 0 auto -50px;
 }
 
-.mainfooter, .push {
+.mainfooter,
+.push {
   height: 50px;
+}
+
+/*----------DASHBOARD--------------*/
+
+#tabs #client-area-graph-onglet-1 .allcards {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+#tabs #client-area-graph-onglet-1 .allcards .card {
+  border-left: 3px solid red;
+  width: 20%;
+  border-radius: 5px;
+  padding: 15px;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+  -webkit-box-shadow: -4px 8px 41px 11px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: -4px 8px 41px 11px rgba(0, 0, 0, 0.1);
+  box-shadow: -4px 8px 41px 11px rgba(0, 0, 0, 0.1);
+}
+
+#tabs #client-area-graph-onglet-1 .allcards .card div.titleCard {
+  padding-left: 10px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  color: red;
+}
+
+#tabs #client-area-graph-onglet-1 .allcards .card div.contentCard {
+  display: flex;
+  justify-content: space-around;
+  font-size: 2em;
+}
+
+#tabs #client-area-graph-onglet-1 .allcards .card div.contentCard i {
+  opacity: 0.2;
+}
+
+#tabs #client-area-graph-onglet-1 .allcards .card-3 div.contentCard {
+  font-size: 1.3em;
 }
 
 /* ~~~~~~~ INIT. BTN ~~~~~~~ */
@@ -893,16 +1035,21 @@ body::-webkit-scrollbar-thumb {
 }
 
 @keyframes shake {
-  10%, 90% {
+  10%,
+  90% {
     transform: translate3d(-1px, 0, 0);
   }
-  20%, 80% {
+  20%,
+  80% {
     transform: translate3d(2px, 0, 0);
   }
-  30%, 50%, 70% {
+  30%,
+  50%,
+  70% {
     transform: translate3d(-2px, 0, 0);
   }
-  40%, 60% {
+  40%,
+  60% {
     transform: translate3d(2px, 0, 0);
   }
 }
@@ -1420,7 +1567,7 @@ h1 {
     font-size: 9em;
   }
   .select p {
-    font-size: .9em;
+    font-size: 0.9em;
   }
 }
 
