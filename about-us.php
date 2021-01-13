@@ -77,9 +77,8 @@ include('inc/header.php');
                 </div>
                 <div class="textarg">
                         <p>Ergonomique</p>
-                        <p>Performantes</p>
+                        <p>Performante</p>
                         <p>Simple à comprendre</p>
-                        <p>Cliquez sur l'image pour <br>lancer la démo</p>
                 </div>
         </div>
 </section>

@@ -1291,6 +1291,9 @@ h1 {
   .banner-text h1 {
     font-size: 12em;
   }
+  #about-section1 .flexbox {
+    top: 40px;
+  }
 }
 
 @media screen and (max-width: 780px) {
@@ -1498,6 +1501,13 @@ h1 {
     font-size: 1.5em;
     padding-top: 30px;
   }
+  #about-section1 p {
+    width: 100%;
+  }
+  #about-section1 h1 {
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+  }
 }
 
 @media screen and (max-width: 355px) {
@@ -1536,13 +1546,6 @@ h1 {
 @media screen and (max-width: 280px) {
   .banner-text h1 {
     font-size: 9em;
-  }
-  #about-section1 p {
-    width: 100%;
-  }
-  #about-section1 h1 {
-    letter-spacing: 1px;
-    margin-bottom: 5px;
   }
   .select p {
     font-size: 0.9em;
