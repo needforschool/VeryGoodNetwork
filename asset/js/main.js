@@ -606,7 +606,7 @@ function isTimeoutOk(trames) {
     options: {
       title: {
         display: true,
-        text: "Graphique",
+        text: "Durée d'envoi de la requête",
         fontSize: 32,
         fontColor: "#000",
       },
@@ -670,7 +670,7 @@ function showBarProtocol(trames) {
       },
       title: {
         display: true,
-        text: "Graphique 2",
+        text: "Les protocoles",
         fontSize: 32,
         fontColor: "#000",
       },
@@ -728,7 +728,7 @@ function showBarTTLProtcol(trames) {
     options: {
       title: {
         display: true,
-        text: "Graphique 3",
+        text: "Utlisations des protocoles",
         fontSize: 32,
         fontColor: "#000",
       },
