@@ -10,7 +10,87 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -21,7 +101,17 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 /* HTML5 display-role reset for older browsers */
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -29,11 +119,13 @@ body {
   line-height: 1;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
@@ -41,7 +133,10 @@ a {
   text-decoration: none;
 }
 
-blockquote:before, blockquote:after, q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -51,12 +146,15 @@ table {
   border-spacing: 0;
 }
 
-*, *:after, *:before {
+*,
+*:after,
+*:before {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-.clear:before, .clear:after {
+.clear:before,
+.clear:after {
   content: "";
   display: table;
 }
@@ -797,7 +895,8 @@ body::-webkit-scrollbar-thumb {
   margin: 0 auto -50px;
 }
 
-.mainfooter, .push {
+.mainfooter,
+.push {
   height: 50px;
 }
 
@@ -844,7 +943,8 @@ body::-webkit-scrollbar-thumb {
   font-size: 1.3em;
 }
 
-.graphTypeTrame, .graphOnglet2 {
+.graphTypeTrame,
+.graphOnglet2 {
   display: flex;
   margin-top: 20px;
   justify-content: space-around;
@@ -943,16 +1043,21 @@ body::-webkit-scrollbar-thumb {
 }
 
 @keyframes shake {
-  10%, 90% {
+  10%,
+  90% {
     transform: translate3d(-1px, 0, 0);
   }
-  20%, 80% {
+  20%,
+  80% {
     transform: translate3d(2px, 0, 0);
   }
-  30%, 50%, 70% {
+  30%,
+  50%,
+  70% {
     transform: translate3d(-2px, 0, 0);
   }
-  40%, 60% {
+  40%,
+  60% {
     transform: translate3d(2px, 0, 0);
   }
 }
@@ -1278,6 +1383,15 @@ h1 {
   #about-section0 h1 {
     margin: 50px 0 0 0;
   }
+  .graphTypeTrame {
+    display: flex;
+    flex-direction: column;
+  }
+  .graphOnglet2 {
+    display: flex;
+    flex-direction: column;
+
+  }
 }
 
 @media screen and (max-width: 630px) {
@@ -1500,7 +1614,7 @@ h1 {
   font-size: 1.9em;
   margin-top: 0.5em;
   text-align: center;
-  font-family: 'PT sans', sans-serif;
+  font-family: "PT sans", sans-serif;
 }
 
 #client-area-graph-onglet-3 form div.lineform1 {
@@ -1577,28 +1691,28 @@ h1 {
 }
 
 /*------Onglet 4 GRAPH AIDE-------*/
-#client-area-graph-onglet-4{
+#client-area-graph-onglet-4 {
   font-family: "PT Sans";
   cursor: default;
 }
 
-#client-area-graph-onglet-4 .bold{
+#client-area-graph-onglet-4 .bold {
   font-weight: 800;
 }
 
-#client-area-graph-onglet-4 .title{
+#client-area-graph-onglet-4 .title {
   text-align: center;
   font-size: 2em;
   color: #000;
   margin-bottom: 10px;
 }
 
-#client-area-graph-onglet-4 .bloc{
+#client-area-graph-onglet-4 .bloc {
   font-size: 1.3em;
   margin: 10px 0 10px 20px;
 }
 
-#client-area-graph-onglet-4 .redhover:hover{
+#client-area-graph-onglet-4 .redhover:hover {
   color: #950303;
   transition-duration: 500ms;
 }
@@ -1655,6 +1769,26 @@ h1 {
   .img-log {
     margin-bottom: 50%;
   }
+  
+}
+
+@media screen and (max-width: 750px){
+    #graph-circulairetimeok {
+        width: 80vw;
+      }
+      #graph-day {
+        width: 80vw;
+      }
+      #graph-protocol {
+        width: 80vw;
+      }
+      #graph-ttl {
+        width: 80vw;
+      }
+      #tabs #client-area-graph-onglet-1 .allcards .card {
+          width: 30%;
+      }
+
 }
 
 /* hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh */
