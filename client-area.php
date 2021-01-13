@@ -77,7 +77,7 @@ include('inc/header.php');
 
                 <div class="card-3 card">
                     <div class="titleCard">
-                        <h2>Qualité de votre trame :</h2>
+                        <h2>Qualité de vos trames :</h2>
                     </div>
                     <div class="contentCard">
                         <p class="qualityTrame">Erreur</p>
