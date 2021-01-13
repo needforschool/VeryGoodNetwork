@@ -644,7 +644,7 @@ body::-webkit-scrollbar-thumb {
 
 #about-section4 {
   font-family: "PT Sans", sans-serif;
-  background-color: #f9f9f9;
+  /* background-color: #f9f9f9; */
 }
 
 #about-section4 .textarg {
@@ -742,7 +742,7 @@ body::-webkit-scrollbar-thumb {
 #about-section4bis {
   display: flex;
   justify-content: center;
-  background-color: #f9f9f9;
+  /* background-color: #f9f9f9; */
 }
 
 #about-section4bis .flexslider {
