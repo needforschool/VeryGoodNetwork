@@ -1230,7 +1230,7 @@ function showTimeGraphVisual(data, mL) {
       },
       title: {
         display: true,
-        text: "Connexion",
+        text: "Graphique des Trames réseau dans le temps",
         fontSize: 32,
         fontColor: "#000",
       },
