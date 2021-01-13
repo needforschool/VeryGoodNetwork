@@ -1479,6 +1479,24 @@ h1 {
     padding-top: 30px;
   }
 }
+@media screen and (max-width: 280px) {
+  .banner-text h1 {
+    font-size: 9em;
+  }
+  #about-section1 p {
+    width: 100%;
+  }
+  #about-section1 h1 {
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+  }
+  #about-section4bis .flexslider {
+    width: 100%;
+  }
+  .select p {
+    font-size: .9em;
+  }
+}
 
 /*------Graphique-------*/
 
