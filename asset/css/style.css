@@ -1135,6 +1135,7 @@ body::-webkit-scrollbar-thumb {
 
 .social-links {
   text-align: center;
+  margin-top: -10px;
 }
 
 .social-links .fa {
@@ -1250,6 +1251,11 @@ h1 {
   }
 }
 
+@media screen and (max-width: 1000px) {
+  .banner-btn {
+    width: 75%;
+  }
+}
 @media screen and (max-width: 990px) {
   .banner-btn {
     width: 75%;
