@@ -1694,6 +1694,7 @@ h1 {
 #client-area-graph-onglet-4 {
   font-family: "PT Sans";
   cursor: default;
+  line-height: 1.5;
 }
 
 #client-area-graph-onglet-4 .bold {
