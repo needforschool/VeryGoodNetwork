@@ -549,7 +549,7 @@ function connexionSuccess() {
     data: "",
     dataType: "json",
 
-    beforeSend: function () {},
+    beforeSend: function () { },
 
     success: function (response) {
       //console.log(response)
@@ -613,25 +613,25 @@ function isTimeoutOk(trames) {
       legend: {
         position: "bottom",
       },
+      maintainAspectRatio: false,
       scales: {
-        display: false,
-        yAxes: [
-          {
-            ticks: {
-              beginAtZero: true,
-            },
+        yAxes: [{
+          display: false,
+          ticks: {
+            beginAtZero: true,
           },
-        ],
-        xAxes: [
-          {
-            display: false,
-          },
-        ],
-        yAxes: [
-          {
-            display: false,
-          },
-        ],
+          stacked: true,
+          gridLines: {
+            display: true,
+            color: "rgba(255,99,132,0.2)"
+          }
+        }],
+        xAxes: [{
+          display: false,
+          gridLines: {
+            display: false
+          }
+        }]
       },
     },
   });
@@ -673,6 +673,26 @@ function showBarProtocol(trames) {
         text: "Graphique 2",
         fontSize: 32,
         fontColor: "#000",
+      },
+      maintainAspectRatio: false,
+      scales: {
+        yAxes: [{
+          display: false,
+          ticks: {
+            beginAtZero: true,
+          },
+          stacked: true,
+          gridLines: {
+            display: true,
+            color: "rgba(255,99,132,0.2)"
+          }
+        }],
+        xAxes: [{
+          display: false,
+          gridLines: {
+            display: false
+          }
+        }]
       },
     },
   });
@@ -735,14 +755,20 @@ function showBarTTLProtcol(trames) {
       legend: {
         display: false,
       },
+      maintainAspectRatio: false,
       scales: {
-        yAxes: [
-          {
-            ticks: {
-              beginAtZero: false,
-            },
-          },
-        ],
+        yAxes: [{
+          stacked: true,
+          gridLines: {
+            display: true,
+            color: "rgba(255,99,132,0.2)"
+          }
+        }],
+        xAxes: [{
+          gridLines: {
+            display: false
+          }
+        }]
       },
     },
   });
@@ -852,14 +878,20 @@ function showLineTrendDay(trames) {
         fontSize: 32,
         fontColor: "#000",
       },
+      maintainAspectRatio: false,
       scales: {
-        yAxes: [
-          {
-            ticks: {
-              beginAtZero: true,
-            },
-          },
-        ],
+        yAxes: [{
+          stacked: true,
+          gridLines: {
+            display: true,
+            color: "rgba(255,99,132,0.2)"
+          }
+        }],
+        xAxes: [{
+          gridLines: {
+            display: false
+          }
+        }]
       },
     },
   });
@@ -1229,14 +1261,20 @@ function showTimeGraphVisual(data, mL) {
         fontSize: 32,
         fontColor: "#000",
       },
+      maintainAspectRatio: false,
       scales: {
-        yAxes: [
-          {
-            ticks: {
-              beginAtZero: true,
-            },
-          },
-        ],
+        yAxes: [{
+          stacked: true,
+          gridLines: {
+            display: true,
+            color: "rgba(255,99,132,0.2)"
+          }
+        }],
+        xAxes: [{
+          gridLines: {
+            display: false
+          }
+        }]
       },
       responsive: true,
       events: [],
