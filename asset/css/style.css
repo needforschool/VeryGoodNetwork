@@ -895,7 +895,6 @@ body::-webkit-scrollbar-thumb {
 
 #tabs #client-area-graph-onglet-1 .allcards {
   margin-top: 20px;
-  border: 1px solid red;
   display: flex;
   justify-content: space-around;
   padding: 30px;
@@ -929,6 +928,10 @@ body::-webkit-scrollbar-thumb {
 
 #tabs #client-area-graph-onglet-1 .allcards .card div.contentCard i {
   opacity: 0.2;
+}
+
+#tabs #client-area-graph-onglet-1 .allcards .card-3 div.contentCard {
+  font-size: 1.3em;
 }
 
 /* ~~~~~~~ INIT. BTN ~~~~~~~ */

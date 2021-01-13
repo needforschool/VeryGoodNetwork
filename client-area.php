@@ -57,21 +57,31 @@ include('inc/header.php');
 
                 <div class="card-1 card">
                     <div class="titleCard">
-                        <h2>Titre de la carte</h2>
+                        <h2>Bienvenue</h2>
                     </div>
                     <div class="contentCard">
-                        <p>54</p>
-                        <i class="fas fa-address-book"></i>
+                        <p><?php echo ucfirst($_SESSION['user']['prenom']) ?></p>
+                        <i class="fas fa-user"></i>
                     </div>
                 </div>
 
                 <div class="card-2 card">
                     <div class="titleCard">
-                        <h2>Titre de la carte 2</h2>
+                        <h2>Nombre total de trames</h2>
                     </div>
                     <div class="contentCard">
-                        <p>4</p>
-                        <i class="fas fa-address-book"></i>
+                        <p class="numberOfAllTrame">0</p>
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                </div>
+
+                <div class="card-3 card">
+                    <div class="titleCard">
+                        <h2>Qualité de votre trame :</h2>
+                    </div>
+                    <div class="contentCard">
+                        <p class="qualityTrame">Erreur</p>
+                        <i id="qualityIcon" class="fas fa-smile"></i>
                     </div>
                 </div>
 
