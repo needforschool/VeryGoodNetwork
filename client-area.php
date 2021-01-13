@@ -46,7 +46,7 @@ include('inc/header.php');
         <ul>
             <li class="tabButton active" id="buttonOnglet-1">Onglet 1</li>
             <li class="tabButton" id="buttonOnglet-2">Onglet 2</li>
-            <li class="tabButton" id="buttonOnglet-3">Onglet 3</li>
+            <li class="tabButton" id="buttonOnglet-3">Analyse des Trames sur le temps</li>
             <li class="tabButton" id="buttonOnglet-4">Onglet 4</li>
         </ul>
     </div>
@@ -104,45 +104,60 @@ include('inc/header.php');
             <div id="graph-day">
                 <canvas id="graphlineday" width="400" height="400"></canvas>
             </div>
-            <div id="graph-time">
-            <form action="">
-
-                <label for="">Année</label>
-                <input type="radio" value="years" name="choose" id="gtmyYears">
-                <label for="">Mois</label>
-                <input type="radio" value="mois" name="choose" id="gtmyMonth">
-
-                <select name="" id="formyearstime">
-                    <option value="years">Année</option>
-                </select>
-
-                <select name="" id="formyearstimemonth" class="gtmyMonthShowGraph">
-                    <option value="">Mois</option>
-                    <option value="01">Janvier</option>
-                    <option value="02">Février</option>
-                    <option value="03">Mars</option>
-                    <option value="04">Avril</option>
-                    <option value="05">Mai</option>
-                    <option value="06">Juin</option>
-                    <option value="07">Juillet</option>
-                    <option value="08">Août</option>
-                    <option value="09">Septembre</option>
-                    <option value="10">Octobre</option>
-                    <option value="11">Novembre</option>
-                    <option value="12">Décembre</option>
-                </select>
-                <select name="" id="formyearstimemonthy" class="gtmyMonthShowGraph">
-                    <option value="">année</option>
-                </select>
-                
-            </form>
-                <canvas id="graphlinetime" width="400" height="400"></canvas>
-            </div>
+            
         </section>
 
         <section id="client-area-graph-onglet-3" class=" hidden-onglet">
-            <p>Onglet 3</p>
+            <p>Veuillez choisir votre option : </p>
+            <div>
+                <form action="">
+                    <div class="lineform1">
+                        <div>
+                            <label for="">Année</label>
+                            <input type="radio" value="years" name="choose" id="gtmyYears">
+                        </div>
+                        <div>
+                            <label for="">Mois</label>
+                            <input type="radio" value="mois" name="choose" id="gtmyMonth">  
+                        </div> 
+                    </div>
 
+                    <div class="lineform2">
+                        <div class="select formyearstime">
+                            <select name="" id="formyearstime">
+                                <option value="years">Année</option>
+                            </select> 
+                        </div>
+
+                        <div class="select gtmyMonthShowGraphbis">
+                            <select name="" id="formyearstimemonth" class="gtmyMonthShowGraph">
+                                <option value="01">Janvier</option>
+                                <option value="02">Février</option>
+                                <option value="03">Mars</option>
+                                <option value="04">Avril</option>
+                                <option value="05">Mai</option>
+                                <option value="06">Juin</option>
+                                <option value="07">Juillet</option>
+                                <option value="08">Août</option>
+                                <option value="09">Septembre</option>
+                                <option value="10">Octobre</option>
+                                <option value="11">Novembre</option>
+                                <option value="12">Décembre</option>
+                            </select>
+                        </div>
+
+                        <div class="select gtmyMonthShowGraphbis">
+                            <select name="" id="formyearstimemonthy" class="gtmyMonthShowGraph">
+                                <option value="">année</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                </form>
+                <div id="graph-time">
+                    <canvas id="graphlinetime" width="400" height="120"></canvas>
+                </div>
+            </div>
 
         </section>
 

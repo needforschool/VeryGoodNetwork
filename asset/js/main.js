@@ -882,8 +882,8 @@ function showTimesGraph(trames) {
   var data = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
   var databis1 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
   var nulle = [0];
-  $(".gtmyMonthShowGraph").hide();
-  $("#formyearstime").hide();
+  $(".gtmyMonthShowGraphbis").hide();
+  $(".formyearstime").hide();
   let chooseyearstime = "null";
 
   $("#gtmyYears").on("click", function () {
@@ -903,8 +903,8 @@ function showTimesGraph(trames) {
     ];
     data = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
     databis1 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-    $("#formyearstime").show();
-    $(".gtmyMonthShowGraph").hide();
+    $(".formyearstime").show();
+    $(".gtmyMonthShowGraphbis").hide();
     console.log("----- Years -----");
     var chooseyearstime = "years";
     let datetoday = new Date();
@@ -936,8 +936,8 @@ function showTimesGraph(trames) {
     ];
     data = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
     databis1 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
-    $("#formyearstime").hide();
-    $(".gtmyMonthShowGraph").show();
+    $(".formyearstime").hide();
+    $(".gtmyMonthShowGraphbis").show();
     console.log("----- Month -----");
     var chooseyearstime = "month";
     let datetoday = new Date();
@@ -1184,27 +1184,41 @@ function showTimeGraphVisual(data, mL) {
           label: "# of Votes",
           data: data,
           backgroundColor: [
-            "rgba(196, 229, 56,1.0)",
-            "rgba(196, 229, 56,1.0)",
-            "rgba(196, 229, 56,1.0)",
-            "rgba(196, 229, 56,1.0)",
-            "rgba(196, 229, 56,1.0)",
-            "rgba(196, 229, 56,1.0)",
-            "rgba(196, 229, 56,1.0)",
-            "rgba(196, 229, 56,1.0)",
-            "rgba(196, 229, 56,1.0)",
-            "rgba(196, 229, 56,1.0)",
-            "rgba(196, 229, 56,1.0)",
-            "rgba(196, 229, 56,1.0)",
-            "rgba(196, 229, 56,1.0)",
-            "rgba(196, 229, 56,1.0)",
-            "rgba(196, 229, 56,1.0)",
-            "rgba(196, 229, 56,1.0)",
-            "rgba(196, 229, 56,1.0)",
-            "rgba(196, 229, 56,1.0)",
-            "rgba(196, 229, 56,1.0)",
-            "rgba(196, 229, 56,1.0)",
-            "rgba(196, 229, 56,1.0)",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
           ],
           borderWidth: 1,
         },
