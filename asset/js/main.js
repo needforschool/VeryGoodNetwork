@@ -14,7 +14,8 @@ $(document).ready(function () {
     dataType: "json",
 
     success: function (trames) {
-      //console.log(trames);
+      console.log(trames);
+      initializeCard(trames);
       isTimeoutOk(trames);
       showBarProtocol(trames);
       showBarTTLProtcol(trames);
@@ -861,168 +862,411 @@ function showLineTrendDay(trames) {
   });
 }
 
-function showTimesGraph(trames){
-    var mL = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-    var data = [0,0,0,0,0,0,0,0,0,0,0,0];
-    var databis1 = [0,0,0,0,0,0,0,0,0,0,0,0];
-    var nulle = [0];
-    $('.gtmyMonthShowGraphbis').hide();
-    $('.formyearstime').hide();
-    let chooseyearstime = "null"
+function showTimesGraph(trames) {
+  var mL = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+  var data = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+  var databis1 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+  var nulle = [0];
+  $(".gtmyMonthShowGraphbis").hide();
+  $(".formyearstime").hide();
+  let chooseyearstime = "null";
 
-    $('#gtmyYears').on('click',function(){
-        mL = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-        data = [0,0,0,0,0,0,0,0,0,0,0,0];
-        databis1 = [0,0,0,0,0,0,0,0,0,0,0,0];
-        $('.formyearstime').show();
-        $('.gtmyMonthShowGraphbis').hide();
-        console.log("----- Years -----");
-        var chooseyearstime = "years";
-        let datetoday = new Date();
-        datetoday = datetoday.getFullYear()
+  $("#gtmyYears").on("click", function () {
+    mL = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
+    ];
+    data = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    databis1 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    $(".formyearstime").show();
+    $(".gtmyMonthShowGraphbis").hide();
+    console.log("----- Years -----");
+    var chooseyearstime = "years";
+    let datetoday = new Date();
+    datetoday = datetoday.getFullYear();
 
-        $('#formyearstime').empty();
-        for (let index = datetoday - 5 ; index < datetoday + 1; index++) {
-            $('#formyearstime').append('<option value="'+ index +'">'+ index +'</option>')
-        }
-            console.log("tu as choisit l année petit gros bg")
-    })
+    $("#formyearstime").empty();
+    for (let index = datetoday - 5; index < datetoday + 1; index++) {
+      $("#formyearstime").append(
+        '<option value="' + index + '">' + index + "</option>"
+      );
+    }
+    console.log("tu as choisit l année petit gros bg");
+  });
 
-    $('#gtmyMonth').on('click',function(){
-        mL = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-        data = [0,0,0,0,0,0,0,0,0,0,0,0];
-        databis1 = [0,0,0,0,0,0,0,0,0,0,0,0];
-        $('.formyearstime').hide();
-        $('.gtmyMonthShowGraphbis').show();
-        console.log("----- Month -----");
-        var chooseyearstime = "month"
-        let datetoday = new Date();
-        datetoday = datetoday.getFullYear()
+  $("#gtmyMonth").on("click", function () {
+    mL = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
+    ];
+    data = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    databis1 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    $(".formyearstime").hide();
+    $(".gtmyMonthShowGraphbis").show();
+    console.log("----- Month -----");
+    var chooseyearstime = "month";
+    let datetoday = new Date();
+    datetoday = datetoday.getFullYear();
 
-        $('#formyearstimemonthy').empty();
+    $("#formyearstimemonthy").empty();
 
-        for (let index = datetoday - 5 ; index < datetoday + 1; index++) {
-            $('#formyearstimemonthy').append('<option value="'+ index +'">'+ index +'</option>')
-        }
-            console.log("tu as choisit le mois bg")
-    })
+    for (let index = datetoday - 5; index < datetoday + 1; index++) {
+      $("#formyearstimemonthy").append(
+        '<option value="' + index + '">' + index + "</option>"
+      );
+    }
+    console.log("tu as choisit le mois bg");
+  });
 
+  $("#formyearstime").on("click", function () {
+    let yearschoosenumber = $("#formyearstime")
+      .children("option:selected")
+      .val();
+    databis = trames
+      .map((trame) => [trame["date-trame-year"], trame["date-trame-month"]])
+      .filter((trame) => trame[0] === yearschoosenumber)
+      .map((trame) => trame[1]);
+    data = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    for (let index = 0; index < databis.length; index++) {
+      data[[databis[index]] - 1] = data[[databis[index]] - 1] + 1;
+      // 0[[ 12 - 1]](0) = 0[[ 12 - 1]] (0) + 1 = 1
+    }
+    console.log(data);
+    showTimeGraphVisual(nulle, nulle);
+    showTimeGraphVisual(data, mL);
+  });
 
-    
+  $(".gtmyMonthShowGraph").on("click", function () {
+    dataday = [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+    ];
+    let years = $("#formyearstimemonthy").children("option:selected").val();
+    let month = $("#formyearstimemonth").children("option:selected").val();
+    console.log(month);
+    console.log(years);
+    if (
+      month === "01" ||
+      month === "03" ||
+      month === "05" ||
+      month === "07" ||
+      month === "08" ||
+      month === "10" ||
+      month === "12"
+    ) {
+      console.log("31");
+      mL = [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+      ];
+    } else if (
+      month === "04" ||
+      month === "06" ||
+      month === "09" ||
+      month === "11"
+    ) {
+      console.log("30");
+      mL = [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+      ];
+    } else if (month === "02" && years % 4 == 0) {
+      console.log("bisxtille");
+      mL = [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+      ];
+    } else if (month === "02" && years % 4 != 0) {
+      console.log("NON bisxtille");
+      mL = [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+      ];
+    }
+    databis1 = trames
+      .filter((trame) => trame["date-trame-year"] === years)
+      .filter((trame) => trame["date-trame-month"] === month)
+      .map((trame) => trame["date-trame-day"]);
+    console.log(databis1);
 
+    for (let index = 0; index < databis1.length; index++) {
+      dataday[[databis1[index]] - 1] = dataday[[databis1[index]] - 1] + 1;
+      // 0[[17]](0) = 0[[17]] + 1
+    }
+    console.log(dataday);
+    showTimeGraphVisual(nulle, nulle);
+    showTimeGraphVisual(dataday, mL);
+  });
+}
 
-    $('#formyearstime').on('click',function(){
-        let yearschoosenumber = $('#formyearstime').children("option:selected").val()
-        databis = trames.map((trame) => [trame['date-trame-year'], trame['date-trame-month']]).filter((trame) => trame[0] === yearschoosenumber).map((trame) => trame[1])
-        data = [0,0,0,0,0,0,0,0,0,0,0,0];
-        for(let index = 0; index < databis.length; index++) {
-            data[[databis[index]] - 1] = data[[databis[index]] - 1] + 1;
-            // 0[[ 12 - 1]](0) = 0[[ 12 - 1]] (0) + 1 = 1
-        }
-        console.log(data)
-        showTimeGraphVisual(nulle, nulle);
-        showTimeGraphVisual(data, mL);
-    })
-
-    $('.gtmyMonthShowGraph').on('click',function(){
-        dataday = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-        let years = $('#formyearstimemonthy').children("option:selected").val();
-        let month = $('#formyearstimemonth').children("option:selected").val();
-        console.log(month)
-        console.log(years)
-        if(month === "01" || month === "03" || month === "05" || month === "07" || month === "08" || month === "10" || month === "12"){
-            console.log('31')
-            mL = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31];
-        }
-        else if(month === "04" || month === "06" || month === "09" || month === "11"){
-            console.log('30')
-            mL = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30];
-
-        }
-        else if(month === "02" && years%4 == 0 ){
-            console.log('bisxtille')
-            mL = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29];
-        }
-        else if(month === "02" && years%4 != 0 ){
-            console.log('NON bisxtille')
-            mL = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28];
-
-        }
-        databis1 = trames.filter((trame) => trame['date-trame-year'] === years).filter((trame) => trame['date-trame-month'] === month).map((trame) =>trame['date-trame-day'])
-        console.log(databis1)
-
-        for(let index = 0; index < databis1.length; index++) {
-            dataday[[databis1[index]] - 1] = dataday[[databis1[index]] - 1 ] + 1
-            // 0[[17]](0) = 0[[17]] + 1
-        }
-        console.log(dataday)
-        showTimeGraphVisual(nulle, nulle);
-        showTimeGraphVisual(dataday, mL);
-
-
-    })
-
-
-  function showTimeGraphVisual(data, mL) {
-    var ctxmpot = document.getElementById("graphlinetime").getContext("2d");
-    var chart5 = new Chart(ctxmpot, {
-      type: "bar",
-      data: {
-        labels: mL,
-        datasets: [
+function showTimeGraphVisual(data, mL) {
+  var ctxmpot = document.getElementById("graphlinetime").getContext("2d");
+  var chart5 = new Chart(ctxmpot, {
+    type: "bar",
+    data: {
+      labels: mL,
+      datasets: [
+        {
+          label: "# of Votes",
+          data: data,
+          backgroundColor: [
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+            "#8556DA",
+          ],
+          borderWidth: 1,
+        },
+      ],
+    },
+    options: {
+      legend: {
+        display: false,
+      },
+      title: {
+        display: true,
+        text: "Connexion",
+        fontSize: 32,
+        fontColor: "#000",
+      },
+      scales: {
+        yAxes: [
           {
-            label: "# of Votes",
-            data: data,
-            backgroundColor: [
-              "rgba(196, 229, 56,1.0)",
-              "rgba(196, 229, 56,1.0)",
-              "rgba(196, 229, 56,1.0)",
-              "rgba(196, 229, 56,1.0)",
-              "rgba(196, 229, 56,1.0)",
-              "rgba(196, 229, 56,1.0)",
-              "rgba(196, 229, 56,1.0)",
-              "rgba(196, 229, 56,1.0)",
-              "rgba(196, 229, 56,1.0)",
-              "rgba(196, 229, 56,1.0)",
-              "rgba(196, 229, 56,1.0)",
-              "rgba(196, 229, 56,1.0)",
-              "rgba(196, 229, 56,1.0)",
-              "rgba(196, 229, 56,1.0)",
-              "rgba(196, 229, 56,1.0)",
-              "rgba(196, 229, 56,1.0)",
-              "rgba(196, 229, 56,1.0)",
-              "rgba(196, 229, 56,1.0)",
-              "rgba(196, 229, 56,1.0)",
-              "rgba(196, 229, 56,1.0)",
-              "rgba(196, 229, 56,1.0)",
-            ],
-            borderWidth: 1,
+            ticks: {
+              beginAtZero: true,
+            },
           },
         ],
       },
-      options: {
-        legend: {
-          display: false,
-        },
-        title: {
-          display: true,
-          text: "Connexion",
-          fontSize: 32,
-          fontColor: "#000",
-        },
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero: true
-                }
-            }]
-        },
-        responsive: true,
-            events: [],
-            cutoutPercentage: 60,
-        tooltips: {enabled: false},
-        hover: {mode: null},
-    }
-    });
+      responsive: true,
+      events: [],
+      cutoutPercentage: 60,
+      tooltips: { enabled: false },
+      hover: { mode: null },
+    },
+  });
+}
+
+function initializeCard(trames) {
+  $("p.numberOfAllTrame").html(trames.length);
+  //console.log(trames.length);
+  let pourcentageTrameOk = trames.map((trame) => trame.status);
+  pourcentageTrameOk = pourcentageTrameOk.filter(
+    (trame) => trame !== "TIMEOUT"
+  );
+  pourcentageTrameOk = (pourcentageTrameOk.length / trames.length) * 100;
+  if (pourcentageTrameOk >= 60) {
+    $("p.qualityTrame").html("Bonne (" + pourcentageTrameOk + "%)");
+    $("#qualityIcon").attr("class", "fas fa-smile");
+  } else if (pourcentageTrameOk < 60 && pourcentageTrameOk >= 40) {
+    $("p.qualityTrame").html("Moyenne (" + pourcentageTrameOk + "%)");
+    $("#qualityIcon").attr("class", "fas fa-meh");
+  } else if (pourcentageTrameOk < 40) {
+    $("p.qualityTrame").html("Mauvaise (" + pourcentageTrameOk + "%)");
+    $("#qualityIcon").attr("class", "fas fa-frown");
   }
+  console.log(pourcentageTrameOk);
 }
