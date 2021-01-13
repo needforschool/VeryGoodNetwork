@@ -762,6 +762,7 @@ body::-webkit-scrollbar-thumb {
   padding: 10px 20px;
   cursor: pointer;
   border-radius: 5px 5px 0 0;
+  font-family: "PT sans", sans-serif;
 }
 
 #client-area-graph .navbar-graph ul li:hover {
@@ -1584,7 +1585,7 @@ h1 {
 }
 
 #client-area-graph-onglet-3 p:nth-child(1) {
-  font-size: 1.6em;
+  font-size: 1.9em;
   margin-top: 0.5em;
   text-align: center;
 }
@@ -1592,7 +1593,7 @@ h1 {
 #client-area-graph-onglet-3 form div.lineform1 {
   display: flex;
   flex-direction: row;
-  font-size: 1.5em;
+  font-size: 1.8em;
   align-items: center;
   justify-content: space-around;
   margin: 10px 0;

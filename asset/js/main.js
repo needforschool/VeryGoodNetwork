@@ -888,24 +888,23 @@ function showTimesGraph(trames) {
 
   $("#gtmyYears").on("click", function () {
     mL = [
-      "January",
-      "February",
-      "March",
-      "April",
-      "May",
-      "June",
-      "July",
-      "August",
-      "September",
-      "October",
-      "November",
-      "December",
+      "Janvier",
+      "Février",
+      "Mard",
+      "Avril",
+      "Mai",
+      "Juin",
+      "Jullet",
+      "Août",
+      "Septembre",
+      "Octobre",
+      "Novembre",
+      "Décembre",
     ];
     data = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
     databis1 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
     $(".formyearstime").show();
     $(".gtmyMonthShowGraphbis").hide();
-    console.log("----- Years -----");
     var chooseyearstime = "years";
     let datetoday = new Date();
     datetoday = datetoday.getFullYear();
@@ -921,24 +920,23 @@ function showTimesGraph(trames) {
 
   $("#gtmyMonth").on("click", function () {
     mL = [
-      "January",
-      "February",
-      "March",
-      "April",
-      "May",
-      "June",
-      "July",
-      "August",
-      "September",
-      "October",
-      "November",
-      "December",
+      "Janvier",
+      "Février",
+      "Mard",
+      "Avril",
+      "Mai",
+      "Juin",
+      "Jullet",
+      "Août",
+      "Septembre",
+      "Octobre",
+      "Novembre",
+      "Décembre",
     ];
     data = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
     databis1 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
     $(".formyearstime").hide();
     $(".gtmyMonthShowGraphbis").show();
-    console.log("----- Month -----");
     var chooseyearstime = "month";
     let datetoday = new Date();
     datetoday = datetoday.getFullYear();
@@ -950,7 +948,6 @@ function showTimesGraph(trames) {
         '<option value="' + index + '">' + index + "</option>"
       );
     }
-    console.log("tu as choisit le mois bg");
   });
 
   $("#formyearstime").on("click", function () {
@@ -1018,7 +1015,6 @@ function showTimesGraph(trames) {
       month === "10" ||
       month === "12"
     ) {
-      console.log("31");
       mL = [
         1,
         2,
@@ -1058,7 +1054,6 @@ function showTimesGraph(trames) {
       month === "09" ||
       month === "11"
     ) {
-      console.log("30");
       mL = [
         1,
         2,
@@ -1092,7 +1087,6 @@ function showTimesGraph(trames) {
         30,
       ];
     } else if (month === "02" && years % 4 == 0) {
-      console.log("bisxtille");
       mL = [
         1,
         2,
