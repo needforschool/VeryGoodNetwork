@@ -847,7 +847,7 @@ function showLineTrendDay(trames) {
       },
       title: {
         display: true,
-        text: "Tendance journaliere",
+        text: "Tendance journalière",
         fontSize: 32,
         fontColor: "#000",
       },
