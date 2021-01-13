@@ -44,10 +44,10 @@ include('inc/header.php');
 <section id="client-area-graph">
     <div class="navbar-graph">
         <ul>
-            <li class="tabButton active" id="buttonOnglet-1">Onglet 1</li>
-            <li class="tabButton" id="buttonOnglet-2">Onglet 2</li>
+            <li class="tabButton active" id="buttonOnglet-1">Dashboard</li>
+            <li class="tabButton" id="buttonOnglet-2">Type de protocole</li>
             <li class="tabButton" id="buttonOnglet-3">Analyse des Trames sur le temps</li>
-            <li class="tabButton" id="buttonOnglet-4">Onglet 4</li>
+            <li class="tabButton" id="buttonOnglet-4">Aide</li>
         </ul>
     </div>
     <div id="tabs">
@@ -87,24 +87,32 @@ include('inc/header.php');
 
             </div>
             
+            <div class="graphTypeTrame">
+
+                <div id="graph-circulairetimeok">
+                    <canvas id="graphcamenbert" width="200" height="200"></canvas>
+                </div>
+
+                <div id="graph-day">
+                    <canvas id="graphlineday" width="200" height="200"></canvas>
+                </div>
+
+            </div>
+            
         </section>
 
         <section id="client-area-graph-onglet-2" class=" hidden-onglet">
-            <p>Onglet 2</p>
+            <div class="graphOnglet2">
 
-            <div id="graph-circulairetimeok">
-                <canvas id="graphcamenbert" width="400" height="400"></canvas>
+                <div id="graph-protocol">
+                        <canvas id="graphbarprotocol" width="200" height="200"></canvas>
+                </div>
+
+                <div id="graph-ttl">
+                    <canvas id="graphbarttl" width="400" height="400"></canvas>
+                </div>
+
             </div>
-            <div id="graph-protocol">
-                <canvas id="graphbarprotocol" width="400" height="400"></canvas>
-            </div>
-            <div id="graph-ttl">
-                <canvas id="graphbarttl" width="400" height="400"></canvas>
-            </div>
-            <div id="graph-day">
-                <canvas id="graphlineday" width="400" height="400"></canvas>
-            </div>
-            
         </section>
 
         <section id="client-area-graph-onglet-3" class=" hidden-onglet">
