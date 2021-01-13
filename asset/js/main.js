@@ -1225,7 +1225,7 @@ function showTimeGraphVisual(data, mL) {
       },
       title: {
         display: true,
-        text: "Graphique des Trames réseau dans le temps",
+        text: "Graphique d'analyse temporelle",
         fontSize: 32,
         fontColor: "#000",
       },
