@@ -10,87 +10,7 @@
    License: none (public domain)
 */
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -101,17 +21,7 @@ video {
 
 /* HTML5 display-role reset for older browsers */
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
@@ -119,13 +29,11 @@ body {
   line-height: 1;
 }
 
-ol,
-ul {
+ol, ul {
   list-style: none;
 }
 
-blockquote,
-q {
+blockquote, q {
   quotes: none;
 }
 
@@ -133,10 +41,7 @@ a {
   text-decoration: none;
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+blockquote:before, blockquote:after, q:before, q:after {
   content: "";
   content: none;
 }
@@ -146,15 +51,12 @@ table {
   border-spacing: 0;
 }
 
-*,
-*:after,
-*:before {
+*, *:after, *:before {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-.clear:before,
-.clear:after {
+.clear:before, .clear:after {
   content: "";
   display: table;
 }
@@ -840,8 +742,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .select p {
-    font-size: 1.6em;
-  }
+  font-size: 1.6em;
+}
 
 /* .split {
     width: 5px;
@@ -886,8 +788,7 @@ body::-webkit-scrollbar-thumb {
   margin: 0 auto -50px;
 }
 
-.mainfooter,
-.push {
+.mainfooter, .push {
   height: 50px;
 }
 
@@ -984,21 +885,16 @@ body::-webkit-scrollbar-thumb {
 }
 
 @keyframes shake {
-  10%,
-  90% {
+  10%, 90% {
     transform: translate3d(-1px, 0, 0);
   }
-  20%,
-  80% {
+  20%, 80% {
     transform: translate3d(2px, 0, 0);
   }
-  30%,
-  50%,
-  70% {
+  30%, 50%, 70% {
     transform: translate3d(-2px, 0, 0);
   }
-  40%,
-  60% {
+  40%, 60% {
     transform: translate3d(2px, 0, 0);
   }
 }
@@ -1012,7 +908,6 @@ body::-webkit-scrollbar-thumb {
 #client-area-logs {
   display: none;
 }
-
 
 .box-log {
   width: auto;
@@ -1453,6 +1348,7 @@ h1 {
     font-size: 1.1em;
   }
 }
+
 @media screen and (max-width: 350px) {
   .banner-text {
     margin-top: -100px;
@@ -1479,6 +1375,7 @@ h1 {
     padding-top: 30px;
   }
 }
+
 @media screen and (max-width: 280px) {
   .banner-text h1 {
     font-size: 9em;
@@ -1525,10 +1422,9 @@ h1 {
   height: 500px;
 }
 
-
-#client-area-graph-onglet-1{
-    display: flex;
-    flex-direction: column;
+#client-area-graph-onglet-1 {
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (max-width: 320px) {
