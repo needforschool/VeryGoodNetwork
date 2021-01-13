@@ -93,24 +93,17 @@ include('inc/header.php');
                                 <img src="asset/img/slider-vgn/avis.png" />
                         </li>
                         <li>
-                                <img src="asset/img/slider-vgn/logs.png" />
+                                <img src="asset/img/slider-vgn/graph1.png" />
+                        </li>
+                        <li>
+                                <img src="asset/img/slider-vgn/graph2.png" />
+                        </li>
+                        <li>
+                                <img src="asset/img/slider-vgn/graph-time.png" />
                         </li>
                         <li>
                                 <img src="asset/img/slider-vgn/logs.png" />
                         </li>
-                        <li>
-                                <img src="asset/img/slider-vgn/logs.png" />
-                        </li>
-                        <li>
-                                <img src="asset/img/slider-vgn/logs.png" />
-                        </li>
-                        <li>
-                                <img src="asset/img/slider-vgn/logs.png" />
-                        </li>
-                        <li>
-                                <img src="asset/img/slider-vgn/logs.png" />
-                        </li>
-
                 </ul>
         </div>
 </section>

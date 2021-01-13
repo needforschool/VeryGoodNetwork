@@ -170,7 +170,25 @@ include('inc/header.php');
         </section>
 
         <section id="client-area-graph-onglet-4" class=" hidden-onglet">
-            <p>Onglet 4</p>
+            <p class="title">Aide</p>
+            <div class="bloc">
+                <p>L’analyse d’une trame réseau peut s’avérer utile dans plusieurs cas :</p>
+                <p>- Perte inexplicable de données secrètes malgré aucune violation évidente</p>
+                <p>- Diagnostiquer les applications lentes lorsqu'il ne semble y avoir aucune preuve</p>
+                <p>- S'assurer que votre ordinateur / réseau n'a pas été compromis</p>
+                <p>- Comprendre pourquoi votre serveur est le goulot d'étranglement malgré un faible trafic</p>
+            </div>
+            <div class="bloc">
+                <p>Very Good Network vous accompagne dans votre démarche d’analyse.</p>
+                <p>Dans votre Espace client vous avez accès a 2 types d’informations :</p>
+                <p>- <span class="bold redhover">Les Graphiques</span></p>
+                <p>- <span class="bold redhover">Les Logs</span></p>
+                <p>Dans la partie graphique vous avez un dashboard qui vous permets de retrouver en détails des informations de vos trames réseaux.</p>
+                <p>Vous avez aussi accès a des onglets qui contiennent plusieurs graphiques correspondant a des informations de votre en tête :</p>
+                <p>- Les différents types de protocole (UDP, TLS …) </p>
+                <p>- Une analyse temporelle de vos trames.</p>
+                <p>- Dans la partie logs, vous pouvez consultés les données qui constitue votre trame réseau comme l’adresse IP, les dates d’émission ou le type de protocole</p>
+            <div>
         </section>
     </div>
 

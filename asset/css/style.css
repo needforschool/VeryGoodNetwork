@@ -648,7 +648,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #about-section4bis .flexslider {
-  width: 40%;
+  width: 35.5%;
 }
 
 /******** Client area ********/
@@ -1575,6 +1575,34 @@ h1 {
   width: 80vw;
   margin-bottom: 30px;
 }
+
+/*------Onglet 4 GRAPH AIDE-------*/
+#client-area-graph-onglet-4{
+  font-family: "PT Sans";
+  cursor: default;
+}
+
+#client-area-graph-onglet-4 .bold{
+  font-weight: 800;
+}
+
+#client-area-graph-onglet-4 .title{
+  text-align: center;
+  font-size: 2em;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+#client-area-graph-onglet-4 .bloc{
+  font-size: 1.3em;
+  margin: 10px 0 10px 20px;
+}
+
+#client-area-graph-onglet-4 .redhover:hover{
+  color: #950303;
+  transition-duration: 500ms;
+}
+
 /*------Graphique-------*/
 
 /* font-family: 'PT Sans'*/
