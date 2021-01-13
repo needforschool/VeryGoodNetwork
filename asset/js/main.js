@@ -422,7 +422,8 @@ $(document).ready(function () {
       animationLoop: false,
       itemWidth: 300,
       itemMargin: 5,
-      controlNav: false,
+      controlNav: true,
+      directionNav: false,
       slideshowSpeed: 4000,
     });
   });
