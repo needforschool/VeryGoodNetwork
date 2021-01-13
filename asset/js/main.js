@@ -118,6 +118,8 @@ $(document).ready(function () {
         if (response.success) {
           connexionSuccess();
         } else if (!response.success) {
+          $("#password-signin").val("");
+          $("#conform-password-signin").val("");
           $.each(response.errors, function (index, value) {
             $("span.error-" + index + "-signin").css("color", "#ff6b6b");
             $("span.error-" + index + "-signin").html(value);
@@ -150,6 +152,7 @@ $(document).ready(function () {
         if (response.success) {
           connexionSuccess();
         } else if (!response.success) {
+          $("#password-login").val("");
           $("span.error-password-login").html(
             "Email ou mot de passe incorrect"
           );
