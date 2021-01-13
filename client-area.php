@@ -184,10 +184,10 @@ include('inc/header.php');
                 <p>- <span class="bold redhover">Les Graphiques</span></p>
                 <p>- <span class="bold redhover">Les Logs</span></p>
                 <p>Dans la partie graphique vous avez un dashboard qui vous permets de retrouver en détails des informations de vos trames réseaux.</p>
-                <p>Vous avez aussi accès a des onglets qui contiennent plusieurs graphiques correspondant a des informations de votre en tête :</p>
+                <p>Vous avez aussi accès a des onglets qui contiennent plusieurs graphiques correspondant a des informations de votre en-tête :</p>
                 <p>- Les différents types de protocole (UDP, TLS …) </p>
                 <p>- Une analyse temporelle de vos trames.</p>
-                <p>- Dans la partie logs, vous pouvez consultés les données qui constitue votre trame réseau comme l’adresse IP, les dates d’émission ou le type de protocole</p>
+                <p>- Dans la partie logs, vous pouvez consulter les données qui constituent votre trame réseau comme l’adresse IP, les dates d’émission ou le type de protocole.</p>
             <div>
         </section>
     </div>

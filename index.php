@@ -70,7 +70,7 @@ include('inc/header.php');
                                 <div class="text3">
                                         <h1>Analyse en temps réel</h1>
                                         <br>
-                                        <p>Avec ses outils, vous pouvez avoir <br> accès à des graphiques qui vous<br> permettent de comprendre les besoins <br>de votre site</p>
+                                        <p>Avec ces outils, vous pouvez avoir <br> accès à des graphiques qui vous<br> permettent de comprendre les besoins de votre site.</p>
                                 </div>
                         </div>
 
