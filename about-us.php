@@ -87,30 +87,30 @@ include('inc/header.php');
         <div class="flexslider carousel">
                    <ul class="slides">
                         <li>
-                                <img src="asset/img/caroussel 1.jpg" />
+                                <img src="asset/img/slider-vgn/accueil.png" />
                         </li>
                         <li>
-                                <img src="asset/img/caroussel 2.jpg" />
+                                <img src="asset/img/slider-vgn/avis.png" />
                         </li>
                         <li>
-                                <img src="asset/img/caroussel 3.jpg" />
+                                <img src="asset/img/slider-vgn/logs.png" />
                         </li>
                         <li>
-                                <img src="asset/img/caroussel 4.jpg" />
+                                <img src="asset/img/slider-vgn/logs.png" />
                         </li>
                         <li>
-                                <img src="asset/img/caroussel 5.jpg" />
+                                <img src="asset/img/slider-vgn/logs.png" />
                         </li>
                         <li>
-                                <img src="asset/img/caroussel 6.jpg" />
+                                <img src="asset/img/slider-vgn/logs.png" />
                         </li>
                         <li>
-                                <img src="asset/img/caroussel 7.jpg" />
+                                <img src="asset/img/slider-vgn/logs.png" />
                         </li>
                         <li>
-                                <img src="asset/img/caroussel 8.jpg" />
+                                <img src="asset/img/slider-vgn/logs.png" />
                         </li>
-                        
+
                 </ul>
         </div>
 </section>

@@ -644,6 +644,17 @@ body::-webkit-scrollbar-thumb {
 
 #about-section4 {
   font-family: "PT Sans", sans-serif;
+  background-color: #f9f9f9;
+}
+
+#about-section4 .textarg {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 1.5em;
+  letter-spacing: 6px;
+  line-height: 45px;
 }
 
 #about-section4 h1 {
@@ -661,11 +672,12 @@ body::-webkit-scrollbar-thumb {
 #about-section4 .stick {
   background-color: #000;
   width: 4px;
+  border-radius: 4px;
   height: 240px;
 }
 
 #about-section4 .picture {
-  background-image: url("../img/dashboard.jpg");
+  background-image: url("../img/slider-vgn/espace-client.png");
   height: 240px;
   width: 450px;
   background-size: contain;
@@ -674,12 +686,7 @@ body::-webkit-scrollbar-thumb {
 
 #about-section4 .flexbox div {
   margin: 0 15px;
-}
-
-#about-section4 .textarg {
-  font-size: 1.5em;
-  letter-spacing: 6px;
-  line-height: 45px;
+  margin-bottom: 40px;
 }
 
 #about-section5 {
@@ -735,10 +742,11 @@ body::-webkit-scrollbar-thumb {
 #about-section4bis {
   display: flex;
   justify-content: center;
+  background-color: #f9f9f9;
 }
 
 #about-section4bis .flexslider {
-  width: 50%;
+  width: 40%;
 }
 
 /******** Client area ********/
@@ -1297,6 +1305,9 @@ h1 {
   #about-section1 .flexbox {
     top: 40px;
   }
+  #about-section4 .textarg {
+    font-size: 1.7em;
+  }
 }
 
 @media screen and (max-width: 780px) {
@@ -1484,6 +1495,11 @@ h1 {
   #about-section4 .picture {
     width: 95%;
     background-size: contain;
+  }
+  #about-section4 .textarg {
+    font-size: 2em;
+    font-weight: 500;
+    letter-spacing: 4px;
   }
   .logTrame {
     font-size: 1.9em;
