@@ -79,7 +79,6 @@ include('inc/header.php');
                         <p>Ergonomique</p>
                         <p>Performantes</p>
                         <p>Simple à comprendre</p>
-                        <p>Cliquez sur l'image pour <br>lancer la démo</p>
                 </div>
         </div>
 </section>
