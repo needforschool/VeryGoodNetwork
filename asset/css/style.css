@@ -762,6 +762,7 @@ body::-webkit-scrollbar-thumb {
   padding: 10px 20px;
   cursor: pointer;
   border-radius: 5px 5px 0 0;
+  font-family: 'PT sans', sans-serif;
 }
 
 #client-area-graph .navbar-graph ul li:hover {
