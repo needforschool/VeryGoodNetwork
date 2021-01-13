@@ -2,7 +2,7 @@
 session_start();
 include('inc/pdo.php');
 include('inc/function.php');
-$title = 'Client area';
+$title = 'Espace Client';
 
 if (!isLogged()) {
     header('location: 403.php');
@@ -66,17 +66,35 @@ include('inc/header.php');
             </div>
             <div id="graph-time">
             <form action="">
-                    <label for="cars">Choose a car:</label>
-                <select id="cars" name="cars">
-                    <option value="years">Année</option>
-                    <option value="mois">Mois</option>
-                </select>
-                <div id="btngraphtime">ss</div>
+
+                <label for="">Année</label>
+                <input type="radio" value="years" name="choose" id="gtmyYears">
+                <label for="">Mois</label>
+                <input type="radio" value="mois" name="choose" id="gtmyMonth">
 
                 <select name="" id="formyearstime">
-                <option value="years">Année</option>
+                    <option value="years">Année</option>
                 </select>
-                <div id="btngraphtimeyears">Show graph</div>
+
+                <select name="" id="formyearstimemonth" class="gtmyMonthShowGraph">
+                    <option value="">Mois</option>
+                    <option value="01">Janvier</option>
+                    <option value="02">Février</option>
+                    <option value="03">Mars</option>
+                    <option value="04">Avril</option>
+                    <option value="05">Mai</option>
+                    <option value="06">Juin</option>
+                    <option value="07">Juillet</option>
+                    <option value="08">Août</option>
+                    <option value="09">Septembre</option>
+                    <option value="10">Octobre</option>
+                    <option value="11">Novembre</option>
+                    <option value="12">Décembre</option>
+                </select>
+                <select name="" id="formyearstimemonthy" class="gtmyMonthShowGraph">
+                    <option value="">année</option>
+                </select>
+                
             </form>
                 <canvas id="graphlinetime" width="400" height="400"></canvas>
             </div>
