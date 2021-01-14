@@ -753,7 +753,7 @@ body::-webkit-scrollbar-thumb {
 
 #client-area-graph .navbar-graph ul {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   border-bottom: #000 1px solid;
 }
 
@@ -845,7 +845,7 @@ body::-webkit-scrollbar-thumb {
   height: auto;
   display: flex;
   justify-content: space-around;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .select p {
@@ -932,16 +932,16 @@ body::-webkit-scrollbar-thumb {
 #tabs #client-area-graph-onglet-1 .allcards .card div.contentCard {
   display: flex;
   justify-content: space-around;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 #tabs #client-area-graph-onglet-1 .allcards .card div.contentCard i {
   opacity: 0.2;
 }
 
-#tabs #client-area-graph-onglet-1 .allcards .card-3 div.contentCard {
+/* #tabs #client-area-graph-onglet-1 .allcards .card-3 div.contentCard {
   font-size: 1.3em;
-}
+} */
 
 .graphTypeTrame,
 .graphOnglet2 {
@@ -1547,7 +1547,7 @@ h1 {
     height: 200px;
   }
   .social-links {
-    margin-top: -30px;
+    margin-top: -25px;
   }
   .social-links p {
     font-size: 1.5em;
@@ -1559,6 +1559,12 @@ h1 {
   #about-section1 h1 {
     letter-spacing: 1px;
     margin-bottom: 5px;
+  }
+  .titleCard h2 {
+    font-size: 1.4em;
+  }
+  .card-1 .contentCard {
+    margin-top: 32px;
   }
 }
 
@@ -1763,16 +1769,6 @@ h1 {
   flex-direction: column;
 }
 
-@media screen and (max-width: 320px) {
-  .title-main {
-    margin-bottom: 20%;
-  }
-  .img-log {
-    margin-bottom: 50%;
-  }
-  
-}
-
 @media screen and (max-width: 750px){
     #graph-circulairetimeok {
         width: 80vw;
@@ -1791,5 +1787,23 @@ h1 {
       }
 
 }
+@media screen and (max-width: 480px){
+  #client-area-graph .navbar-graph ul li {
+    font-size: 1.8em;
+  }
+  #client-area-graph-onglet-4 {
+    font-size: 1.3em;
+    line-height: 1.2;
+  }
+}
 
 /* hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh */
+@media screen and (max-width: 320px) {
+  .title-main {
+    margin-bottom: 20%;
+  }
+  .img-log {
+    margin-bottom: 50%;
+  }
+  
+}
