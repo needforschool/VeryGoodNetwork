@@ -22,14 +22,14 @@ if (isLogged()) {
     <section id="fakeEmail">
 
         <div class="resetMail">
-            <h1>Mail de : Very Good Network (verygoodnetwork@gmail.com)</h1>
-            <h2>Objet : Réinitialisation de mot de passe</h2>
-            <p>Bonjour <?php echo mb_strtoupper($user['lastname']) . ' ' . ucfirst($user['firstname']); ?>,<br><br>
-            Un utilisateur a demandé un nouveau mot de passe pour le compte suivant sur VERY GOOD NETWORK :<br><br>
-            Identifiant : <?php echo $user['email'] ?><br><br>
+            <h2><span class="bold">Mail de :</span> Very Good Network (verygoodnetwork@gmail.com)</h2>
+            <h3><span class="bold">Objet :</span> Réinitialisation du mot de passe</h3>
+            <p>Bonjour <span class="bold"><?php echo mb_strtoupper($user['lastname']) . ' ' . ucfirst($user['firstname']); ?></span>,<br><br>
+            Un utilisateur a demandé un nouveau mot de passe pour le compte suivant :<br><br>
+            <span class="bold">Identifiant :</span> <span class="under"><?php echo $user['email'] ?></span><br><br>
             Si vous n'êtes pas l'auteur de cette demande, ignorez simplement cet e-mail.<br><br>
-            Pour continuer :<br><br>
-            <a data-tokenUser="<?php echo $user['token'] ?>" data-emailUser="<?php echo $user['email'] ?>" class="clickResetPassword">Cliquez ici pour réinitialiser votre mot de passe</a><br><br>
+            <span class="bold">Pour continuer :</span><br><br>
+            <a data-tokenUser="<?php echo $user['token'] ?>" data-emailUser="<?php echo $user['email'] ?>" class="clickResetPassword"><span class="under">Cliquez ici</span></a> pour réinitialiser votre mot de passe<br><br>
             Merci de votre attention.
             </p>
         </div>
@@ -46,20 +46,21 @@ if (isLogged()) {
                     <input type="password" id="password-reset" name="password-reset">
                     <span class="error-password-reset"></span>
                 </div>
-
+    
                 <div class="input-area">
                     <label for="confirm-password-reset"><strong>Confirmer nouveau mot de passe</strong></label>
                     <input type="password" id="confirm-password-reset" name="confirm-password-reset">
                     <span class="error-confirm-password-reset"></span>
                 </div>
 
-                <input id="btn-submit-reset" type="submit" name="submitted" class="modal__btn modal__btn-primary" value="Modifier">
+                <input id="btn-submit-reset" class="submit-btn" type="submit" name="submitted" class="modal__btn modal__btn-primary" value="Modifier">
 
             
             </form>
         </div>
 
     </section>
-
+    <div class="push"></div>
+</div>
 <?php
 include('inc/footer.php');
