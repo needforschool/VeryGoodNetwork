@@ -21,9 +21,9 @@ if (isLogged()) {
     <img src="asset/img/triangle.png" class="banner-img">
     <section id="fakeEmail">
         <div class="resetMail">
-            <h2>Mail de : Very Good Network (verygoodnetwork@gmail.com)</h2>
-            <h3>Objet : Réinitialisation de mot de passe</h3>
-            <p>Bonjour <?php echo mb_strtoupper($user['lastname']) . ' ' . ucfirst($user['firstname']); ?>,<br>
+            <h2><span class="bold">Mail de :</span> Very Good Network (verygoodnetwork@gmail.com)</h2>
+            <h3><span class="bold">Objet :</span> Réinitialisation de mot de passe</h3>
+            <p>Bonjour <span class="bold"><?php echo mb_strtoupper($user['lastname']) . ' ' . ucfirst($user['firstname']); ?></span>,<br>
                 Un utilisateur a demandé un nouveau mot de passe pour le compte suivant sur VERY GOOD NETWORK :<br>
                 Identifiant : <?php echo $user['email'] ?><br><br>
                 Si vous n'êtes pas l'auteur de cette demande, ignorez simplement cet e-mail.<br>
