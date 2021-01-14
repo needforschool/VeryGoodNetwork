@@ -991,7 +991,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .box-log::-webkit-scrollbar-track {
-  background: linear-gradient(0deg, #e22813 0%, rgb(54, 0, 0) 100%);
+  background: #fff;
 }
 
 .box-log::-webkit-scrollbar-thumb {

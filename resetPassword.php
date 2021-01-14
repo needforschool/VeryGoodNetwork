@@ -40,7 +40,7 @@ if (isLogged()) {
 
         <div>
             <form action="ajax/ajax-resetPassword.php" id="formNewPassword" method="post" novalidate>
-
+                <h2>Réinitialiser le mot de passe</h2>
                 <div class="input-area">
                     <label for="password-reset"><strong>Nouveau mot de passe</strong></label>
                     <input type="password" id="password-reset" name="password-reset">
