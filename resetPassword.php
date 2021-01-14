@@ -25,9 +25,9 @@ if (isLogged()) {
             <h3><span class="bold">Objet :</span> Réinitialisation de mot de passe</h3>
             <p>Bonjour <span class="bold"><?php echo mb_strtoupper($user['lastname']) . ' ' . ucfirst($user['firstname']); ?></span>,<br>
                 Un utilisateur a demandé un nouveau mot de passe pour le compte suivant sur VERY GOOD NETWORK :<br>
-                Identifiant : <?php echo $user['email'] ?><br><br>
+                <span class="bold">Identifiant :</span> <span class="under"><?php echo $user['email'] ?></span><br><br>
                 Si vous n'êtes pas l'auteur de cette demande, ignorez simplement cet e-mail.<br>
-                Pour continuer :<br><br>
+                <span class="bold">Pour continuer :</span><br><br>
                 <a class="clickResetPassword">Cliquez ici pour réinitialiser votre mot de passe</a><br>
                 Merci de votre attention.
             </p>

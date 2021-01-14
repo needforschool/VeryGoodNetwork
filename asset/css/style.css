@@ -1722,6 +1722,10 @@ h1 {
   font-weight: bold;
 }
 
+.under {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 480px) {
   .resetMail {
     font-size: 2.3em;
