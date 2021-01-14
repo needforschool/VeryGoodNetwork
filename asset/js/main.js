@@ -492,23 +492,26 @@ $(document).ready(function () {
     delay: 400,
   });
 
+  // Carousel FlexSLider
+
+  // tiny helper function to add breakpoints
+  var getGridSize = function () {
+    return window.innerWidth < 600 ? 1 : window.innerWidth < 900 ? 2 : 2;
+  };
+
   $(window).load(function () {
     $(".flexslider").flexslider({
       animation: "slide",
       animationLoop: false,
-      itemWidth: 300,
-      itemMargin: 5,
-      controlNav: true,
-      directionNav: false,
-      slideshowSpeed: 4000,
+      itemWidth: 200,
+      itemMargin: 40,
+      controlNav: false,
+      directionNav: true,
+      slideshowSpeed: 6000,
+      minItems: getGridSize(),
+      maxItems: getGridSize(),
     });
   });
-
-  //const parallax = document.querySelector('#about-picture2');
-
-  //window.addEventListener('scroll', () =>{
-  //    parallax.style.backgroundPositionY = window.scrollY / 4 + "px";
-  //});
 
   //Client area
 
@@ -531,7 +534,6 @@ $(document).ready(function () {
     $("#client-area-graph").hide();
     $("#btn-ca-main").show();
     $("#client-area-logs").show();
-    // getLog(trames);
   });
 
   //----------------------
@@ -832,7 +834,7 @@ function showBarTTLProtcol(trames) {
     options: {
       title: {
         display: true,
-        text: "Utlisations des protocoles",
+        text: "Moyenne TTL des protocoles",
         fontSize: 32,
         fontColor: "#000",
       },
