@@ -751,7 +751,7 @@ function showBarTTLProtcol(trames) {
     options: {
       title: {
         display: true,
-        text: "Utlisations des protocoles",
+        text: "Moyenne TTL des protocoles",
         fontSize: 32,
         fontColor: "#000",
       },
