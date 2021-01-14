@@ -1449,6 +1449,9 @@ h1 {
   .card-1 .contentCard {
     margin-top: 32px;
   }
+  #about-section4bis {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 355px) {
