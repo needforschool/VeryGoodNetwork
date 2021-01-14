@@ -14,7 +14,7 @@ $(document).ready(function () {
     dataType: "json",
 
     success: function (trames) {
-      console.log(trames);
+      //console.log(trames);
       initializeCard(trames);
       isTimeoutOk(trames);
       showBarProtocol(trames);
@@ -184,7 +184,7 @@ $(document).ready(function () {
   });
 
   //-------------------------
-  //FORMULAIRE DE RESET MDP
+  //FORMULAIRE DE RESET MDP AVEC EMAIL
   //-------------------------
 
   $("#formEmailReset").on("submit", function (e) {
@@ -220,17 +220,37 @@ $(document).ready(function () {
   //----------------------
 
   $("a.clickResetPassword").on("click", function () {
+    $("section#fakeEmail").css("display", "none");
+    $("section#resetPassword").fadeIn();
+  });
+
+  $("#formNewPassword").on("submit", function (e) {
+    e.preventDefault();
+    let formNewPassword = $("#formNewPassword");
+    const dataNewPassword = {
+      token: $("a.clickResetPassword").attr("data-tokenUser"),
+      email: $("a.clickResetPassword").attr("data-emailUser"),
+      newPassword: $("input#password-reset").val(),
+      confirmNewPassword: $("input#confirm-password-reset").val(),
+    };
     $.ajax({
       type: "POST",
-      url: "",
-      data: "",
+      url: formNewPassword.attr("action"),
+      data: dataNewPassword,
       dataType: "json",
 
       beforeSend: function () {
-        //$("#btn-submit-login").css("display", "none");
+        $("a.clickResetPassword").css("display", "none");
       },
 
-      success: function (response) {},
+      success: function (response) {
+        $("a.clickResetPassword").fadeIn(200);
+        if (response.success === true) {
+          window.location.replace("index.php");
+        } else {
+          $("span.error-confirm-password-reset").html(response.errors);
+        }
+      },
     });
   });
 
@@ -1401,5 +1421,5 @@ function initializeCard(trames) {
     $("p.qualityTrame").html("Mauvaise (" + pourcentageTrameOk + "%)");
     $("#qualityIcon").attr("class", "fas fa-frown");
   }
-  console.log(pourcentageTrameOk);
+  //console.log(pourcentageTrameOk);
 }
