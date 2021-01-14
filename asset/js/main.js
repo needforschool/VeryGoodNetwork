@@ -161,6 +161,79 @@ $(document).ready(function () {
     });
   });
 
+  //--------------------------
+  //Retour a la modale login
+  //--------------------------
+
+  $("span#btn-return-login").on("click", function () {
+    $("form#formEmailReset").css("display", "none");
+    $("h2#modal-login-resetEmail").css("display", "none");
+    $("form#formLogin").fadeIn();
+    $("h2#modal-login-title").fadeIn();
+  });
+
+  //----------------------
+  //système de reset mot de passe
+  //----------------------
+
+  $(".linkForgortPassword p.link").on("click", function () {
+    $("form#formLogin").css("display", "none");
+    $("h2#modal-login-title").css("display", "none");
+    $("form#formEmailReset").fadeIn();
+    $("h2#modal-login-resetEmail").fadeIn();
+  });
+
+  //-------------------------
+  //FORMULAIRE DE RESET MDP
+  //-------------------------
+
+  $("#formEmailReset").on("submit", function (e) {
+    e.preventDefault();
+    let formLogin = $("#formEmailReset");
+    $.ajax({
+      type: "POST",
+      url: formLogin.attr("action"),
+      data: formLogin.serialize(),
+      dataType: "json",
+
+      beforeSend: function () {
+        $("#btn-submit-login").css("display", "none");
+      },
+
+      success: function (response) {
+        $("#btn-submit-login").fadeIn("200");
+        console.log(response);
+        if (response.success) {
+          MicroModal.close("modal-login");
+          window.location.replace(
+            "resetPassword.php?email=" + response.userEmail
+          );
+        } else {
+          $("span.error-email-emailReset").html(response.errors.email);
+        }
+      },
+    });
+  });
+
+  //----------------------
+  //Lien Email Reset MDP
+  //----------------------
+
+  $("a.clickResetPassword").on("click", function () {
+    $.ajax({
+      type: "POST",
+      url: "",
+      data: "",
+      dataType: "json",
+
+      beforeSend: function () {
+        //$("#btn-submit-login").css("display", "none");
+      },
+
+      success: function (response) {},
+    });
+  });
+
   //----------------------
   //Scroll reveal About us
   //----------------------
@@ -552,7 +625,7 @@ function connexionSuccess() {
     data: "",
     dataType: "json",
 
-    beforeSend: function () { },
+    beforeSend: function () {},
 
     success: function (response) {
       //console.log(response)
@@ -618,23 +691,27 @@ function isTimeoutOk(trames) {
       },
       maintainAspectRatio: false,
       scales: {
-        yAxes: [{
-          display: false,
-          ticks: {
-            beginAtZero: true,
+        yAxes: [
+          {
+            display: false,
+            ticks: {
+              beginAtZero: true,
+            },
+            stacked: true,
+            gridLines: {
+              display: true,
+              color: "rgba(255,99,132,0.2)",
+            },
           },
-          stacked: true,
-          gridLines: {
-            display: true,
-            color: "rgba(255,99,132,0.2)"
-          }
-        }],
-        xAxes: [{
-          display: false,
-          gridLines: {
-            display: false
-          }
-        }]
+        ],
+        xAxes: [
+          {
+            display: false,
+            gridLines: {
+              display: false,
+            },
+          },
+        ],
       },
     },
   });
@@ -679,23 +756,27 @@ function showBarProtocol(trames) {
       },
       maintainAspectRatio: false,
       scales: {
-        yAxes: [{
-          display: false,
-          ticks: {
-            beginAtZero: true,
+        yAxes: [
+          {
+            display: false,
+            ticks: {
+              beginAtZero: true,
+            },
+            stacked: true,
+            gridLines: {
+              display: true,
+              color: "rgba(255,99,132,0.2)",
+            },
           },
-          stacked: true,
-          gridLines: {
-            display: true,
-            color: "rgba(255,99,132,0.2)"
-          }
-        }],
-        xAxes: [{
-          display: false,
-          gridLines: {
-            display: false
-          }
-        }]
+        ],
+        xAxes: [
+          {
+            display: false,
+            gridLines: {
+              display: false,
+            },
+          },
+        ],
       },
     },
   });
@@ -760,18 +841,22 @@ function showBarTTLProtcol(trames) {
       },
       maintainAspectRatio: false,
       scales: {
-        yAxes: [{
-          stacked: true,
-          gridLines: {
-            display: true,
-            color: "rgba(255,99,132,0.2)"
-          }
-        }],
-        xAxes: [{
-          gridLines: {
-            display: false
-          }
-        }]
+        yAxes: [
+          {
+            stacked: true,
+            gridLines: {
+              display: true,
+              color: "rgba(255,99,132,0.2)",
+            },
+          },
+        ],
+        xAxes: [
+          {
+            gridLines: {
+              display: false,
+            },
+          },
+        ],
       },
     },
   });
@@ -883,18 +968,22 @@ function showLineTrendDay(trames) {
       },
       maintainAspectRatio: false,
       scales: {
-        yAxes: [{
-          stacked: true,
-          gridLines: {
-            display: true,
-            color: "rgba(255,99,132,0.2)"
-          }
-        }],
-        xAxes: [{
-          gridLines: {
-            display: false
-          }
-        }]
+        yAxes: [
+          {
+            stacked: true,
+            gridLines: {
+              display: true,
+              color: "rgba(255,99,132,0.2)",
+            },
+          },
+        ],
+        xAxes: [
+          {
+            gridLines: {
+              display: false,
+            },
+          },
+        ],
       },
     },
   });
@@ -1266,18 +1355,22 @@ function showTimeGraphVisual(data, mL) {
       },
       maintainAspectRatio: false,
       scales: {
-        yAxes: [{
-          stacked: true,
-          gridLines: {
-            display: true,
-            color: "rgba(255,99,132,0.2)"
-          }
-        }],
-        xAxes: [{
-          gridLines: {
-            display: false
-          }
-        }]
+        yAxes: [
+          {
+            stacked: true,
+            gridLines: {
+              display: true,
+              color: "rgba(255,99,132,0.2)",
+            },
+          },
+        ],
+        xAxes: [
+          {
+            gridLines: {
+              display: false,
+            },
+          },
+        ],
       },
       responsive: true,
       events: [],

@@ -7,6 +7,9 @@
                         <h2 class="modal__title" id="modal-login-title">
                             Connexion <i class="fas fa-lock"></i>
                         </h2>
+                        <h2 class="modal__title" id="modal-login-resetEmail">
+                            <span id="btn-return-login"><i class="fas fa-arrow-left fa-sm arrow"></i> | </span>Mot de passe oublié <i class="fas fa-envelope"></i>
+                        </h2>
                         <button class="modal__close" aria-label="Close modal" data-custom-close="modal-login"></button>
                     </header>
                     <form id="formLogin" action="ajax/ajax-login.php" method="post" novalidate>
@@ -23,10 +26,30 @@
                                 <input type="password" id="password-login" name="password-login">
                                 <span class="error-password-login"></span>
                             </div>
+
+                            <div class="linkForgortPassword">
+                                <p class="link">Mot de passe oublié ?</p>
+                            </div>
                         </div>
 
                         <footer class="modal__footer">
                             <input id="btn-submit-login" type="submit" name="submitted" class="modal__btn modal__btn-primary" value="Connexion">
+                        </footer>
+                    </form>
+
+                    <form id="formEmailReset" action="ajax/ajax-checkEmailReset.php" method="post" novalidate>
+                        <div class="modal__content" id="modal-emailReset-content">
+
+                            <div class="input-area">
+                                <label for="email-emailReset"><strong>Email</strong> </label>
+                                <input type="email" id="email-emailReset" name="email-emailReset">
+                                <span class="error-email-emailReset"></span>
+                            </div>
+
+                        </div>
+
+                        <footer class="modal__footer">
+                            <input id="btn-submit-emailReset" type="submit" name="submitted" class="modal__btn modal__btn-primary" value="Envoyer">
                         </footer>
                     </form>
                 </div>
@@ -87,12 +110,6 @@
                 </div>
             </div>
         </div>
-
-
-
-        
-
-
 
         <footer class="mainfooter">
         <div class="triangleinverse">
