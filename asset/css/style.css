@@ -1688,3 +1688,37 @@ h1 {
     margin-bottom: 50%;
   }
 }
+
+#fakeEmail {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  height: auto;
+  margin: 0 auto;
+  margin-top: 180px;
+}
+
+.resetMail {
+  font-family: "PT sans", sans-serif;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  line-height: 1.4;
+  border-radius: 5px;
+  padding: 15px;
+  -webkit-box-shadow: -4px 8px 41px 11px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: -4px 8px 41px 11px rgba(0, 0, 0, 0.1);
+  box-shadow: -4px 8px 41px 11px rgba(0, 0, 0, 0.1);
+}
+
+.resetMail h3 {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 400px) {
+  .resetMail {
+    width: 90%;
+  }
+}

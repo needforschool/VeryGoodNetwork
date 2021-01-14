@@ -34,9 +34,10 @@
                     <?php if (isLogged()) {
                         echo '<li><a href="client-area.php">Votre Espace</a></li>';
                         echo '<li><a href="logout.php">Se deconnecter</a></li>';
-                    }?>
+                    } ?>
                 </ul>
             </div>
         </div>
         <!-- <img src="asset/img/triangle.png" class="banner-img"> -->
     </header>
+    <!-- <div class="wrapper"> -->
