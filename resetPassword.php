@@ -6,18 +6,19 @@ $title = 'Mot de passe oublié';
 
 if (isLogged()) {
     header('location: 403.php');
-} elseif(!empty($_GET['email'])) {
+} elseif (!empty($_GET['email'])) {
     $email = $_GET['email'];
     $user = querySQLWhere('vgn_users', 'email', $email, $pdo);
-    if(empty($user)){
+    if (empty($user)) {
         header('location: index.php?error=yes');
     }
 }
-
-
-include('inc/header.php');
 ?>
+<div class="wrapper">
+    <?php include('inc/header.php');
+    ?>
 
+    <img src="asset/img/triangle.png" class="banner-img">
     <section id="fakeEmail">
 
         <div class="resetMail">

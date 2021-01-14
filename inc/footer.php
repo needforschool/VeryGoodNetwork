@@ -112,42 +112,41 @@
         </div>
 
         <footer class="mainfooter">
-        <div class="triangleinverse">
-            <img id="triangle4" src="asset/img/triangleinverse.png" alt="Avatar">
-            <div class="footer-box">
-                <div class="social-links">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="https://github.com/ImJustLucas/VeryGoodNetwork" target="_blank"><i class="fa fa-github"></i></a>
+            <div class="triangleinverse">
+                <img id="triangle4" src="asset/img/triangleinverse.png" alt="Avatar">
+                <div class="footer-box">
+                    <div class="social-links">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="https://github.com/ImJustLucas/VeryGoodNetwork" target="_blank"><i class="fa fa-github"></i></a>
 
-                    <p class="copyright">2020 &copy; VeryGoodNetwork. All rights reserved.</p>
+                        <p class="copyright">2020 &copy; VeryGoodNetwork. All rights reserved.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-
 
         </footer>
-        
-            <!--JQuery-->
-            <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-            <!-- fatNav -->
-            <script type="text/javascript" src="asset/js/jquery.fatNav.min.js"></script>
-            <!--ScrollReveal.js-->
-            <script src="https://unpkg.com/scrollreveal"></script>
-            <!--Chart.js-->
-            <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-            <!--Parallax.js-->
-            <script src="asset/js/parallax.min.js"></script>
-            <!--flexslider.js-->
-            <script src="asset/flexslider/jquery.flexslider.js"></script>
-            <!--Chart.js-->
-            <!-- TypeType  -->
-            <!-- <script src="http://iamdanfox.github.io/typetype/jquery.typetype.min.js" type="text/javascript"></script> -->
-            
-            <!--MicroModal-->
-            <script src="asset/js/micromodal.min.js"></script>
-            <!--JS Perso-->
-            <script src="asset/js/main.js" type="text/javascript"></script>
+
+        <!--JQuery-->
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <!-- fatNav -->
+        <script type="text/javascript" src="asset/js/jquery.fatNav.min.js"></script>
+        <!--ScrollReveal.js-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <!--Chart.js-->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+        <!--Parallax.js-->
+        <script src="asset/js/parallax.min.js"></script>
+        <!--flexslider.js-->
+        <script src="asset/flexslider/jquery.flexslider.js"></script>
+        <!--Chart.js-->
+        <!-- TypeType  -->
+        <!-- <script src="http://iamdanfox.github.io/typetype/jquery.typetype.min.js" type="text/javascript"></script> -->
+
+        <!--MicroModal-->
+        <script src="asset/js/micromodal.min.js"></script>
+        <!--JS Perso-->
+        <script src="asset/js/main.js" type="text/javascript"></script>
         </body>
 
         </html>
