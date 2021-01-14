@@ -202,7 +202,7 @@ $(document).ready(function () {
 
       success: function (response) {
         $("#btn-submit-login").fadeIn("200");
-        console.log(response);
+        //console.log(response);
         if (response.success) {
           MicroModal.close("modal-login");
           window.location.replace(
@@ -237,15 +237,23 @@ $(document).ready(function () {
       type: "POST",
       url: formNewPassword.attr("action"),
       data: dataNewPassword,
-      dataType: "json",
+      //dataType: "json",
 
       beforeSend: function () {
-        $("a.clickResetPassword").css("display", "none");
+        $("#btn-submit-reset").css("display", "none");
+        console.log("beforeSend");
+      },
+
+      error: function (xhr, error) {
+        console.log(xhr);
+        console.log(error);
       },
 
       success: function (response) {
-        $("a.clickResetPassword").fadeIn(200);
-        if (response.success === true) {
+        $("#btn-submit-reset").fadeIn(200);
+        console.log(response);
+        if (response.success) {
+          console.log("c'est good");
           window.location.replace("index.php");
         } else {
           $("span.error-confirm-password-reset").html(response.errors);

@@ -5,8 +5,6 @@ include('../inc/function.php');
 $success = false;
 $errors = array();
 
-debug($_POST);
-
 if (!empty($_POST['token']) && !empty($_POST['email']) && !empty($_POST['newPassword']) && !empty($_POST['confirmNewPassword'])){
 
     //Verification email
@@ -49,21 +47,33 @@ if (!empty($_POST['token']) && !empty($_POST['email']) && !empty($_POST['newPass
                           );
                         showJson($data);
                     }
-                }$data = array(
+                } else {
+                    $data = array(
                     'success' => $success,
                     'errors' => 'Token expiré'
                   );
-                showJson($data);
-            }$data = array(
+                    showJson($data);
+                }
+            }else {
+                $data = array(
                 'success' => $success,
                 'errors' => 'Erreur durant le processus, veuillez recommencer'
-              );
-            showJson($data);
-        }$data = array(
+                );
+                showJson($data);
+            }
+        } else {
+            $data = array(
             'success' => $success,
             'errors' => 'Email invalide'
           );
-        showJson($data);
+            showJson($data);
+        }
+    } else {
+        $data = array(
+            'success' => $success,
+            'errors' => 'Les mots de passe ne correspondent pas'
+          );
+            showJson($data);
     }
 }
 
