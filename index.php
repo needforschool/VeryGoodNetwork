@@ -93,6 +93,8 @@ include('inc/header.php');
                         </div>
                 </div>
         </section>
+        <div class="push"></div>
+        
 
         <!-- <img id="triangle4" src="asset/img/triangleinverse.png" alt="Avatar"> -->
       
